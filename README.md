@@ -1,6 +1,6 @@
 ## ***NOMBRE***
 
-Sitio Web dedicado a la venta y reparación de teléfono celulares y tablets. 
+Sitio Web dedicado a la venta y reparación de teléfono celulares y tablets. Permitiendo presupuestar el soporte tecnico y hacer la gestion todo desde casa, sin tener que ir al local.
 
 ## **Clientes objetivos**
 
@@ -14,10 +14,12 @@ Dirigido a público en general mayores de edad que necesite comprar y/o reparar 
 
 ## **Sitios de referencias**
 
- - https://www.phonehouse.es
- - https://www.phoneservicecenter.es/
- 
-Estos sitios fueron elegidos por como dan el soporte técnico online. También sacamos de ellos el estilo, carrito de compras, filtros.
+ - https://www.phonehouse.es dan el soporte técnico online + carrito de compras
+ - https://www.phoneservicecenter.es/ rubro + carrito de compras
+ - https://all-spares.com/es rubro + carrito de compras
+ - https://www.hponline.com.ar/ ver estética
+ - https://www.lenovo.com/ar/es/pc estética
+
 
 ## **Paletas de colores**
 
@@ -25,8 +27,8 @@ Estos sitios fueron elegidos por como dan el soporte técnico online. También s
 
 ## **Tipografía**
 
- - Open Sans Regular
- - Raleway Regular
+ - Roboto
+ - Raleway *puede cambiar
 
 ## **Logo**
 

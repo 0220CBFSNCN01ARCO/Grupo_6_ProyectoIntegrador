@@ -24,6 +24,7 @@ Dirigido a público en general mayores de edad que necesite comprar y/o reparar 
 ## **Paletas de colores**
 
  - https://colorhunt.co/palette/2763
+ img/Color Hunt Palette 2763.png
 
 ## **Tipografía**
 

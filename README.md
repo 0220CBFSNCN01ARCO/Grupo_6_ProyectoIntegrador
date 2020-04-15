@@ -1,4 +1,4 @@
-## ***NOMBRE***
+## ***Clinic Cell***
 
 Sitio Web dedicado a la venta y reparación de teléfono celulares y tablets. Permitiendo presupuestar el soporte tecnico y hacer la gestion todo desde casa, sin tener que ir al local.
 

@@ -27,28 +27,26 @@ Usuarios mayores de edad que además de poseer un equipo celular y/o tablet real
 ## **Logo**
 
 LFG
-
-## **Paletas de colores**
-
-![Paleta de Colores](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_ProyectoIntegrador/master/img/Color%20Hunt%20Palette%202763.png)
  
+
 ## **Tipografía**
 
  - [font-family: 'Roboto', sans-serif](https://fonts.google.com/?selection.family=Roboto);
  - [font-family: 'Raleway', sans-serif](https://fonts.google.com/?selection.family=Raleway);
 
-## **Paleta de colores**
+## **Paletas de colores**
 
-![Paleta de Colores]()
+![Paleta de Colores](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_ProyectoIntegrador/master/img/Color%20Hunt%20Palette%202763.png)
 
 ## Wireframes
-- [PROTOTIPO]
-- [HOME]
+- [PROTOTIPO]()
+- [HOME](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_ProyectoIntegrador/master/img/HOME.jpg)
 - [LOGIN](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_ProyectoIntegrador/master/img/LOGIN.jpg)
-- [REGISTRO]
-- [PRODUCTO-ADMIN]
-- [PRODUCTO-VISTA]
-- [CARRITO]
+- [REGISTRO](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_ProyectoIntegrador/master/img/REGISTRO%20USER.jpg)
+- [RECUPERAR]()
+- [PRODUCTO-ADMIN](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_ProyectoIntegrador/master/img/NUEVO%20PRODUCTO.jpg)
+- [PRODUCTO-VISTA]()
+- [CARRITO]()
 
 
 

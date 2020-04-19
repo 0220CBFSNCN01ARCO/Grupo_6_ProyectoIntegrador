@@ -19,25 +19,36 @@ Usuarios mayores de edad que además de poseer un equipo celular y/o tablet real
  - https://www.phonehouse.es Poseen soporte técnico online + carrito de compras
  - https://www.phoneservicecenter.es/ Mismo rubro + carrito de compras
  - https://all-spares.com/es Mismo rubro + carrito de compras
- - https://www.hponline.com.ar/ ver estética
- - https://www.lenovo.com/ar/es/pc estética
+ - https://www.hponline.com.ar/ Por estética
+ - https://www.lenovo.com/ar/es/pc Por estética
  - https://www.nativeunion.com/ Carrito de compras + estética del sitio
- - https://fixupweb.com/ Forma en la que hacen interactivo el carrito de compras del servicio
+ - https://fixupweb.com/ Forma en la que hacen interactivo el carrito de compras del servicio tecnico
 
+## **Logo**
 
-## Paletas de colores
+LFG
+
+## **Paletas de colores**
 
 ![Paleta de Colores](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_ProyectoIntegrador/master/img/Color%20Hunt%20Palette%202763.png)
  
 ## **Tipografía**
 
- - Roboto
- - Raleway *puede cambiar
+ - [font-family: 'Roboto', sans-serif](https://fonts.google.com/?selection.family=Roboto);
+ - [font-family: 'Raleway', sans-serif](https://fonts.google.com/?selection.family=Raleway);
 
-## **Logo**
+## **Paleta de colores**
 
-A definir
+![Paleta de Colores]()
 
-## **Boceto del sitio web**
+## Wireframes
+- [PROTOTIPO]
+- [HOME]
+- [LOGIN](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_ProyectoIntegrador/master/img/LOGIN.jpg)
+- [REGISTRO]
+- [PRODUCTO-ADMIN]
+- [PRODUCTO-VISTA]
+- [CARRITO]
 
-A definir
+
+

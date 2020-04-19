@@ -1,3 +1,5 @@
+
+
 ## ***LFG venta&service***
 
 Sitio Web dedicado a la venta y reparación de teléfono celulares y tablets. Permitiendo presupuestar el soporte tecnico y hacer la gestion todo desde casa, sin tener que dirigirse al local.
@@ -23,11 +25,10 @@ Usuarios mayores de edad que además de poseer un equipo celular y/o tablet real
  - https://fixupweb.com/ Forma en la que hacen interactivo el carrito de compras del servicio
 
 
-## **Paletas de colores**
+## Paletas de colores
 
-![Paleta de Colores] (https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_ProyectoIntegrador/master/img/Color%20Hunt%20Palette%202763.png)
+![Paleta de Colores](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_ProyectoIntegrador/master/img/Color%20Hunt%20Palette%202763.png)
  
-
 ## **Tipografía**
 
  - Roboto

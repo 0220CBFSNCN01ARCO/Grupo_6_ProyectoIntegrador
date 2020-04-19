@@ -31,8 +31,8 @@ LFG
 
 ## **Tipografía**
 
- - [Font-family: 'Roboto'](https://fonts.google.com/?selection.family=Roboto);
- - [Font-family: 'Raleway'](https://fonts.google.com/?selection.family=Raleway);
+ - [Font-family: 'Roboto'](https://fonts.google.com/?selection.family=Roboto)
+ - [Font-family: 'Raleway'](https://fonts.google.com/?selection.family=Raleway)
 
 ## **Paletas de colores**
 

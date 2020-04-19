@@ -1,10 +1,10 @@
-## ***Clinic Cell***
+## ***LFG venta&service***
 
-Sitio Web dedicado a la venta y reparación de teléfono celulares y tablets. Permitiendo presupuestar el soporte tecnico y hacer la gestion todo desde casa, sin tener que ir al local.
+Sitio Web dedicado a la venta y reparación de teléfono celulares y tablets. Permitiendo presupuestar el soporte tecnico y hacer la gestion todo desde casa, sin tener que dirigirse al local.
 
 ## **Clientes objetivos**
 
-Dirigido a público en general mayores de edad que necesite comprar y/o reparar su celular y tablet sin moverse de su hogar.
+Usuarios mayores de edad que además de poseer un equipo celular y/o tablet realice compras vía internet, sea capaz de poder enviar via servicio de cadeteria su equipo para el arreglo del mismo, sin tener que moverse desde su casa.
 
 ## **¿Como ajustaremos nuestra oferta al público?**
 
@@ -14,16 +14,18 @@ Dirigido a público en general mayores de edad que necesite comprar y/o reparar 
 
 ## **Sitios de referencias**
 
- - https://www.phonehouse.es dan el soporte técnico online + carrito de compras
- - https://www.phoneservicecenter.es/ rubro + carrito de compras
- - https://all-spares.com/es rubro + carrito de compras
+ - https://www.phonehouse.es Poseen soporte técnico online + carrito de compras
+ - https://www.phoneservicecenter.es/ Mismo rubro + carrito de compras
+ - https://all-spares.com/es Mismo rubro + carrito de compras
  - https://www.hponline.com.ar/ ver estética
  - https://www.lenovo.com/ar/es/pc estética
+ - https://www.nativeunion.com/ Carrito de compras + estética del sitio
+ - https://fixupweb.com/ Forma en la que hacen interactivo el carrito de compras del servicio
 
 
 ## **Paletas de colores**
 
- - https://colorhunt.co/palette/2763
+![Paleta de Colores] (https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_ProyectoIntegrador/master/img/Color%20Hunt%20Palette%202763.png)
  
 
 ## **Tipografía**

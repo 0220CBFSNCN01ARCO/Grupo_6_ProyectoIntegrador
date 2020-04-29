@@ -38,6 +38,10 @@ LFG
 
 ![Paleta de Colores](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_ProyectoIntegrador/master/img/Color%20Hunt%20Palette%202763.png)
 
+## ** LINK DE GITHUB ** ##
+
+https://github.com/0220CBFSNCN01ARCO/Grupo_6_LFG-venta-service
+
 ## Wireframes
 - [PROTOTIPO](https://xd.adobe.com/spec/49180aa7-3236-4a1f-72e3-4775413b9cfd-3f29/)
 - [HOME](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_ProyectoIntegrador/master/img/HOME.jpg)

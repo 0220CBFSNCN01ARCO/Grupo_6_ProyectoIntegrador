@@ -36,7 +36,7 @@ LFG
 
 ![Paleta de Colores](https://murally.blob.core.windows.net/uploads/trabajointegrador5229/1586529990926.png?se=2020-05-01T22%3A30%3A00Z&sp=r&sv=2018-03-28&sr=b&rscc=public%2C%20max-age%3D600&sig=ohO7TgO3y%2F8WRo7%2BLAVDhukr1UTiw1bnC39dpdFXdKQ%3D)
 
-### **Link de GITHUB **
+### **Link de GITHUB** 
 
 Aqui se encuentra el link al proyecto en GitHub.
 
@@ -48,7 +48,7 @@ Para la organización del proyecto utilizamos la herramienta **TRELLO**
 
 [Tablero de Trello](https://trello.com/b/v2tsqfon/grupo-6-proyecto-integrador)
 
-### **Wireframes
+### **Wireframes**
 - [PROTOTIPO](https://xd.adobe.com/spec/49180aa7-3236-4a1f-72e3-4775413b9cfd-3f29/)
 - [HOME](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_ProyectoIntegrador/master/img/HOME.jpg)
 - [LOGIN](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_ProyectoIntegrador/master/img/LOGIN.jpg)

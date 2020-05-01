@@ -34,7 +34,7 @@ LFG
 
 ### **Paletas de colores**
 
-![Paleta de Colores](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_ProyectoIntegrador/master/img/Color%20Hunt%20Palette%202763.png)
+![Paleta de Colores](https://murally.blob.core.windows.net/uploads/trabajointegrador5229/1586529990926.png?se=2020-05-01T22%3A30%3A00Z&sp=r&sv=2018-03-28&sr=b&rscc=public%2C%20max-age%3D600&sig=ohO7TgO3y%2F8WRo7%2BLAVDhukr1UTiw1bnC39dpdFXdKQ%3D)
 
 ### **Link de GITHUB **
 

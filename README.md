@@ -34,7 +34,7 @@ LFG
 
 ### **Paletas de colores**
 
-![Paleta de Colores](https://murally.blob.core.windows.net/uploads/trabajointegrador5229/1586529990926.png?se=2020-05-01T22%3A30%3A00Z&sp=r&sv=2018-03-28&sr=b&rscc=public%2C%20max-age%3D600&sig=ohO7TgO3y%2F8WRo7%2BLAVDhukr1UTiw1bnC39dpdFXdKQ%3D)
+![Paleta de Colores](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_LFG-venta-service/master/site/public/images/Color%20Hunt%20Palette%202763.png)
 
 ### **Link de GITHUB** 
 
@@ -50,13 +50,13 @@ Para la organización del proyecto utilizamos la herramienta **TRELLO**
 
 ### **Wireframes**
 - [PROTOTIPO](https://xd.adobe.com/spec/49180aa7-3236-4a1f-72e3-4775413b9cfd-3f29/)
-- [HOME](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_ProyectoIntegrador/master/img/HOME.jpg)
-- [LOGIN](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_ProyectoIntegrador/master/img/LOGIN.jpg)
-- [REGISTRO](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_ProyectoIntegrador/master/img/REGISTRO%20USER.jpg)
-- [RECUPERAR](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_ProyectoIntegrador/master/img/RECUPERAR.jpg)
-- [PRODUCTO-ADMIN](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_ProyectoIntegrador/master/img/NUEVO%20PRODUCTO.jpg)
-- [PRODUCTO-VISTA](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_ProyectoIntegrador/master/img/VISTA%20PRODUCTO.jpg)
-- [CARRITO](https://github.com/0220CBFSNCN01ARCO/Grupo_6_ProyectoIntegrador/blob/master/img/CARRITO.jpg?raw=true)
+- [HOME](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_LFG-venta-service/master/site/public/images/HOME.jpg)
+- [LOGIN](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_LFG-venta-service/master/site/public/images/LOGIN.jpg)
+- [REGISTRO](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_LFG-venta-service/master/site/public/images/REGISTRO%20USER.jpg)
+- [RECUPERAR](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_LFG-venta-service/master/site/public/images/RECUPERAR.jpg)
+- [PRODUCTO-ADMIN](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_LFG-venta-service/master/site/public/images/NUEVO%20PRODUCTO.jpg)
+- [PRODUCTO-VISTA](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_LFG-venta-service/master/site/public/images/VISTA%20PRODUCTO.jpg)
+- [CARRITO](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_LFG-venta-service/master/site/public/images/CARRITO.jpg)
 
 
 

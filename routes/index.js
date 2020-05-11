@@ -9,4 +9,6 @@ router.get('/', function(req, res, next) {
 router.get('/carrito', function(req, res, next) {
   res.render('carrito', { title: 'Express' });
 });
+
+
 module.exports = router;

@@ -20,7 +20,13 @@ body{
  height: auto;
 }
 
-
+.img-fluid{
+    position: relative;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .serivicios-individual{
     position: relative;
@@ -82,6 +88,7 @@ body{
 }
 
 .cotizacion{
+    text-align: center;
     border: solid;
 }
 
@@ -98,7 +105,11 @@ body{
     border: solid;
     margin-bottom: 2%;
 }
-
+.nuestros-servicios{
+    margin-bottom: 3%;
+    margin-top: 3%;
+    text-align: center;
+}
 .nuevo-servicio h5{
     padding-bottom: 3%;
 }

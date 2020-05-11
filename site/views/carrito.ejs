@@ -1,11 +1,271 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+    <link rel="stylesheet" href="../stylesheets/style.css">
+
+    <link rel="stylesheet" href="./fontAwesome/css/all.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>CARRITO</title>
 </head>
+
 <body>
-    
+
+    <!--barra de navegacion-->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+
+            <a class="navbar-brand" href="#">LOGO</a> </a>
+
+            <button class="navbar-toggler ml-auto collapsed" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto text-center">
+                    <!--home-->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <!--Catalogo-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Catalogo
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Celulares</a>
+                            <a class="dropdown-item" href="#">Tablet</a>
+                            <a class="dropdown-item" href="#">Accesorios</a>
+                        </div>
+                    </li>
+                    <!--Soporte-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Soporte
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Seguimiento</a>
+                            <a class="dropdown-item" href="#">Solicita tu Presupuesto</a>
+                        </div>
+                    </li>
+                    <!--Nosotros-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nosotros</a>
+                    </li>
+                </ul>
+                <!--Login-->
+
+                <div class="d-flex flex-row justify-content-center">
+                    <i class="p-2"><ion-icon name="person-outline"></ion-icon></i>
+                    <i class="p-2"><ion-icon name="search-outline"></ion-icon></i>
+                    <i class="p-2"><ion-icon name="cart-outline"></ion-icon></i>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+
+    <!--PRINCIPAL-->
+
+    <div class="container">
+        <main class="main">
+            
+                <div class="titulo-carro">
+                    <h5>CARRITO DE COMPRAS</h5>
+                </div>
+
+                <hr>
+
+                <h6>Resumen de Compra</h6>
+                <hr>
+                <div class="row">
+                    <div class="d-none d-sm-inline col-md-4">
+                        <b>
+                            <p>Imagen</p>
+                        </b>
+                    </div>
+                    <div class="d-none d-sm-inline col-md-3">
+                        <b>
+                            <p>Descripcion</p>
+                        </b>
+                    </div>
+                    <div class="d-none d-sm-inline col-md-2">
+                        <b>
+                            <p>Cantidad</p>
+                        </b>
+                    </div>
+                    <div class="d-none d-sm-inline col-md-2">
+                        <b>
+                            <p>Precio</p>
+                        </b>
+                    </div>
+                    <div class="d-none d-sm-inline col-md-1">
+                        <b>
+                            <p>Quitar</p>
+                        </b>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-center">
+
+                    <div class="col-12 col-md-4">
+
+                        <figure class="figure">
+                            <img src="/imagenes/celular.jpeg" class="figure-img img-fluid rounded" alt="...">
+                            <figcaption class="figure-caption">Algn texto</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-12 col-md-4 ">
+                        <p>Celular nokio 1100</p>
+                    </div>
+                    <div class="col-12 col-md-1">
+                        <select class="custom-select d-block w-100" id="state" required="">
+                            <option value="">1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-2">
+                        <p>$ 10</p>
+                    </div>
+                    <div class="col-12 col-md-1">
+                        <span><i class="fas fa-trash"></i></span>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="row">
+                    <div class="d-none d-sm-inline col-md-4">
+                        <b>
+                            <p>Imagen</p>
+                        </b>
+                    </div>
+                    <div class="d-none d-sm-inline col-md-3">
+                        <b>
+                            <p>Descripcion</p>
+                        </b>
+                    </div>
+                    <div class="d-none d-sm-inline col-md-2">
+                        <b>
+                            <p>Cantidad</p>
+                        </b>
+                    </div>
+                    <div class="d-none d-sm-inline col-md-2">
+                        <b>
+                            <p>Precio</p>
+                        </b>
+                    </div>
+                    <div class="d-none d-sm-inline col-md-1">
+                        <b>
+                            <p>Quitar</p>
+                        </b>
+                    </div>
+                </div>
+                <div class="row align-items-center justify-content-center">
+
+                    <div class="col-12 col-md-4">
+
+                        <figure class="figure">
+                            <img src="/imagenes/celular.jpeg" class="figure-img img-fluid rounded" alt="...">
+                            <figcaption class="figure-caption">Algn texto</figcaption>
+                        </figure>
+                    </div>
+                    <div class="col-12 col-md-4 ">
+                        <p>Celular nokio 1100</p>
+                    </div>
+                    <div class="col-12 col-md-1">
+                        <select class="custom-select d-block w-100" id="state" required="">
+                            <option value="">1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                    <div class="col-12 col-md-2">
+                        <p>$$10</p>
+                    </div>
+                    <div class="col-12 col-md-1">
+                        <span><i class="fas fa-trash"></i></span>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="row">
+                    <div class="col-6 col-md-6">
+                        <p style="text-align: end;">TOTAL</p>
+                    </div>
+                    <div class="col-6 col-md-6">
+                        <b>
+                            <p style="text-align: end;">$$$$$$$</p>
+                        </b>
+                    </div>
+
+                </div>
+                <div class="carrito-botones">
+                    <button type="button" class="btn btn-secondary">Volver</button>
+                    <button type="button" class="btn btn-primary btn-lg float-right">Siguiente</button>
+                </div>
+
+
+            
+
+
+        </main>
+    </div>
+    <!--footer-->
+
+    <footer class="footer-main bg-dark">
+        <div class="container">
+            <p>aca va la imagen</p>
+
+            <ul class="list-inline">
+                <li class="list-inline-item footer-menu"><a href="#">catalogo</a></li>
+                <li class="list-inline-item footer-menu"><a href="#">soporte</a></li>
+                <li class="list-inline-item footer-menu"><a href="#">nosotros</a></li>
+            </ul>
+
+            <ul class="list-inline">
+                <li class="list-inline-item "><a href="#">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a></li>
+                <li class="list-inline-item "><a href="#">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a></li>
+                <li class="list-inline-item "><a href="#">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a></li>
+            </ul>
+
+            <small>derechos reservados a nosotros</small>
+        </div>
+
+    </footer>
+
+
+    <!--ScripDeBoostrapt-->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

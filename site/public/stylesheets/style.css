@@ -1,4 +1,5 @@
-.nuestros-servicios{
+.tienda{
+    margin-top: 5%;
     text-align: center;
 }
 
@@ -19,7 +20,13 @@ body{
  height: auto;
 }
 
-
+.img-fluid{
+    position: relative;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 .serivicios-individual{
     position: relative;
@@ -78,6 +85,33 @@ body{
     text-align: center;
     position: static;
     float: none;
+}
+
+.cotizacion{
+    text-align: center;
+    border: solid;
+}
+
+.cotizacion-detalle button{
+    position: relative;
+    margin-left: auto;
+    display: block;
+    margin-right: auto
+}
+
+.nuevo-servicio{
+    text-align: center;
+    margin-top: 2%;
+    border: solid;
+    margin-bottom: 2%;
+}
+.nuestros-servicios{
+    margin-bottom: 3%;
+    margin-top: 3%;
+    text-align: center;
+}
+.nuevo-servicio h5{
+    padding-bottom: 3%;
 }
 
 @media(min-width:767px){

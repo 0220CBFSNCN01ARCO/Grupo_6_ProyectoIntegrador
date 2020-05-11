@@ -1,4 +1,5 @@
-.nuestros-servicios{
+.tienda{
+    margin-top: 5%;
     text-align: center;
 }
 
@@ -78,6 +79,28 @@ body{
     text-align: center;
     position: static;
     float: none;
+}
+
+.cotizacion{
+    border: solid;
+}
+
+.cotizacion-detalle button{
+    position: relative;
+    margin-left: auto;
+    display: block;
+    margin-right: auto
+}
+
+.nuevo-servicio{
+    text-align: center;
+    margin-top: 2%;
+    border: solid;
+    margin-bottom: 2%;
+}
+
+.nuevo-servicio h5{
+    padding-bottom: 3%;
 }
 
 @media(min-width:767px){

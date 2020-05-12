@@ -34,20 +34,7 @@ h3.precio.mb-2 {
 }
 
 
-@media(min-width:767px){
 
-    ul.list-inline{
-    justify-content: center;
-    display: flex;
-    }
-
-.cuadroProducto{
-        margin-top: 2%;
-        border: 1px solid #eeeeee;
-        padding: 2%;
-        margin-bottom: 2%;
-    }
-}
 
 /* LOGIN */
 .inicio-sesion{
@@ -112,10 +99,6 @@ h3.precio.mb-2 {
 
 
 /* GENERALES */
-body{
-    font-family: 'Lato', sans-serif;
-    font-family: 'Open Sans', sans-serif;
-}
 
 
 /* BARRA DE NAVEGACION */
@@ -145,7 +128,7 @@ body{
 
 .cotizacion{
     text-align: center;
-    border: solid;
+    border: none
 }
 
 .cotizacion-detalle button{
@@ -158,7 +141,6 @@ body{
 .nuevo-servicio{
     text-align: center;
     margin-top: 2%;
-    border: solid;
     margin-bottom: 2%;
 }
 
@@ -179,8 +161,6 @@ body{
     margin-left: auto;
     margin-right: auto;
 }
-
-
 
 /*
 
@@ -223,11 +203,11 @@ body{
     justify-content: center;
     display: flex;
     }
-    .cuadroProducto{
+
+.cuadroProducto{
         margin-top: 2%;
         border: 1px solid #eeeeee;
         padding: 2%;
         margin-bottom: 2%;
     }
-
 }

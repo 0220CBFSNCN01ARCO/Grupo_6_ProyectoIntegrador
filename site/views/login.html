@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="../public/stylesheets/stylelogin.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+
+<body>
+<div class="container-fluid">
+
+
+    <!--barra de navegacion-->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-light">
+
+            <a class="navbar-brand" href="#">LFG</a> </a>
+
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="navbar-collapse collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav m-auto">
+                    <!--home-->
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <!--Catalogo-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Catalogo
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Celulares</a>
+                            <a class="dropdown-item" href="#">Tablet</a>
+                            <a class="dropdown-item" href="#">Accesorios</a>
+                        </div>
+                    </li>
+                    <!--Soporte-->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Soporte
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Seguimiento</a>
+                            <a class="dropdown-item" href="#">Solicita tu Presupuesto</a>
+                        </div>
+                    </li>
+                    <!--Nosotros-->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Nosotros</a>
+                    </li>
+                </ul>
+                <!--Login-->
+
+                <form class="form-inline my-2 my-lg-0">
+                    <button type="button" class="btn btn-outline-primary">Primary</button>
+                    <a class="nav-link" href="#">Buscar</a>
+                    <a class="nav-link" href="#">Carrito</a>
+                  </form>
+
+            </div>
+        </nav>
+    </header>
+
+
+     <!--INICIAR SESION-->
+
+     <div class="inicio-sesion row">
+            <div class="formulario-body col-sm-8 col-md-6 col-lg-4 mx-auto">
+                
+                <div class="titulo text-center" ><p>INICIAR SESION</p>
+                    </div>
+
+                <div class="formulario-email">
+
+                 <label for="email">Correo Electronico</label>
+                 <input type="email" id="inputEmail" class="form-control" placeholder="Ingresa tu correo electronico" required autofocus>
+                    
+                </div>
+                <div class="formulario-contraseña">
+
+                 <label for="password">Contraseña</label>
+                 <input type="password" id="password" class="form-control" placeholder="Contraseña" required autofocus>
+                
+                </div>
+
+                <div class="custom-control custom-checkbox mb-3">
+                    <input type="checkbox" class="custom-control-input" id="customCheck1">
+                    <label class="custom-control-label" for="customCheck1">Recordar Contraseña</label>
+                </div>
+
+                <div class="olvidarse text-center"> <a href="">¿Olvidaste tu contraseña?</a>
+            
+                </div>
+
+                <div>
+                <button class="boton-ingresar text-center" type="submit"> INGRESAR </button></div>
+                
+                <div class="otras-cuentas">
+                
+                    <div class="o text-center"><p>ó</p></div>
+                
+                    <div> <button class="boton-google text-center" type="submit"><i class="fab fa-google mr-2"></i>Ingresar con <ion-icon name="logo-google"></ion-icon></button></div>
+                
+                    <div> <button class="boton-facebook text-center" type="submit"><i class="fab fa-facebook-f mr-2"></i> Ingresar con <ion-icon name="logo-facebook"></ion-icon></button></div>
+                </div>
+                
+            <div class="registrarse text-center"> <a href="#">¿No tenes una cuenta? Haz click aquí</a></div>
+            </div>
+
+        
+        </div>
+    
+    </div>
+
+    <!--footer-->
+
+    <footer id="footer" class="bg-dark">
+        <div class="container">
+            <p>aca va la imagen</p>
+
+            <ul class="list-inline">
+                <li class="list-inline-item footer-menu"><a href="#">catalogo</a></li>
+                <li class="list-inline-item footer-menu"><a href="#">soporte</a></li>
+                <li class="list-inline-item footer-menu"><a href="#">nosotros</a></li>
+            </ul>
+
+            <ul class="list-inline">
+                <li class="list-inline-item "><a href="#">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a></li>
+                <li class="list-inline-item "><a href="#">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a></li>
+                <li class="list-inline-item "><a href="#">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a></li>
+            </ul>
+
+            <small>derechos reservados a nosotros</small>
+        </div>
+
+    </footer>
+
+
+</div>
+    <!--ScripDeBoostrapt-->
+    <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+.inicio-sesion{
+    padding: 4vw;
+}
+.titulo{
+    font-size: x-large;
+    font-weight: 500;
+}
+.formulario-body{
+    border:1px solid #393e46;
+    border-radius: 20px 20px 20px 20px;
+    padding: 3%;
+    text-decoration: none;
+}
+.otras-cuentas a{
+    text-decoration: none;
+}
+.registrarse{
+    text-decoration: none;
+}
+
+
+.boton-ingresar{
+    width: 100%;
+    text-decoration: none;
+    padding: 10px;
+    font-weight: 600;
+    font-size: 15px;
+    color: #ffffff;
+    background-color: #00adb5;
+    border-radius: 6px;
+    border: 2px solid #00adb5;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+.boton-google{
+    width: 49%;
+    text-decoration: none;
+    padding: 5px;
+    font-weight: 200;
+    font-size: 15px;
+    color:black;
+    background-color:white;
+    border-radius: 6px;
+    border: 1px solid #00adb5;
+    float: left;
+    }
+
+.boton-facebook{
+    width: 49%;
+    text-decoration: none;
+    padding: 5px;
+    font-weight: 200;
+    font-size: 15px;
+    color:black;
+    background-color:white;
+    border-radius: 6px;
+    border: 1px solid #00adb5;
+    float: right
+}
+
+
+.footer-main{
+    padding: 80px 0;
+    text-align: center;
+    color: wheat;
+}
+
+.footer a {
+    color: wheat;
+}
+.footer a:hover {
+    color: wheat;
+}
+.footer .list-inline .list-inline-item{
+    padding: 10px 15px;
+}
+
+.footer-menu{
+    display: block !important;
+    padding: 20px 0 !important;
+    font-size: 20px !important
+}
+
+@media(min-width:767px){
+
+    ul.list-inline{
+    justify-content: center;
+    display: flex;
+    }
+}

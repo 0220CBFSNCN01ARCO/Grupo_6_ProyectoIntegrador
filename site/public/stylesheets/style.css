@@ -1,6 +1,7 @@
 /*PRODUCTOS*/
 body{
     font-family: 'Roboto', sans-serif;
+    background: linear-gradient(to top left, grey, white);
 }
 .cuadroProducto{
     margin-top: 2%;

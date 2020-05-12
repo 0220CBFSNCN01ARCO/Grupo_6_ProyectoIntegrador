@@ -12,15 +12,89 @@ body{
     width: 100%;
 }
 .caja-descripcion{
-    border: 1px solid #393e46;
+    border: 1px solid #adaeaf;
     padding: 2%;
-    color: #222831;
+    color: #393e46;
+    margin-left: 2%;
+    margin-right: 2%;
 }
+
 .btn-carga {
   color: white;
   border: 1px solid transparent;
   background-color: #00adb5;
 }
+/*Descripcion producto*/
+h6.subtitulo {
+    color: #808080;
+}
+h3.precio.mb-2 {
+    color: #00adb5;
+}
+
+
+/* BARRA DE NAVEGACION */
+.navbar-nav .dropdown-menu{
+    border: none;
+    text-align: center;
+    position: static;
+    float: none;
+}
+
+/* CARROUSEL */
+
+.carousel-inner img {
+    width: 100vh;
+    max-height: 100vh;
+}
+
+.carousel-inner{
+ height: auto;
+}
+/* MAIN */
+.tienda{
+    margin-top: 5%;
+    text-align: center;
+}
+
+.cotizacion{
+    text-align: center;
+    border: solid;
+}
+
+.cotizacion-detalle button{
+    position: relative;
+    margin-left: auto;
+    display: block;
+    margin-right: auto
+}
+
+.nuevo-servicio{
+    text-align: center;
+    margin-top: 2%;
+    border: solid;
+    margin-bottom: 2%;
+}
+
+.nuevo-servicio h5{
+    padding-bottom: 3%;
+}
+
+.nuestros-servicios{
+    margin-bottom: 3%;
+    margin-top: 3%;
+    text-align: center;
+}
+
+.img-fluid{
+    position: relative;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/*Footer*/
 
 .footer-main{
     padding: 80px 0;
@@ -45,10 +119,12 @@ body{
 }
 
 @media(min-width:767px){
-ul.list-inline{
+
+    ul.list-inline{
     justify-content: center;
     display: flex;
     }
+
 .cuadroProducto{
         margin-top: 2%;
         border: 1px solid #eeeeee;

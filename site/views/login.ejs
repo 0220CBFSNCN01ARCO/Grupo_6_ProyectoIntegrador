@@ -2,7 +2,8 @@
 <html lang="en">
 
 <head>
-    <link rel="stylesheet" href="../public/stylesheets/stylelogin.css">
+    <link rel="stylesheet" href="/stylesheets/stylelogin.css">
+    <link rel="stylesheet" href="/stylesheets/style.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
 
@@ -20,19 +21,20 @@
 
 
     <!--barra de navegacion-->
+    <!--barra de navegacion-->
     <header>
         <nav class="navbar navbar-expand-md navbar-light bg-light">
 
-            <a class="navbar-brand" href="#">LFG</a> </a>
+            <a class="navbar-brand" href="#">LOGO</a> </a>
 
-            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse"
+            <button class="navbar-toggler ml-auto collapsed" type="button" data-toggle="collapse"
                 data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
             <div class="navbar-collapse collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav m-auto">
+                <ul class="navbar-nav m-auto text-center">
                     <!--home-->
                     <li class="nav-item active">
                         <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
@@ -41,12 +43,12 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Catalogo
+                            Tienda
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="#">Celulares</a>
-                            <a class="dropdown-item" href="#">Tablet</a>
                             <a class="dropdown-item" href="#">Accesorios</a>
+                            <a class="dropdown-item" href="#">Ofertas</a>
                         </div>
                     </li>
                     <!--Soporte-->
@@ -56,22 +58,31 @@
                             Soporte
                         </a>
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Cotiza online</a>
                             <a class="dropdown-item" href="#">Seguimiento</a>
-                            <a class="dropdown-item" href="#">Solicita tu Presupuesto</a>
                         </div>
                     </li>
                     <!--Nosotros-->
                     <li class="nav-item">
                         <a class="nav-link" href="#">Nosotros</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contacto</a>
+                    </li>
                 </ul>
                 <!--Login-->
 
-                <form class="form-inline my-2 my-lg-0">
-                    <button type="button" class="btn btn-outline-primary">Primary</button>
-                    <a class="nav-link" href="#">Buscar</a>
-                    <a class="nav-link" href="#">Carrito</a>
-                  </form>
+                <div class="d-flex flex-row justify-content-center">
+                    <i class="p-2">
+                        <ion-icon name="person-outline"></ion-icon>
+                    </i>
+                    <i class="p-2">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </i>
+                    <i class="p-2">
+                        <ion-icon name="cart-outline"></ion-icon>
+                    </i>
+                </div>
 
             </div>
         </nav>
@@ -130,31 +141,53 @@
 
     <!--footer-->
 
-    <footer id="footer" class="bg-dark">
+    <footer class="footer-main bg-dark">
         <div class="container">
-            <p>aca va la imagen</p>
-
-            <ul class="list-inline">
-                <li class="list-inline-item footer-menu"><a href="#">catalogo</a></li>
-                <li class="list-inline-item footer-menu"><a href="#">soporte</a></li>
-                <li class="list-inline-item footer-menu"><a href="#">nosotros</a></li>
-            </ul>
-
-            <ul class="list-inline">
-                <li class="list-inline-item "><a href="#">
-                        <ion-icon name="logo-facebook"></ion-icon>
-                    </a></li>
-                <li class="list-inline-item "><a href="#">
-                        <ion-icon name="logo-instagram"></ion-icon>
-                    </a></li>
-                <li class="list-inline-item "><a href="#">
-                        <ion-icon name="logo-twitter"></ion-icon>
-                    </a></li>
-            </ul>
-
-            <small>derechos reservados a nosotros</small>
+    
+            <div class="row text-center d-flex justify-content-center pt-5">
+                <div class="col-md-2">
+                    <ul class="list-inline d-flex justify-content-center pt-3 footer-icono">
+                        <li><a href=""><ion-icon name="logo-facebook" style="color: blanchedalmond;"></ion-icon></a></li>
+                        <li><a href=""><ion-icon name="logo-instagram" style="color: blanchedalmond;"></ion-icon></a></li>
+                        <li><a href=""><ion-icon name="logo-twitter" style="color: blanchedalmond;"></ion-icon></li>
+                    </ul> 
+                </div>
+                
+                <div class="col-md-2">
+                    <h6 class="text-uppercase font-weight-bold">
+                      <a href="#!" style="color: white;">Tienda</a>
+                    </h6>
+                </div>
+    
+                <div class="col-md-2 mb-1">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="#!" style="color: white;">Soporte Tecnico</a>
+                    </h6>
+                </div>
+    
+                <div class="col-md-2">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="#!" style="color: white;">Nosotros</a>
+                    </h6>
+                </div>
+    
+                <div class="col-md-2">
+                    <h6 class="text-uppercase font-weight-bold">
+                        <a href="#!" style="color: white;">Ayuda</a>
+                    </h6>
+                </div>
+    
+            </div>
+    
+            
         </div>
-
+    
+    
+    
+    
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+            <a href="https://mdbootstrap.com/"> ---- </a>
+        </div>
     </footer>
 
 

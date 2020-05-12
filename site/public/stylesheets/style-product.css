@@ -94,7 +94,7 @@ h3.precio.mb-2 {
     margin-right: auto;
 }
 
-/*Footer*/
+/*Footer
 
 .footer-main{
     padding: 80px 0;
@@ -117,6 +117,7 @@ h3.precio.mb-2 {
     padding: 20px 0 !important;
     font-size: 20px !important
 }
+*/
 
 @media(min-width:767px){
 

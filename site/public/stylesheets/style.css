@@ -120,42 +120,11 @@ h3.precio.mb-2 {
     max-height: 80vh;
 }
 
-.carousel-inner{
- height: auto;
-}
-
-/* MAIN */
-.tienda{
-    margin-top: 5%;
-    text-align: center;
-}
-
-.cotizacion{
-    text-align: center;
-    border: none
-}
-
 .cotizacion-detalle button{
     position: relative;
     margin-left: auto;
     display: block;
     margin-right: auto
-}
-
-.nuevo-servicio{
-    text-align: center;
-    margin-top: 2%;
-    margin-bottom: 2%;
-}
-
-.nuevo-servicio h5{
-    padding-bottom: 3%;
-}
-
-.nuestros-servicios{
-    margin-bottom: 3%;
-    margin-top: 3%;
-    text-align: center;
 }
 
 .img-fluid{
@@ -166,46 +135,7 @@ h3.precio.mb-2 {
     margin-right: auto;
 }
 
-/*
 
-.footer-main{
-    padding: 80px 0;
-    text-align: center;
-    color: wheat;
-}
-
-.footer a {
-    color: wheat;
-}
-.footer a:hover {
-    color: wheat;
-}
-.footer .list-inline .list-inline-item{
-    padding: 10px 15px;
-}
-
-.footer-menu{
-    display: block !important;
-    padding: 20px 0 !important;
-    font-size: 20px !important
-}
-*/
-
-.listaFooter{
-    padding-left: 2%;
-}
-
-
-
-/*Carrito de compras*/
-.titulo-carro{
-    margin-top: 2%;
-    text-align: center;
-}
-
-.carrito-botones{
-    margin-bottom: 5%;
-}
 
 @media(min-width:767px){
 

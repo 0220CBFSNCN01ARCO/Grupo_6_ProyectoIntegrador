@@ -20,72 +20,7 @@
 <body class="fondo"> <!--agregue color de fondo-->
 
     <!--barra de navegacion-->
-    <header>
-        <nav class="navbar navbar-expand-md navbar-light bg-light" style="border-bottom: 1px solid gray;">
-             <!--agregué borde-->
-
-            <a class="navbar-brand" href="#">LOGO</a> </a>
-
-            <button class="navbar-toggler ml-auto collapsed" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="navbar-collapse collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav m-auto text-center">
-                    <!--home-->
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <!--Catalogo-->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Tienda
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Celulares</a>
-                            <a class="dropdown-item" href="#">Accesorios</a>
-                            <a class="dropdown-item" href="#">Ofertas</a>
-                        </div>
-                    </li>
-                    <!--Soporte-->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Soporte
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Cotiza online</a>
-                            <a class="dropdown-item" href="#">Seguimiento</a>
-                        </div>
-                    </li>
-                    <!--Nosotros-->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                </ul>
-                <!--Login-->
-
-                <div class="d-flex flex-row justify-content-center">
-                    <i class="p-2">
-                        <ion-icon name="person-outline"></ion-icon>
-                    </i>
-                    <i class="p-2">
-                        <ion-icon name="search-outline"></ion-icon>
-                    </i>
-                    <i class="p-2">
-                        <ion-icon name="cart-outline"></ion-icon>
-                    </i>
-                </div>
-
-            </div>
-        </nav>
-    </header>
+    <%- include('./partials/header.ejs')%>
     
     <!--PRINCIPAL-->
     <main class="main">
@@ -162,62 +97,7 @@
      </main>  
     
 
-     <footer class="footer-main bg-dark">
-        <div class="container">
-            <div class="row text-center d-flex justify-content-center pt-4 ">
-                <div class="col-md-2">
-                    <h6 class="text-uppercase">
-                      <a href="#!" style="color: white;">Tienda</a>
-                    </h6>
-                </div>
-    
-                <div class="col-md-2 mb-1">
-                    <h6 class="text-uppercase">
-                        <a href="#!" style="color: white;">Soporte Tecnico</a>
-                    </h6>
-                </div>
-    
-                <div class="col-md-2">
-                    <h6 class="text-uppercase">
-                        <a href="#!" style="color: white;">Nosotros</a>
-                    </h6>
-                </div>
-    
-                <div class="col-md-2">
-                    <h6 class="text-uppercase">
-                        <a href="#!" style="color: white;">Ayuda</a>
-                    </h6>
-                </div>
-                
-                    
-                </div>
-            
-    
-            
-        </div>
-    
-      
-        <div class="footer-copyright">
-            
-            <div class="row d-flex justify-content-center pt-3" style="background-color: #292f35">
-                <div class="col-md-1"> </div>    
-            <div class="col-md-3"> 
-            <a style="text-decoration: none; color: white;" href="#">© 2020 Copyright: LFG </a>
-
-            </div>  
-            <div class="col-md-4"> </div> 
-            <div class="col-md-3">
-                <ul class="list-inline d-flex justify-content-center footer-icono">
-                    <li class="listaFooter"><a href=""><ion-icon name="logo-facebook" style="color: #eeeeee;"></ion-icon></a></li>
-                    <li class="listaFooter"><a href=""><ion-icon name="logo-instagram" style="color: #eeeeee;"></ion-icon></a></li>
-                    <li class="listaFooter"><a href=""><ion-icon name="logo-twitter" style="color: #eeeeee;"></ion-icon></li>
-                </ul> 
-            </div>
-
-            
-        </div>
-        </div>
-    </footer>
+     <%- include('./partials/footer.ejs')%>
     
     <!--ScripDeBoostrapt-->
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>

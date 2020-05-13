@@ -1,9 +1,9 @@
-<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    
-    <link rel="stylesheet" href="/stylesheets/style.css">
+    <link rel="stylesheet" href="../public/stylesheets/style-product.css">
+
+    <link rel="stylesheet" href="./fontAwesome/css/all.css">
 
     <link href="https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&display=swap" rel="stylesheet">
 
@@ -11,16 +11,13 @@
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <meta charset="UTF-8">
-    
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+    <title>Ver Producto</title>
 </head>
 
-<body>
+<body class="probando">
 
-
-
-    <!--barra de navegacion-->
     <!--barra de navegacion-->
     <header>
         <nav class="navbar navbar-expand-md navbar-light bg-light">
@@ -87,111 +84,115 @@
             </div>
         </nav>
     </header>
-
-
-     <!--INICIAR SESION-->
-     <div class="container-fluid">
-     <div class="inicio-sesion row">
-            <div class="formulario-body col-sm-8 col-md-6 col-lg-4 mx-auto">
-                
-                <div class="titulo text-center" ><p>INICIAR SESION</p>
-                    </div>
-
-                <div class="formulario-email">
-
-                 <label for="email">Correo Electronico</label>
-                 <input type="email" id="inputEmail" class="form-control" placeholder="Ingresa tu correo electronico" required autofocus>
-                    
+    
+    <!--PRINCIPAL-->
+    <main class="main">
+        <div class="container cuadroProducto">
+            <div class="row">
+                <!--imagen producto-->
+                <div class="col-md-6 order-md-1 mb-4" >
+                    <img src="../public/imagenes/xiaomi.jpg" class="imgProducto" alt="...">
                 </div>
-                <div class="formulario-contraseña">
-
-                 <label for="password">Contraseña</label>
-                 <input type="password" id="password" class="form-control" placeholder="Contraseña" required autofocus>
+                <!--especificaciones-->
+                <div class="col-md-6 order-md-2">
+                    <h4 class="mb-2">Xiaomi Redmi Note7 - Negro</h4>
+                    <h6 class="subtitulo mb-0">18 ctas de</h6>
+                    <h3 class="precio mb-2">$1500</h3>
+                    <h6 class="subtitulo mb-4">1 Pago de $23500</h6>
+                    <!--Breve Desc Tecn-->
+                <div class="row">
+                    <div class="col-ms-12">
+                        <p class="caja-descripcion">
+                            Descripcion del producto en venta. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. 
+                        </p>
+                    </div> 
+                </div>      
                 
+                <!--cantidad y Reseña-->
+                <div class="row">
+                <div class="col-md-3 mb-3">
+                    <label for="cantidad">Cantidad</label>
+                    <select class="custom-select d-block w-100" id="cantidad" >
+                      <option value="">1</option>
+                      <option>2</option>
+                      <option>3</option>
+                      <option>4</option>
+                    </select>
+                </div>
+                <div class="col-md-3 mb-3">
+                    <label for="reseña">Puntuación</label>
+                
+                <div class="d-flex flex-row justify-content-center">
+                    <i class="p-2">
+                        <ion-icon name="star"></ion-icon>
+                    </i>
+                    <i class="p-2">
+                        <ion-icon name="star"></ion-icon>
+                    </i>
+                    <i class="p-2">
+                        <ion-icon name="star-outline"></ion-icon>
+                    </i>
+                </div>
                 </div>
 
-                <div class="custom-control custom-checkbox mb-3">
-                    <input type="checkbox" class="custom-control-input" id="customCheck1">
-                    <label class="custom-control-label" for="customCheck1">Recordar Contraseña</label>
-                </div>
 
-                <div class="olvidarse text-center"> <a href="">¿Olvidaste tu contraseña?</a>
-            
-                </div>
 
-                <div>
-                <button class="boton-ingresar text-center" type="submit"> INGRESAR </button></div>
-                
-                <div class="otras-cuentas">
-                
-                    <div class="o text-center"><p>ó</p></div>
-                
-                    <div> <button class="boton-google text-center" type="submit"><i class="fab fa-google mr-2"></i>Ingresar con <ion-icon name="logo-google"></ion-icon></button></div>
-                
-                    <div> <button class="boton-facebook text-center" type="submit"><i class="fab fa-facebook-f mr-2"></i> Ingresar con <ion-icon name="logo-facebook"></ion-icon></button></div>
+
                 </div>
+                <!--linea separacion-->
+                <hr class="mb-4">
+                <!--Boton-->
+                <button class="btn-carga btn-sm btn-block" type="submit">Añadir al Carrito</button>
+                </div><!--cierra el primer row, lleva la descripcion del producto-->
                 
-            <div class="registrarse text-center"> <a href="#">¿No tenes una cuenta? Haz click aquí</a></div>
             </div>
+                
+
+
 
         
-        </div>
+        
+        
+         
+        </div> <!--cierra container-->
+
     
-    </div>
+     </main>  
+    
+
+
 
     <!--footer-->
 
     <footer class="footer-main bg-dark">
         <div class="container">
-    
-            <div class="row text-center d-flex justify-content-center pt-5">
-                <div class="col-md-2">
-                    <ul class="list-inline d-flex justify-content-center pt-3 footer-icono">
-                        <li><a href=""><ion-icon name="logo-facebook" style="color: blanchedalmond;"></ion-icon></a></li>
-                        <li><a href=""><ion-icon name="logo-instagram" style="color: blanchedalmond;"></ion-icon></a></li>
-                        <li><a href=""><ion-icon name="logo-twitter" style="color: blanchedalmond;"></ion-icon></li>
-                    </ul> 
-                </div>
-                
-                <div class="col-md-2">
-                    <h6 class="text-uppercase font-weight-bold">
-                      <a href="#!" style="color: white;">Tienda</a>
-                    </h6>
-                </div>
-    
-                <div class="col-md-2 mb-1">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <a href="#!" style="color: white;">Soporte Tecnico</a>
-                    </h6>
-                </div>
-    
-                <div class="col-md-2">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <a href="#!" style="color: white;">Nosotros</a>
-                    </h6>
-                </div>
-    
-                <div class="col-md-2">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <a href="#!" style="color: white;">Ayuda</a>
-                    </h6>
-                </div>
-    
-            </div>
-    
-            
+            <p>aca va la imagen</p>
+
+            <ul class="list-inline">
+                <li class="list-inline-item footer-menu"><a href="#">catalogo</a></li>
+                <li class="list-inline-item footer-menu"><a href="#">soporte</a></li>
+                <li class="list-inline-item footer-menu"><a href="#">nosotros</a></li>
+            </ul>
+
+            <ul class="list-inline">
+                <li class="list-inline-item "><a href="#">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                    </a></li>
+                <li class="list-inline-item "><a href="#">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a></li>
+                <li class="list-inline-item "><a href="#">
+                        <ion-icon name="logo-twitter"></ion-icon>
+                    </a></li>
+            </ul>
+
+            <small>derechos reservados a nosotros</small>
         </div>
-    
-    
-    
-    
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            <a href="https://mdbootstrap.com/"> ---- </a>
-        </div>
+
     </footer>
 
 
-</div>
+
     <!--ScripDeBoostrapt-->
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
 

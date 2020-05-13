@@ -1,17 +1,20 @@
 /*PRODUCTOS*/
-body{
+.fondo{
     font-family: 'Roboto', sans-serif;
-    background: linear-gradient(to top left, grey, white);
+    background-color: #efefef;
 }
 .cuadroProducto{
     margin-top: 2%;
     border: none;
     padding: 2%;
     margin-bottom: 2%;
+    border-radius: 2%;
+    background-color: white;
 }
 
 .imgProducto{
-    width: 100%;
+    width: 60%;
+
 }
 .caja-descripcion{
     border: 1px solid #adaeaf;
@@ -188,6 +191,12 @@ h3.precio.mb-2 {
 }
 */
 
+.listaFooter{
+    padding-left: 2%;
+}
+
+
+
 /*Carrito de compras*/
 .titulo-carro{
     margin-top: 2%;
@@ -207,8 +216,10 @@ h3.precio.mb-2 {
 
 .cuadroProducto{
         margin-top: 2%;
-        border: 1px solid #eeeeee;
+        border: 1px solid white;
         padding: 2%;
         margin-bottom: 2%;
+        background-color: white;
+        border-radius: 2%;
     }
 }

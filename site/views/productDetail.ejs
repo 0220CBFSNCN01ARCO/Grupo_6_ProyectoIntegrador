@@ -17,11 +17,12 @@
     <title>Ver Producto</title>
 </head>
 
-<body>
+<body class="fondo"> <!--agregue color de fondo-->
 
     <!--barra de navegacion-->
     <header>
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <nav class="navbar navbar-expand-md navbar-light bg-light" style="border-bottom: 1px solid gray;">
+             <!--agregué borde-->
 
             <a class="navbar-brand" href="#">LOGO</a> </a>
 
@@ -91,7 +92,7 @@
         <div class="container cuadroProducto">
             <div class="row">
                 <!--imagen producto-->
-                <div class="col-md-6 order-md-1 mb-4" >
+                <div class="col-md-6 order-md-1 mb-4 d-flex justify-content-center" >
                     <img src="/imagenes/xiaomi.jpg" class="imgProducto" alt="...">
                 </div>
                 <!--especificaciones-->
@@ -163,50 +164,58 @@
 
      <footer class="footer-main bg-dark">
         <div class="container">
-    
-            <div class="row text-center d-flex justify-content-center pt-5">
+            <div class="row text-center d-flex justify-content-center pt-4 ">
                 <div class="col-md-2">
-                    <ul class="list-inline d-flex justify-content-center pt-3 footer-icono">
-                        <li><a href=""><ion-icon name="logo-facebook" style="color: blanchedalmond;"></ion-icon></a></li>
-                        <li><a href=""><ion-icon name="logo-instagram" style="color: blanchedalmond;"></ion-icon></a></li>
-                        <li><a href=""><ion-icon name="logo-twitter" style="color: blanchedalmond;"></ion-icon></li>
-                    </ul> 
-                </div>
-                
-                <div class="col-md-2">
-                    <h6 class="text-uppercase font-weight-bold">
+                    <h6 class="text-uppercase">
                       <a href="#!" style="color: white;">Tienda</a>
                     </h6>
                 </div>
     
                 <div class="col-md-2 mb-1">
-                    <h6 class="text-uppercase font-weight-bold">
+                    <h6 class="text-uppercase">
                         <a href="#!" style="color: white;">Soporte Tecnico</a>
                     </h6>
                 </div>
     
                 <div class="col-md-2">
-                    <h6 class="text-uppercase font-weight-bold">
+                    <h6 class="text-uppercase">
                         <a href="#!" style="color: white;">Nosotros</a>
                     </h6>
                 </div>
     
                 <div class="col-md-2">
-                    <h6 class="text-uppercase font-weight-bold">
+                    <h6 class="text-uppercase">
                         <a href="#!" style="color: white;">Ayuda</a>
                     </h6>
                 </div>
-    
-            </div>
+                
+                    
+                </div>
+            
     
             
         </div>
     
-    
-    
-    
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            <a href="https://mdbootstrap.com/"> ---- </a>
+      
+        <div class="footer-copyright">
+            
+            <div class="row d-flex justify-content-center pt-3" style="background-color: #292f35">
+                <div class="col-md-1"> </div>    
+            <div class="col-md-3"> 
+            <a style="text-decoration: none; color: white;" href="#">© 2020 Copyright: LFG </a>
+
+            </div>  
+            <div class="col-md-4"> </div> 
+            <div class="col-md-3">
+                <ul class="list-inline d-flex justify-content-center footer-icono">
+                    <li class="listaFooter"><a href=""><ion-icon name="logo-facebook" style="color: #eeeeee;"></ion-icon></a></li>
+                    <li class="listaFooter"><a href=""><ion-icon name="logo-instagram" style="color: #eeeeee;"></ion-icon></a></li>
+                    <li class="listaFooter"><a href=""><ion-icon name="logo-twitter" style="color: #eeeeee;"></ion-icon></li>
+                </ul> 
+            </div>
+
+            
+        </div>
         </div>
     </footer>
     

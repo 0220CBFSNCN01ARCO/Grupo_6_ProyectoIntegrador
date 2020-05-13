@@ -117,7 +117,7 @@ h3.precio.mb-2 {
 
 .carousel-inner img {
     width: 100vh;
-    max-height: 100vh;
+    max-height: 80vh;
 }
 
 .carousel-inner{

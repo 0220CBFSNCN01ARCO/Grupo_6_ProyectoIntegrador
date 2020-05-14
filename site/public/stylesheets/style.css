@@ -9,7 +9,7 @@
     padding: 2%;
     margin-bottom: 2%;
     border-radius: 2%;
-    background-color: white;
+    /*background-color: white;*/
 }
 
 .imgProducto{
@@ -146,10 +146,10 @@ h3.precio.mb-2 {
 
 .cuadroProducto{
         margin-top: 2%;
-        border: 1px solid white;
+        /*border: 1px solid white;*/
         padding: 2%;
         margin-bottom: 2%;
-        background-color: white;
+        /*background-color: white;*/
         border-radius: 2%;
     }
 }

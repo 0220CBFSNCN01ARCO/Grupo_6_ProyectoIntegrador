@@ -50,13 +50,13 @@ Para la organización del proyecto utilizamos la herramienta **TRELLO**
 
 ### **Wireframes**
 - [PROTOTIPO](https://xd.adobe.com/spec/49180aa7-3236-4a1f-72e3-4775413b9cfd-3f29/)
-- [HOME](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_LFG-venta-service/master/site/public/images/HOME.jpg)
-- [LOGIN](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_LFG-venta-service/master/site/public/images/LOGIN.jpg)
-- [REGISTRO](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_LFG-venta-service/master/site/public/images/REGISTRO%20USER.jpg)
-- [RECUPERAR](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_LFG-venta-service/master/site/public/images/RECUPERAR.jpg)
-- [PRODUCTO-ADMIN](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_LFG-venta-service/master/site/public/images/NUEVO%20PRODUCTO.jpg)
-- [PRODUCTO-VISTA](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_LFG-venta-service/master/site/public/images/VISTA%20PRODUCTO.jpg)
-- [CARRITO](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_LFG-venta-service/master/site/public/images/CARRITO.jpg)
+- [HOME](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_LFG-venta-service/master/site/mockups/HOME.jpg)
+- [LOGIN](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_LFG-venta-service/master/site/mockups/LOGIN.jpg)
+- [REGISTRO](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_LFG-venta-service/master/site/mockups/REGISTRO%20USER.jpg)
+- [RECUPERAR](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_LFG-venta-service/master/site/mockups/RECUPERAR.jpg)
+- [PRODUCTO-ADMIN](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_LFG-venta-service/master/site/mockups/NUEVO%20PRODUCTO.jpg)
+- [PRODUCTO-VISTA](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_LFG-venta-service/master/site/mockups/VISTA%20PRODUCTO.jpg)
+- [CARRITO](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_LFG-venta-service/master/site/mockups/CARRITO.jpg)
 
 
 

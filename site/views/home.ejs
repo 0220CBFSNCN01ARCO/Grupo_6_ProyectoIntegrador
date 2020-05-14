@@ -16,80 +16,16 @@
     <title>HOME</title>
 </head>
 
-<body>
+<body class="fondo">
 
     <!--barra de navegacion-->
-    <header>
-        <nav class="navbar navbar-expand-md navbar-light bg-light">
-
-            <a class="navbar-brand" href="#">LOGO</a> </a>
-
-            <button class="navbar-toggler ml-auto collapsed" type="button" data-toggle="collapse"
-                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
-            <div class="navbar-collapse collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav m-auto text-center">
-                    <!--home-->
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                    </li>
-                    <!--Catalogo-->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Tienda
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Celulares</a>
-                            <a class="dropdown-item" href="#">Accesorios</a>
-                            <a class="dropdown-item" href="#">Ofertas</a>
-                        </div>
-                    </li>
-                    <!--Soporte-->
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
-                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Soporte
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="#">Cotiza online</a>
-                            <a class="dropdown-item" href="#">Seguimiento</a>
-                        </div>
-                    </li>
-                    <!--Nosotros-->
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Nosotros</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Contacto</a>
-                    </li>
-                </ul>
-                <!--Login-->
-
-                <div class="d-flex flex-row justify-content-center">
-                    <i class="p-2">
-                        <ion-icon name="person-outline"></ion-icon>
-                    </i>
-                    <i class="p-2">
-                        <ion-icon name="search-outline"></ion-icon>
-                    </i>
-                    <i class="p-2">
-                        <ion-icon name="cart-outline"></ion-icon>
-                    </i>
-                </div>
-
-            </div>
-        </nav>
-    </header>
+    <%- include('./partials/header.ejs')%>
 
     <!--carrousel-->
 
-    <div class="carousel slide" data-ride="carousel">
+    <div class="carousel slide mt-4" data-ride="carousel">
 
-        <div class="carousel-inner">
+        <div class="carousel-inner" style="height: auto;"> 
             <div class="carousel-item active">
                 <img class="d-block w-100" src="/imagenes/img.jpeg" alt="Tienda">
                 <div class="carousel-caption d-none d-sm-inline">
@@ -120,10 +56,10 @@
     <div class="container">
         <main class="main">
             <!--Titulo y servicios-->
-            <div class="container tienda">
+            <div class="container mt-4 text-center">
                 <h3> Nuestra tienda</h3>
 
-                <ul class="nav nav-tabs" id="myTab" role="tablist" style="display: inline-flex;">
+                <ul class="nav nav-tabs mt-4" id="myTab" role="tablist" style="display: inline-flex;">
                     <li class="nav-item">
                         <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
                             aria-controls="home" aria-selected="true">Ofertas</a>
@@ -175,13 +111,13 @@
             </div>
 
             <!--PARTE DE RETIRO DE COTIZACION ONLINE-->
-            <div class="container cotizacion">
+            <div class="container text-center">
                 <br>
                 <div class="row cotizacion-detalle">
-                    <div class="col-md-6">
+                    <div class="col-md-6 mb-4">
                         <h4>¿Problemas con tu celular o tablet?</h4>
                         <p>Utilizá nuestro sistema de reparación, calcula tu presupuesto indicando el problema y
-                            dispositivo que tienes y reparalo ya mismo</p>
+                            dispositivo que tenés y reparalo ya mismo!!</p>
                         <button type="button" class="btn btn-outline-primary btn-lg btn-block">Cotizar</button>
                     </div>
                     <div class="col-md-6">
@@ -193,14 +129,14 @@
             </div>
 
             <!--PARTE DE RETIRO DE EQUIPO EN SITIO-->
-            <div class="container nuevo-servicio">
+            <div class="container text-center mt-4 mb-4">
                 <br>
-                <h5>PRUEBA NUESTRO SERVICIO.</h5>
-                <h5>RECOGEMOS TU MÓVIL Y LO REPARAMOS AL INSTANTE DE MANERA URGENTE Y TE LO LLEVAMOS</h5>
+                <h5 style="margin-bottom: 3%">PRUEBA NUESTRO SERVICIO.</h5>
+                <h5 style="margin-bottom: 10%">Buscamos tu equipo, lo reparamos al instante y llevamos sin moverte de tu casa</h5>
                 <div class="row">
                     <div class="col-md-3">
                         <img src="/imagenes/icono4.png" alt="">
-                        <h6>Movil dañado?</h6>
+                        <h6 style="margin-bottom: 4%">Movil dañado?</h6>
                         <span>
                             <p>Reparamos tu móvil de manera Urgente hoy mismo Sin cita previa, con garantía SELLADA!.
                             </p>
@@ -211,14 +147,14 @@
                         <img src="/imagenes/icono5.png" alt="">
                         <h6>Retiro en Domicilio</h6>
                         <span>
-                            <p>Recogemos tu móvil en toda España por MRW,(en Madrid repartidor propio)y lo traemos a
+                            <p>Recogemos tu móvil en toda la Ciudad de cordoba y lo traemos a
                                 nuestro taller para repararlo.</p>
                         </span>
                     </div>
 
                     <div class="col-md-3">
                         <img src="/imagenes/icono6.png" alt="">
-                        <h6>Reparacion</h6>
+                        <h6 >Reparacion</h6>
                         <span>
                             <p>En nuestro taller examinaremos tu teléfono y lo repararemos al instante!.</p>
                         </span>
@@ -228,7 +164,7 @@
                         <img src="/imagenes/icono7.png" alt="">
                         <h6>Retiro en Domicilio</h6>
                         <span>
-                            <p>Una vez reparado te lo entregamos en MADRID en el mismo día y Resto de España 48-72 horas
+                            <p>Una vez reparado te lo entregamos en la Ciudad de Cordoba en el mismo día y Resto de la provicincia 48-72 horas
                                 en la dirección indicada</p>
                         </span>
                     </div>
@@ -238,25 +174,25 @@
 
             <!--esta parte es la de imagenes de seguimiento tarjeta y otras-->
 
-            <div class="container nuestros-servicios">
+            <div class="container text-center mt-4 mb-4">
 
 
                 <div class="row">
-                    <div class="col-md-4">
+                    <div class="col-md-4 mb-4">
                         <b>
-                            <p>Pagá con tarjeta o en efectivo</p>
+                            <p>Trabajos con Mercado Pago</p>
                         </b>
                         <img src="/imagenes/payment.svg" class="img-fluid" alt="">
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 mb-4">
                         <b>
                             <p>Envíos Gratis desde $2.500</p>
                         </b>
                         <img src="/imagenes/shipping.svg" class="img-fluid" alt="">
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-md-4 mb-4">
                         <b>
-                            <p>Seguridad de principio a fin</p>
+                            <p>Sitio Seguro</p>
                         </b>
                         <img src="/imagenes/protected.svg" class="img-fluid" alt="">
                     </div>
@@ -267,60 +203,7 @@
     </div>
     <!--footer-->
 
-    <footer class="footer-main bg-dark">
-        <div class="container">
-
-            <div class="row text-center d-flex justify-content-center pt-5">
-                <div class="col-md-2">
-                    <ul class="list-inline d-flex justify-content-center pt-3 footer-icono">
-                        <li><a href="">
-                                <ion-icon name="logo-facebook" style="color: blanchedalmond;"></ion-icon>
-                            </a></li>
-                        <li><a href="">
-                                <ion-icon name="logo-instagram" style="color: blanchedalmond;"></ion-icon>
-                            </a></li>
-                        <li><a href="">
-                                <ion-icon name="logo-twitter" style="color: blanchedalmond;"></ion-icon>
-                        </li>
-                    </ul>
-                </div>
-
-                <div class="col-md-2">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <a href="#!" style="color: white;">Tienda</a>
-                    </h6>
-                </div>
-
-                <div class="col-md-2 mb-1">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <a href="#!" style="color: white;">Soporte Tecnico</a>
-                    </h6>
-                </div>
-
-                <div class="col-md-2">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <a href="#!" style="color: white;">Nosotros</a>
-                    </h6>
-                </div>
-
-                <div class="col-md-2">
-                    <h6 class="text-uppercase font-weight-bold">
-                        <a href="#!" style="color: white;">Ayuda</a>
-                    </h6>
-                </div>
-
-            </div>
-
-
-        </div>
-
-
-
-
-        <div class="footer-copyright text-center py-3">© 2020 Copyright:
-            <a href="https://mdbootstrap.com/"> ---- </a>
-        </div>
-    </footer>
+    <%- include('./partials/footer.ejs')%>
 
 
 

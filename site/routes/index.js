@@ -3,15 +3,15 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('home', { title: 'Express' });
+  res.render('index', { title: 'Express' });
 });
 
-router.get('/carrito', function(req, res, next) {
-  res.render('carrito', { title: 'Express' });
+router.get('/productcart', function(req, res, next) {
+  res.render('productCart', { title: 'Express' });
 });
 
-router.get('/login', function(req, res, next) {
-  res.render('login', { title: 'Express' });
+router.get('/register', function(req, res, next) {
+  res.render('register', { title: 'Express' });
 });
 
 router.get('/productAdd', function(req, res, next) {

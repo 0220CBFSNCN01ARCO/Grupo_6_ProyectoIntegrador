@@ -34,7 +34,7 @@ LFG
 
 ### **Paletas de colores**
 
-![Paleta de Colores](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_LFG-venta-service/master/mockups/Color%20Hunt%20Palette%202763.png)
+![Paleta de Colores](https://raw.githubusercontent.com/0220CBFSNCN01ARCO/Grupo_6_LFG-venta-service/master/site/mockups/Color%20Hunt%20Palette%202763.png)
 
 ### **Link de GITHUB** 
 

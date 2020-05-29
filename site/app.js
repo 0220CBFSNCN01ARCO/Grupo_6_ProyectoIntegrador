@@ -3,31 +3,33 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+const methodOverride = require("method-override");
+const logsMiddleware = require ('./middleware/logsMiddleware');
 
 var indexRouter = require('./routes/index');
+var productsRouter = require('./routes/product');
+var usersRouter = require ('./routes/users');
 
-var productAddRouter = require('./routes/productAdd');
-var productCartRouter = require('./routes/productCart');
-var productDetailRouter = require('./routes/productDetail');
-var registerRouter = require('./routes/register');
+
 
 var app = express();
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
-
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
+app.use(methodOverride('_method'));
+app.use(logsMiddleware);
 
 app.use('/', indexRouter);
-app.use('/productadd',productAddRouter);
-app.use('/productcart',productCartRouter);
-app.use('/productdetail',productDetailRouter);
-app.use('/register',registerRouter);
+app.use('/product', productsRouter);
+app.use('/user/', usersRouter);
+
+
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {

@@ -1,7 +1,7 @@
 const fs = require("fs");
 
 /*/*--------------------------------lEE EL PRODUCTOS JSON Y CONVIERTE A OBJETO JS--------------------------------*/
-leerJSON = fs.readFileSync("productos.json", { encoding: "utf-8" });
+leerJSON = fs.readFileSync("./data/productos.json", { encoding: "utf-8" });
 arrayProductos = JSON.parse(leerJSON);
 
 /*--------------------------------BUSCAR PRODUCTOS EN OFERTAS Y DESTACADOS--------------------------------*/
@@ -37,7 +37,7 @@ const productController = {
      arrayProductos.push(producto);   
 
      productoJSON = JSON.stringify(arrayProductos);
-     fs.writeFileSync('productos.json', productoJSON);
+     fs.writeFileSync("./data/productos.json", productoJSON);
     
     res.send("producto creado exitosamente!!! volver a producto haga click aqui");
   },

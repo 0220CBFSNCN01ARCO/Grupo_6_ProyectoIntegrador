@@ -209,3 +209,7 @@ Se accedió a la pagina /images/product/
 Se accedió a la pagina /product/fontAwesome/css/all.css
 Se accedió a la pagina /product/ofertas
 Se accedió a la pagina /product/fontAwesome/css/all.css
+Se accedió a la pagina /
+Se accedió a la pagina /fontAwesome/css/all.css
+Se accedió a la pagina /user/list
+Se accedió a la pagina /user/fontAwesome/css/all.css

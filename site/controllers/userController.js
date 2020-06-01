@@ -11,7 +11,9 @@ const userController = {
           
           return res.send("ERROR PASSWORD INCORRECTAS");
         }
-        const leerJSON = fs.readFileSync("usuarios.json", { encoding: "utf-8" });
+        const leerJSON = fs.readFileSync("./data/usuarios.json", {
+          encoding: "utf-8",
+        });
 
         if (leerJSON == "") {
           arrayDeUsuarios = [];
@@ -31,7 +33,10 @@ const userController = {
         };
         
         arrayDeUsuarios.push(usuarioAGuardar);
-        fs.writeFileSync("usuarios.json", JSON.stringify(arrayDeUsuarios));
+        fs.writeFileSync(
+          "./data/usuarios.json",
+          JSON.stringify(arrayDeUsuarios)
+        );
         return res.redirect("/");
     },
 
@@ -40,7 +45,9 @@ const userController = {
     },
 
     listUsers: (req,res)=>{
-      const leerJSON = fs.readFileSync("usuarios.json", { encoding: "utf-8" });
+      const leerJSON = fs.readFileSync("./data/usuarios.json", {
+        encoding: "utf-8",
+      });
       if (leerJSON == "") {
         arrayDeUsuarios = [];
       } else {

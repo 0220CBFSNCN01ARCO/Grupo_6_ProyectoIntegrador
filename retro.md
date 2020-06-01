@@ -22,3 +22,8 @@
 ## **Less Of**
 
 - El uso de Mural como alternativa a Trello.
+
+
+## ***RETROSPECTIVA SPRINT 2*** ##
+
+

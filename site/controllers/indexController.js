@@ -12,12 +12,12 @@ const ListadoProductosDestacado = arrayProductos.filter((producto) => {
   return producto.categoria == "Destacado";
 });
 
-console.log(ListadoProductosOferta,ListadoProductosDestacado);
 /*--------------------------------CONTROLADOR CON METODO HOME PAGINA PRINCIPAL--------------------------------*/
 const indexController = {
 
   home: (req,res) => {
-    return res.render("index", {ListadoProductosOferta, ListadoProductosDestacado});
+    return res.render("index", {ListadoProductosOferta, 
+                                ListadoProductosDestacado});
   }
 };
 

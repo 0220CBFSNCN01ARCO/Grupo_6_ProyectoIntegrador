@@ -6,18 +6,18 @@ arrayProductos = JSON.parse(leerJSON);
 
 /*--------------------------------BUSCAR PRODUCTOS EN OFERTAS Y DESTACADOS--------------------------------*/
 const ListadoProductosOferta = arrayProductos.filter((producto) => {
-  return producto.categoria == "oferta";
+  return producto.categoria == "Oferta";
 });
 const ListadoProductosDestacado = arrayProductos.filter((producto) => {
-  return producto.categoria == "destacado";
+  return producto.categoria == "Destacado";
 });
 
-
+console.log(ListadoProductosOferta,ListadoProductosDestacado);
 /*--------------------------------CONTROLADOR CON METODO HOME PAGINA PRINCIPAL--------------------------------*/
 const indexController = {
 
   home: (req,res) => {
-    return res.render("index", { ListadoProductosOferta, ListadoProductosDestacado});
+    return res.render("index", {ListadoProductosOferta, ListadoProductosDestacado});
   }
 };
 

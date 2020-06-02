@@ -66,13 +66,15 @@ const productController = {
   },
 
   update: (req,res) => {
-                         /* 
+      /* 
       pasos para editar un registro
       1- tomar el ID que viene para saber cual es
       2- buscarlo
       3- editar
       4- grabar
       5- redireccionar
+
+
         productoAEditar.id = idProductoEdit,
         productoAEditar.nombre = productoAEditar.nombre,
         productoAEditar.precio = productoAEditar.precio,
@@ -84,19 +86,35 @@ const productController = {
 
     */
     let idProductoEdit = req.params.id;
-    let productoAEditar = arrayProductos.find(
-      (product) => product.id == idProductoEdit
-    );
+    console.log("abajo de req.params.id"+idProductoEdit);
+    let indiceProductoEditar = arrayProductos.findIndex(
+      (product) => product.id == idProductoEdit);
 
-    
+      console.log("indice" + indiceProductoEditar);
 
-    arrayProductos.push(productoAEditar);
+      
+      
+        
+        productoAEditar.precio = req.body.precio;
+        productoAEditar.cuotas = req.body.cuotas;
+        productoAEditar.stock = req.body.stock;
+        productoAditar.color = req.body.color;
+        productoAEditar.categoria = req.body.categoria;
+        productoAEditar.descripcion = req.body.descripcion;
+
+        let productoAEditar = arrayProductos[indiceProductoEditar];
+        arrayProductos[indiceProductoEditar] = productoAEditar;
+        
+        console.log(arrayProductos);
+  
 
     productoJSON = JSON.stringify(arrayProductos);
     fs.writeFileSync("productos.json", productoJSON);
     res.send("se actualizó el producto");
-  }
+  },
 
+
+  //arrayProductos = arrayProductos.filter((producto) => {return producto.id != productoAEliminar.id});
   
 }
 

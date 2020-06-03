@@ -1,17 +1,5 @@
 [
   {
-    "id": 1,
-    "nombre": "samsung galaxy s20",
-    "marca": "samsung",
-    "imagen": "",
-    "precio": "11111111111",
-    "cuotas": "18",
-    "stock": "50",
-    "color": "Otro",
-    "categoria": "Baja",
-    "descripcion": "1111111111111"
-  },
-  {
     "id": 2,
     "nombre": "Samsung Galaxy S10",
     "marca": "Samsung",

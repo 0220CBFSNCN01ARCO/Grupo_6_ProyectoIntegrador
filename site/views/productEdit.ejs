@@ -98,9 +98,13 @@
             <!--Boton-->
             <br>
             <button class="btn-carga btn-sm btn-block" type="submit">Guardar y Publicar</button>
-            <button type="submit" class="btn-carga btn-sm btn-block btn btn-danger">ELIMINAR PRODUCTO</button>
-
+            
           </form>
+          <form action="/product/edit/<%=productoAEditar.id%>?_method=DELETE" method="POST">
+            <button class="btn-carga btn-sm btn-block btn btn-danger" type="submit">ELIMINAR PRODUCTO</button>
+          </form>
+            
+          
         </div>
       </div>
     </div>

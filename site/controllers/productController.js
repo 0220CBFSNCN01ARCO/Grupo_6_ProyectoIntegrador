@@ -86,9 +86,17 @@ const productController = {
         res.send("se actualizó el producto");
   },
 
+  delete: (req,res)=>{
+    console.log("vamos a borrar");
+    let productoAEliminar = req.params.id;
+    console.log(productoAEliminar);
+    arrayProductos = arrayProductos.filter((producto) => {return producto.id != productoAEliminar});
+    console.log(arrayProductos);
+    productoJSON = JSON.stringify(arrayProductos);
+    fs.writeFileSync("./data/productos.json", productoJSON);
+    res.send("eliminó el producto");
+  }
 
-  //arrayProductos = arrayProductos.filter((producto) => {return producto.id != productoAEliminar.id});
-  
 }
 
 module.exports = productController;

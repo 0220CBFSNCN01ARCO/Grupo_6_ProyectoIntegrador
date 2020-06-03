@@ -66,51 +66,24 @@ const productController = {
   },
 
   update: (req,res) => {
-      /* 
-      pasos para editar un registro
-      1- tomar el ID que viene para saber cual es
-      2- buscarlo
-      3- editar
-      4- grabar
-      5- redireccionar
 
-
-        productoAEditar.id = idProductoEdit,
-        productoAEditar.nombre = productoAEditar.nombre,
-        productoAEditar.precio = productoAEditar.precio,
-        productoAEditar.cuotas = productoAEditar.cuotas,
-        productoAEditar.stock = productoAEditar.stock,
-        productoAditar.color = productoAEditar.color,
-        productoAEditar.categoria = productoAEditar.categoria,
-        productoAEditar.descripcion = productoAEditar.descripcion
-
-    */
     let idProductoEdit = req.params.id;
-    console.log("abajo de req.params.id"+idProductoEdit);
-    let indiceProductoEditar = arrayProductos.findIndex(
-      (product) => product.id == idProductoEdit);
-
-      console.log("indice" + indiceProductoEditar);
-
-      
-      
+    let indiceProductoEditar = arrayProductos.findIndex((product) => product.id == idProductoEdit);
+    let nuevoProducto = arrayProductos[indiceProductoEditar];
+    const body = req.body;
+    
+        nuevoProducto.precio = body.precio;
+        nuevoProducto.cuotas = body.cuotas;
+        nuevoProducto.stock = body.stock;
+        nuevoProducto.color = body.color;
+        nuevoProducto.categoria = body.categoria;
+        nuevoProducto.descripcion = body.descripcion;
         
-        productoAEditar.precio = req.body.precio;
-        productoAEditar.cuotas = req.body.cuotas;
-        productoAEditar.stock = req.body.stock;
-        productoAditar.color = req.body.color;
-        productoAEditar.categoria = req.body.categoria;
-        productoAEditar.descripcion = req.body.descripcion;
-
-        let productoAEditar = arrayProductos[indiceProductoEditar];
-        arrayProductos[indiceProductoEditar] = productoAEditar;
-        
-        console.log(arrayProductos);
-  
-
-    productoJSON = JSON.stringify(arrayProductos);
-    fs.writeFileSync("productos.json", productoJSON);
-    res.send("se actualizó el producto");
+        arrayProductos[indiceProductoEditar] = nuevoProducto;
+        console.log(nuevoProducto);
+        productoJSON = JSON.stringify(arrayProductos);
+        fs.writeFileSync("./data/productos.json", productoJSON);
+        res.send("se actualizó el producto");
   },
 
 

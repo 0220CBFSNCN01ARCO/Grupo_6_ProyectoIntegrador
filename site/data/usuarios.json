@@ -23,5 +23,12 @@
     "email": "fmagra85@gmail.com",
     "password": "$2b$10$eoWBbuDI7dDbrFMg0aOSTOZzbZnjlur/CbWT1JT/VFzZZi03hSrB.",
     "avatar": "avatar-1590794854605.png"
+  },
+  {
+    "nombre": "Simona",
+    "apellido": "Magra",
+    "email": "simona@gmail.com",
+    "password": "$2b$10$cGHnsSq143amBkLKDQXmBeZ1SYZsqviThnHldVR9ucseQLktLiCuq",
+    "avatar": "avatar-1591046703778.jpg"
   }
 ]

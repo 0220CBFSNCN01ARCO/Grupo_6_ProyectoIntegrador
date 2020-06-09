@@ -53,6 +53,5 @@ router.get("/edit/:id", productController.edit);
 router.put("/edit/:id", productController.update);
 
 /*--------------------------------RUTAS PARA BUSCAR PRODUCTO A ELIMINAR--------------------------------*/
-router.delete("/edit/:id", productController.delete);
 
 module.exports = router;

@@ -1,11 +1,22 @@
 const fs = require("fs");
 const bcrypt = require("bcrypt");
+const { check, validationResult, body } = require("express-validator");
 
 const userController = {
 
-    register: (req,res) => {
+    register: (req, res) => {
+              res.render("register");
+              },
+
+    store: (req,res) => {
 
         const body = req.body;
+        const errores = validationResult(req);
+        
+        if(!errores.isEmpty()){
+          return res.send("errror");
+        }
+        
 
         if (body.password != body.repassword) {
           
@@ -45,9 +56,7 @@ const userController = {
     },
 
     listUsers: (req,res)=>{
-      const leerJSON = fs.readFileSync("./data/usuarios.json", {
-        encoding: "utf-8",
-      });
+      const leerJSON = fs.readFileSync("./data/usuarios.json", { encoding: "utf-8" });
       if (leerJSON == "") {
         arrayDeUsuarios = [];
       } else {

@@ -23,13 +23,13 @@
         <div class="col-md-6 order-md-2">
           <h4 class="mb-3">Usted va a Modificar el Producto</h4>
           <h6 style="color: red; font-size: xx-large;"><%=productoAEditar.nombre%></h6>
-          <form action="/product/edit/<%=productoAEditar.id%>?_method=PUT" method="POST">
+          <form action="/product/edit/<%=productoAEditar.id%>?_method=PUT" method="POST" enctype="multipart/form-data">
             
             <!--Precio-Cuotas-Stock-->
             <div class="row">
               <div class="col-md-6 mb-3">
                 <label for="precio">Precio</label>
-                <input type="number" class="form-control" id="precio" name="precio">
+                <input type="number" class="form-control" id="precio" name="precio" value="<%=productoAEditar.precio%>" placeholder=>
                 <div class="invalid-feedback">
                   Ingresar el precio total.
                 </div>
@@ -37,7 +37,7 @@
               <div class="col-md-3 mb-3">
                 <label for="cuotas">Cuotas</label>
                 <select class="custom-select d-block w-100" id="cuotas" name="cuotas">
-                  <option>Elegir</option>
+                  <option value="<%=productoAEditar.cuotas%>">Elegir</option>
                   <option>Sin Cuotas</option>
                   <option>1</option>
                   <option>3</option>
@@ -98,13 +98,9 @@
             <!--Boton-->
             <br>
             <button class="btn-carga btn-sm btn-block" type="submit">Guardar y Publicar</button>
-            
+            <button type="submit" class="btn-carga btn-sm btn-block btn btn-danger">ELIMINAR PRODUCTO</button>
+
           </form>
-          <form action="/product/edit/<%=productoAEditar.id%>?_method=DELETE" method="POST">
-            <button class="btn-carga btn-sm btn-block btn btn-danger" type="submit">ELIMINAR PRODUCTO</button>
-          </form>
-            
-          
         </div>
       </div>
     </div>

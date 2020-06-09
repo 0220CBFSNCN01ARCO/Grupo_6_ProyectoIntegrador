@@ -5,6 +5,8 @@ var cookieParser = require('cookie-parser');
 var logger = require('morgan');
 const methodOverride = require("method-override");
 const logsMiddleware = require ('./middleware/logsMiddleware');
+const session = require('express-session');
+const recordameMiddleware = require('./middleware/recordameMiddleware');
 
 var indexRouter = require('./routes/index');
 var productsRouter = require('./routes/product');
@@ -23,7 +25,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(methodOverride('_method'));
+app.use(session({secret:"es sesion"}));
 app.use(logsMiddleware);
+app.use(recordameMiddleware);
 
 app.use('/', indexRouter);
 app.use('/product', productsRouter);

@@ -4,6 +4,7 @@ const adminMiddleware = require("../middleware/adminMiddleware");
 const productController = require("../controllers/productController");
 const multer = require("multer");
 const path = require("path");
+const authMiddleware = require("../middleware/authMiddleware");
 
 //multer
 var storage = multer.diskStorage({
@@ -33,7 +34,7 @@ router.get("/create", function (req, res) {
 router.post("/create", upload.single('imagen-producto'), productController.create);
 
 /*-------------------------------- ruta a carro de compras-------------------------------- */
-router.get("/cart", function (req, res) {
+router.get("/cart",  function (req, res) {
   res.render("productCart");
 });
 
@@ -53,5 +54,6 @@ router.get("/edit/:id", productController.edit);
 router.put("/edit/:id", productController.update);
 
 /*--------------------------------RUTAS PARA BUSCAR PRODUCTO A ELIMINAR--------------------------------*/
+router.delete("/edit/:id", productController.delete);
 
 module.exports = router;

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head.ejs')%>
+
+<body class="fondo">
+
+    <%- include('./partials/header.ejs')%>
+
+
+    <!--INICIAR SESION-->
+    <div class="container-fluid">
+
+
+        <form action="/user/perfil" method="get">
+            <div class="inicio-sesion row">
+            
+                <div class="formulario-body col-sm-8 col-md-6 col-lg-4 mx-auto">
+            
+                    <h1>PERFIL DE USUARIO</h1>
+                    <h3>BIENVENIDO <%= usuarioLogueado.nombre %> </h3>
+                    <H4>Datos personales</H4>
+                    <p>nombre: <%=usuarioLogueado.nombre  %> </p><br>
+                    <p>apellido: <%=usuarioLogueado.apellido  %> </p><br>
+                    <p>mail: <%=usuarioLogueado.email  %> </p><br>
+                    
+                    <img src="/images/users/<%= usuarioLogueado.avatar %>" style="height: 25%;" alt="...">
+
+                    
+                </div>
+            
+                
+            </div>
+            
+        </form>
+        <form action="/user/logout">
+            <button class="btn-carga btn-sm btn-block btn btn-danger" type="submit">CERRAR SESIÓN</button>
+        </form>
+        
+        
+
+    </div>
+
+    <!--footer-->
+
+    <%- include('./partials/footer.ejs')%>
+
+
+    </div>
+    <!--ScripDeBoostrapt-->
+    <%- include('./partials/scripts.ejs')%>
+</body>
+
+</html>

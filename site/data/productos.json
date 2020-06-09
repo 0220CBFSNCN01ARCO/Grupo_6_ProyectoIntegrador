@@ -1,27 +1,15 @@
 [
   {
-    "id": 1,
-    "nombre": "samsung galaxy s20",
-    "marca": "samsung",
-    "precio": "50000",
-    "cuotas": "18",
-    "stock": "50",
-    "color": "negro",
-    "categoria": "",
-    "descripcion": "nada",
-    "imagen": ""
-  },
-  {
     "id": 2,
     "nombre": "Samsung Galaxy S10",
     "marca": "Samsung",
-    "precio": "10000",
-    "cuotas": "18",
-    "stock": "50",
-    "color": "Blanco",
-    "categoria": "Oferta",
-    "descripcion": "lorem!",
-    "imagen": "imagen-producto-1590966238228.jpg"
+    "imagen": "imagen-producto-1590966238228.jpg",
+    "precio": "00000",
+    "cuotas": "Sin Cuotas",
+    "stock": "sin stock",
+    "color": "Otro",
+    "categoria": "Baja",
+    "descripcion": "0000"
   },
   {
     "id": 3,

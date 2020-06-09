@@ -1,3 +1,5 @@
+//middleware a nivel de aplicacion
+
 const fs = require('fs');
 
 function logsMiddleware (req,res,next) {

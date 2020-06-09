@@ -66,38 +66,37 @@ const productController = {
   },
 
   update: (req,res) => {
-                         /* 
-      pasos para editar un registro
-      1- tomar el ID que viene para saber cual es
-      2- buscarlo
-      3- editar
-      4- grabar
-      5- redireccionar
-        productoAEditar.id = idProductoEdit,
-        productoAEditar.nombre = productoAEditar.nombre,
-        productoAEditar.precio = productoAEditar.precio,
-        productoAEditar.cuotas = productoAEditar.cuotas,
-        productoAEditar.stock = productoAEditar.stock,
-        productoAditar.color = productoAEditar.color,
-        productoAEditar.categoria = productoAEditar.categoria,
-        productoAEditar.descripcion = productoAEditar.descripcion
 
-    */
     let idProductoEdit = req.params.id;
-    let productoAEditar = arrayProductos.find(
-      (product) => product.id == idProductoEdit
-    );
-
+    let indiceProductoEditar = arrayProductos.findIndex((product) => product.id == idProductoEdit);
+    let nuevoProducto = arrayProductos[indiceProductoEditar];
+    const body = req.body;
     
+        nuevoProducto.precio = body.precio;
+        nuevoProducto.cuotas = body.cuotas;
+        nuevoProducto.stock = body.stock;
+        nuevoProducto.color = body.color;
+        nuevoProducto.categoria = body.categoria;
+        nuevoProducto.descripcion = body.descripcion;
+        
+        arrayProductos[indiceProductoEditar] = nuevoProducto;
+        console.log(nuevoProducto);
+        productoJSON = JSON.stringify(arrayProductos);
+        fs.writeFileSync("./data/productos.json", productoJSON);
+        res.send("se actualizó el producto");
+  },
 
-    arrayProductos.push(productoAEditar);
-
+  delete: (req,res)=>{
+    console.log("vamos a borrar");
+    let productoAEliminar = req.params.id;
+    console.log(productoAEliminar);
+    arrayProductos = arrayProductos.filter((producto) => {return producto.id != productoAEliminar});
+    console.log(arrayProductos);
     productoJSON = JSON.stringify(arrayProductos);
-    fs.writeFileSync("productos.json", productoJSON);
-    res.send("se actualizó el producto");
+    fs.writeFileSync("./data/productos.json", productoJSON);
+    res.send("eliminó el producto");
   }
 
-  
 }
 
 module.exports = productController;

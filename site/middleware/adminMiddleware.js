@@ -1,5 +1,5 @@
 //este middleware va a verificar si el usuario facu es administrador, el mismo esta en usuarios.json localhost:300/admin?user=facu
-
+//es una prueba, no sirve
 
 const fs = require("fs");
 
@@ -28,5 +28,6 @@ function buscarAdminMiddleware (req,res,next) {
     next();
 
 }
+
 
 module.exports = buscarAdminMiddleware;

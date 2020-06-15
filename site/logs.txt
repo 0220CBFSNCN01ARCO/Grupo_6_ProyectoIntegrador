@@ -1384,10 +1384,20 @@ Se accedió a la pagina /product/ofertas
 Se accedió a la pagina /product/fontAwesome/css/all.css
 Se accedió a la pagina /
 Se accedió a la pagina /fontAwesome/css/all.css
+<<<<<<< HEAD
+=======
+Se accedió a la pagina /favicon.ico
+Se accedió a la pagina /user
+Se accedió a la pagina /fontAwesome/css/all.css
+Se accedió a la pagina /user/register
+Se accedió a la pagina /user/fontAwesome/css/all.css
+Se accedió a la pagina /user/register
+>>>>>>> 6c08b8beadcc6098db54eb4de21a2d0a4531eeb3
 Se accedió a la pagina /user
 Se accedió a la pagina /fontAwesome/css/all.css
 Se accedió a la pagina /user/
 Se accedió a la pagina /user/fontAwesome/css/all.css
+<<<<<<< HEAD
 Se accedió a la pagina /product/ofertas
 Se accedió a la pagina /product/fontAwesome/css/all.css
 Se accedió a la pagina /product/cart
@@ -1406,3 +1416,32 @@ Se accedió a la pagina /product/1/
 Se accedió a la pagina /product/1/fontAwesome/css/all.css
 Se accedió a la pagina /
 Se accedió a la pagina /fontAwesome/css/all.css
+=======
+Se accedió a la pagina /user/
+Se accedió a la pagina /user/fontAwesome/css/all.css
+Se accedió a la pagina /user/
+Se accedió a la pagina /user/fontAwesome/css/all.css
+Se accedió a la pagina /user/logout?
+Se accedió a la pagina /user
+Se accedió a la pagina /fontAwesome/css/all.css
+Se accedió a la pagina /user/register
+Se accedió a la pagina /user/fontAwesome/css/all.css
+Se accedió a la pagina /user/register
+Se accedió a la pagina /user/
+Se accedió a la pagina /user/fontAwesome/css/all.css
+Se accedió a la pagina /user/register
+Se accedió a la pagina /user/fontAwesome/css/all.css
+Se accedió a la pagina /user/profile
+Se accedió a la pagina /user/fontAwesome/css/all.css
+Se accedió a la pagina /user/profile
+Se accedió a la pagina /user/fontAwesome/css/all.css
+Se accedió a la pagina /
+Se accedió a la pagina /fontAwesome/css/all.css
+Se accedió a la pagina /detail/6
+Se accedió a la pagina /edit/6
+Se accedió a la pagina /edit/6
+Se accedió a la pagina /user
+Se accedió a la pagina /fontAwesome/css/all.css
+Se accedió a la pagina /user/register
+Se accedió a la pagina /user/fontAwesome/css/all.css
+>>>>>>> 6c08b8beadcc6098db54eb4de21a2d0a4531eeb3

@@ -1412,3 +1412,12 @@ Se accedió a la pagina /user/profile
 Se accedió a la pagina /user/fontAwesome/css/all.css
 Se accedió a la pagina /user/profile
 Se accedió a la pagina /user/fontAwesome/css/all.css
+Se accedió a la pagina /
+Se accedió a la pagina /fontAwesome/css/all.css
+Se accedió a la pagina /detail/6
+Se accedió a la pagina /edit/6
+Se accedió a la pagina /edit/6
+Se accedió a la pagina /user
+Se accedió a la pagina /fontAwesome/css/all.css
+Se accedió a la pagina /user/register
+Se accedió a la pagina /user/fontAwesome/css/all.css

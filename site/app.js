@@ -26,7 +26,7 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(methodOverride('_method'));
 app.use(session({secret:"es sesion"}));
-app.use(logsMiddleware);
+//app.use(logsMiddleware);
 app.use(recordameMiddleware);
 
 app.use('/', indexRouter);

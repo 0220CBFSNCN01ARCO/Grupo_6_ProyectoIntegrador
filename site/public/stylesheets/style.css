@@ -29,6 +29,19 @@
   border: 1px solid transparent;
   background-color: #00adb5;
 }
+.card-title {
+    line-height: 1.33;
+    letter-spacing: normal;
+    margin: 0 0 16px;
+    height: 50px;
+    
+}
+h5.card-title{
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
 /*Descripcion producto*/
 h6.subtitulo {
     color: #808080;

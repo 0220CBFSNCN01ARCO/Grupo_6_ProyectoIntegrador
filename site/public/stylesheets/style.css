@@ -42,6 +42,18 @@ h5.card-title{
     margin-inline-start: 0px;
     margin-inline-end: 0px;
 }
+.card-body p{
+    font-size: smaller;
+    color: grey;
+    }
+h6.card-subtitle{
+   font-size:large;
+   color:grey;
+   padding-bottom: 2%;
+}
+.card-precios p{
+    padding:1%
+}
 /*Descripcion producto*/
 h6.subtitulo {
     color: #808080;

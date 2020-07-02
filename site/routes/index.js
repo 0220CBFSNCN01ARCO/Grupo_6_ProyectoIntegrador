@@ -3,6 +3,7 @@ var router = express.Router();
 const indexController = require('../controllers/indexController');
 
 /* ruta al home */
-router.get('/', indexController.home);
+
+router.get('/', indexController.catalagoCompleto);
 
 module.exports = router;

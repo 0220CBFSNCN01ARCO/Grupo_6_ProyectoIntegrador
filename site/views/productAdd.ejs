@@ -15,13 +15,13 @@
         <!--carga imagen-->
         <div class="col-md-6 order-md-1 mb-4">
 
-            <img src="/images/product/preview.jpg" class="imgProducto" alt="...">
+            <img src="/images/product/imagen-producto-1591036274646.webp" class="imgProducto" alt="imagenDemo">
 
         </div>
 
         <!--formulario carga-->
         <div class="col-md-6 order-md-2">
-          <h4 class="mb-3">Carga de Producto</h4>
+          <h4 class="mb-3">Crear Nuevo Producto</h4>
           <form action="/product/create" method="POST" enctype="multipart/form-data">
             <div class="row">
               <div class="col-md-12  mb-3">
@@ -35,10 +35,10 @@
                 <label for="marca">Marca</label>
                 <select class="custom-select d-block w-100" id="marca" name="marca">
                   <option value="">Seleccionar</option>
-                  <option>Iphone</option>
-                  <option >Samsung</option>
-                  <option >Xiaomi</option>
-                  <option >Motorola</option>
+                  <option value="1">iphone</option>
+                  <option value="2" >samsung</option>
+                  <option value="3" >motorola</option>
+                  <option value="4" >nokia</option>
                 </select>
                 <div class="invalid-feedback">
                   Seleccionar una marca.
@@ -57,14 +57,14 @@
               </div>
               <div class="col-md-3 mb-3">
                 <label for="cuotas">Cuotas</label>
-                <select class="custom-select d-block w-100" id="cuotas" name="cuotas">
+                <select class="custom-select d-block w-100" id="cuota" name="cuota">
                   <option value="">Elegir</option>
-                  <option>Sin Cuotas</option>
-                  <option>1</option>
-                  <option>3</option>
-                  <option>6</option>
-                  <option>12</option>
-                  <option>18</option>
+                  <option value="1">Sin Cuotas</option>
+                  <option value="2">1</option>
+                  <option value="3">3</option>
+                  <option value="4">6</option>
+                  <option value="5">12</option>
+                  <option value="6">18</option>
                 </select>
                 <div class="invalid-feedback">
                   Debes seleccionar 1 opción.
@@ -72,12 +72,7 @@
               </div>
               <div class="col-md-3 mb-3">
                 <label for="stock">Stock</label>
-                <select class="custom-select d-block w-100" id="stock" name="stock">
-                  <option value="">Elegir</option>
-                  <option>0</option>
-                  <option>10</option>
-                  <option>50</option>
-                </select>
+                <input type="text" class="form-control" id="stock" name="stock" placeholder="Ingrese un numero">
                 <div class="invalid-feedback">
                   Debes seleccionar 1 opción.
                 </div>
@@ -86,10 +81,12 @@
               <div class="col-md-3 mb-3">
                 <label for="color">color</label>
                 <select class="custom-select d-block w-100" id="color" name="color">
-                  <option value="">Elegir</option>
-                  <option>Blanco</option>
-                  <option>Negro</option>
-                  <option>Otro</option>
+                 <option value="">Elegir</option>
+                 <option value="1">blanco</option>
+                 <option value="2">negro</var></option>
+                 <option value="3">rojo</option>
+                 <option value="4">azul</option>
+                 <option value="5">celeste</option>
                 </select>
                 <div class="invalid-feedback">
                   Debes seleccionar 1 opción.
@@ -97,12 +94,16 @@
               </div>
               <div class="col-md-3 mb-3">
                 <label for="categoria">categoria</label>
+
                 <select class="custom-select d-block w-100" id="categoria" name="categoria">
-                  <option value="">Elegir</option>
-                  <option>Oferta</option>
-                  <option>Destacado</option>
-                  <option>Nuevo</option>
+                  <% for( let i = 0; i < categorias.length; i++ ) { %>
+                  <option value="<%= categorias[i].id %> ">
+                    <%= categorias[i].descripcion %>
+                  </option>
+                  <% } %>
                 </select>
+
+                
                 <div class="invalid-feedback">
                   Debes seleccionar 1 opción.
                 </div>

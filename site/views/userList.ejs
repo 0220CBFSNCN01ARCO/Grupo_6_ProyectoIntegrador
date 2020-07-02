@@ -12,27 +12,31 @@
                 <h1> Nuestros Usuarios</h1>
                 <p style="text-align:initial;">Todos Los usuarios</p>
                 <div class="row">
-                    <div class="container">
+                    <div class="container col-12">
                         <h2>Usuarios</h2>
 
                         <table class="table table-hover">
                             <thead>
                                 <tr>
+                                    <th>Ver</th>
                                     <th>Nombre</th>
                                     <th>Apellido</th>
+                                    <th>Tipo De Usuario</th>
                                     <th>Email</th>
-                                    <th>Tipo de Usuario</th>
-                                    <th>Ver</th>
+                                    <th>Dirección</th>
+                                    
                                 </tr>
                             </thead>
-                            <% arrayDeUsuarios.forEach(usuario => { %>
+                            <% usuarios.forEach(usuario => { %>
                             <tbody>
                                 <tr>
+                                    <td><a href="/user/edit/<%= usuario.id%>"><button type="button" class="btn btn-info btn-sm">Modificar</button></a></td>
                                     <td><%=usuario.nombre  %> </td>
                                     <td><%=usuario.apellido  %></td>
+                                    <th><%=usuario.tipoUsuario.nombre  %></th>
                                     <td><%=usuario.email  %></td>
-                                    <td><%=usuario.categoria  %></td>
-                                    <td><a href=""><button type="button" class="btn btn-info btn-sm">Ver</button></a></td>
+                                    <td><%=usuario.direccion  %></td>
+                                    
                                 </tr>
                             </tbody>
                             <% }) %>

@@ -4,7 +4,7 @@ function authMiddleware (req,res,next){
 
     if(req.session.usuarioLogueado == undefined)
     {
-        res.render('login');//ACA DEBERIAMOS LLEVAR A PAGINA DE REGISTRACIÓN
+        res.redirect('/user');//ACA DEBERIAMOS LLEVAR A PAGINA DE REGISTRACIÓN
     } else{
         next();
     }

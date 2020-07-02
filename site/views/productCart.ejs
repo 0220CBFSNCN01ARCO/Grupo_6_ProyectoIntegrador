@@ -18,6 +18,9 @@
                 </div>
                 <hr>
                 <h6>Resumen</h6>
+                <% if (usuario != null) { %>
+                    <h6><%= usuario.email %> </h6>
+                <% } %>
                 <hr>
                 <div class="row">
                     <div class="d-none d-sm-inline col-md-4 text-center">

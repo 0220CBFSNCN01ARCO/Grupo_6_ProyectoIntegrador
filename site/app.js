@@ -25,7 +25,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(methodOverride('_method'));
-app.use(session({secret:"es sesion"}));
+app.use(session({secret:"LFG",
+                 resave: true,
+                 saveUninitialized: true}));
 //app.use(logsMiddleware);
 app.use(recordameMiddleware);
 

@@ -3,52 +3,63 @@
 
 <%- include('./partials/head.ejs')%>
 <title>PERFIL</title>
+
 <body class="fondo">
 
     <%- include('./partials/header.ejs')%>
 
-
-    <!--INICIAR SESION-->
-    <div class="container-fluid">
-
-
-        <form action="/user/perfil" method="get">
-            <div class="inicio-sesion row">
-            
-                <div class="formulario-body col-sm-8 col-md-6 col-lg-4 mx-auto">
-            
-                    <h1>PERFIL DE USUARIO</h1>
-                    <h3>BIENVENIDO <%= usuarioLogueado.nombre %> </h3>
-                    <H4>Datos personales</H4>
-                    <p>nombre: <%=usuarioLogueado.nombre  %> </p><br>
-                    <p>apellido: <%=usuarioLogueado.apellido  %> </p><br>
-                    <p>mail: <%=usuarioLogueado.email  %> </p><br>
-                    
-                    <img src="/images/users/<%= usuarioLogueado.avatar %>" style="height: 25%;" alt="...">
-
-                    
+    <div class="container">
+     <div class="row">
+         <div class="col-12 my-3 pt-2 shadow">
+                <img class="float-left rounded-circle mr-4 mt-2 mb-2" src="/images/users/<%= usuario.avatar %>">
+                <div class="row">
+                    <div class="container col-12 text-center shadow">
+                        <h3 style="color: darkslategray;">Mis Datos</h3>
+                    </div>
                 </div>
-            
-                
+                <div class="row">
+                    <div class="container text-left col-12 mr-2 p-5 shadow">
+                        
+                        
+                        <input type="text" class="form-control " id="nombre" name="nombre"
+                            value="<%= usuario.nombre %>"
+                            disabled>
+                        <br>
+                        <input type="text" class="form-control" id="apellido" name="apellido"
+                            value="<%= usuario.apellido %>" disabled>
+                        <br>
+                        <input type="text" class="form-control" id="email" name="email"
+                            value="<%= usuario.email %>" disabled>
+                        <br>
+                        <input type="text" class="form-control" id="direccion" name="direccion"
+                            value="<%= usuario.direccion %>"
+                            disabled>
+                        <br>
+                        
+                        <form action="/user/logout">
+                            <button class="btn-carga btn-sm btn-block btn btn-danger" type="submit">CERRAR
+                                SESIÓN</button>
+                        </form>
+                    </div>
+                </div>
             </div>
-            
-        </form>
-        <form action="/user/logout">
-            <button class="btn-carga btn-sm btn-block btn btn-danger" type="submit">CERRAR SESIÓN</button>
-        </form>
-        
-        
-
+         </div>
+     </div>
     </div>
 
+
+
+    
+    
     <!--footer-->
 
     <%- include('./partials/footer.ejs')%>
 
 
-    </div>
+
     <!--ScripDeBoostrapt-->
     <%- include('./partials/scripts.ejs')%>
+
 </body>
 
 </html>

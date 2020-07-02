@@ -1,0 +1,38 @@
+<html lang="en">
+
+<%- include('./partials/head.ejs')%>
+<title>CATALAGO DE PRODUCTOS</title>
+
+<%- include('./partials/header.ejs')%>
+
+<body class="fondo">
+    <!--PRINCIPAL-->
+
+    <div class="container">
+        <div class="row">
+            <div class="container col-12 m-4 p-5 shadow text-center">
+                <h4>BIENVENDIO AL PORTAL DE ADMINISTRADOR </h4>
+                <a style="text-decoration: none; color: rgb(50, 143, 143);" href="/user/profile">VER PERFIL</a>
+            </div>
+            <div  class="container col-3 mb-5  p-5 shadow text-center">
+                <a style="text-decoration: none; color: rgb(50, 143, 143);" href="/product/create">CREAR
+                    <br>PRODUCTO</a>
+            </div>
+            <div class="container col-3 mb-5  p-5 shadow text-center">
+                <a style="text-decoration: none; color: rgb(50, 143, 143);" href="/product/list">LISTADO DE
+                    PRODUCTOS</a>
+            </div>
+            <div  class="container col-3 mb-5 p-5 shadow text-center">
+                <a style="text-decoration: none; color: rgb(50, 143, 143);" href="/user/list">LISTADO DE <br>
+                    USUARIOS</a>
+            </div>
+            
+        </div>
+    </div>
+    <!--footer-->
+    <%- include('./partials/footer.ejs')%>
+
+    <%- include('./partials/scripts.ejs')%>
+</body>
+
+</html>

@@ -2,7 +2,7 @@
     <nav class="navbar navbar-expand-md navbar-light bg-light" style="border-bottom: 1px solid gray;">
          <!--agregué borde-->
 
-        <a class="navbar-brand" href="#">LOGO</a> </a>
+        <a class="navbar-brand" href="/">LOGO</a> </a>
 
         <button class="navbar-toggler ml-auto collapsed" type="button" data-toggle="collapse"
             data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
@@ -23,9 +23,9 @@
                         Tienda
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="../product/">Celulares</a>
-                        <a class="dropdown-item" href="#">Accesorios</a>
-                        <a class="dropdown-item" href="../product/ofertas">Ofertas</a>
+                        <a class="dropdown-item" href="/product/">Todos Los Productos</a>
+                        <a class="dropdown-item disabled" href="/product/destacados">Destacados</a>
+                        <a class="dropdown-item disabled" href="/product/ofertas">Ofertas</a>
                     </div>
                 </li>
                 <!--Soporte-->
@@ -43,25 +43,35 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Nosotros</a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contacto</a>
+                <!--Login
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Admin
+                    </a>
+                    
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/product/create">Crear Producto</a>
+                        <a class="dropdown-item" href="/product/list">Listado de Productos</a>
+                        <a class="dropdown-item" href="/user/list">Listado de Usuarios</a>
+                    </div>
+                    -->
                 </li>
             </ul>
             <!--Login-->
-
-            <div class="d-flex flex-row justify-content-center">
+            <% if (usuario != null) { %>
+            <h6 style="color: blueviolet;font-size: small;" class=" mr-3"> HOLA!! <%= usuario.nombre %> </h6>
+            <% } %>
+            <div  class="d-flex flex-row justify-content-center" >
                 
-                <i class="p-2">
-                    <a href="../user"><ion-icon name="person-outline"></ion-icon></a>
-                    
-                </i>
-                <i class="p-2">
-                    <ion-icon name="search-outline"></ion-icon>
-                </i>
-                <i class="p-2">
-                    <a href="../product/cart"><ion-icon name="cart-outline"></ion-icon></a>
-                    
-                </i>
+                <a href="">
+                    <i class="fa fa-search fa-2x mr-3"></i>
+                </a>
+                <a href="/user" >
+                   <i class="fa fa-user fa-2x mr-3"></i>
+                </a>
+                    <a href="/product/cart"><i class="fa fa-shopping-cart fa-2x mr-3 "></i>
+                </a>
             </div>
 
         </div>

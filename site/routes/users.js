@@ -23,41 +23,54 @@ var storage = multer.diskStorage({
 });
 var upload = multer({ storage: storage });
 
-/*-------------------------LOGIN DEL USUARIO ---- MUESTRA EMAIL Y PASSWORD-----------------------------*/
-router.get("/",guestMiddleware ,function (req, res) {
-  res.render("login");
-});
-
-/*-------------------------LOGIN DEL USUARIO ----METODO POST ---- PROCESO DE LOGIN -----------------------------*/
-router.post("/",usercontroller.processLogin);
 
 
-/*-------------------------REGISTRAR NUEVO USUARIO ----METODO GET -----------------------------*/
-router.get("/register",guestMiddleware ,usercontroller.register);
-
-
-/*-------------------------REGISTRAR NUEVO USUARIO ----METODO POST---EXPRESS-VALIDATOR -----------------------------*/
-router.post(  "/register",
+router.get("/", guestMiddleware, (req, res) => {res.render("login" , {usuario: req.session.usuarioLogueado} );});
+router.post("/", usercontroller.login_post);
+router.get("/register",guestMiddleware ,usercontroller.registrar);
+router.post(
+  "/register",
   upload.single("avatar"),
   [
-    check("nombre").isLength({ min: 1 }).withMessage("El campo nombre no puede estar vacío"),
-    check("apellido").isLength({ min: 1 }).withMessage("El campo apellido no puede estar vacío"),
+    check("nombre")
+      .isLength({ min: 1 })
+      .withMessage("El campo nombre no puede estar vacío"),
+    check("apellido")
+      .isLength({ min: 1 })
+      .withMessage("El campo apellido no puede estar vacío"),
     check("email").isEmail().withMessage("Debe ser un email válido"),
-    check("password").isLength({ min: 8 }).withMessage("Password debe tener minimo 8 caracteres"),
+    check("password")
+      .isLength({ min: 8 })
+      .withMessage("Password debe tener minimo 8 caracteres"),
   ],
-  usercontroller.store
+  usercontroller.guardarUsuario
 );
 
-/*-------------------------VER PERFIL DE USUARIO ----METODO GET--------------------------------*/
+router.get("/list", usercontroller.listUsers);
+
+router.get("/edit/:id", usercontroller.editUser)
+
+router.put("/edit/:id", usercontroller.editar_post);
+router.delete("/edit/:id", usercontroller.borrar);
+
+router.get("/profile", authMiddleware, usercontroller.userProfile);
+
+router.get("/admin", (req,res)=>{
+  res.render("portalAdmin");
+})
+
+
+
+/*-------------------------VER PERFIL DE USUARIO ----METODO GET--------------------------------
 router.get("/profile", authMiddleware, function (req, res) {
   
   res.render("userProfile", { usuarioLogueado: req.session.usuarioLogueado });
-});
+});*/
 
 /*-------------------------SIRVE PARA CONTROL DE SABER SI EL USUARIO ESTA LOGUEADO ----METODO GET--------------------------------*/
 router.get("/check", function (req, res) {
-  if(req.session.usuarioLogueado == undefined){
-    res.send("EL USUARIO NO ESTA LOGUEADO")
+  if (req.session.usuarioLogueado == undefined) {
+    res.send("EL USUARIO NO ESTA LOGUEADO");
   }
   res.send("EL USUARIO LOGUEADO ES: " + req.session.usuarioLogueado.email);
 });
@@ -72,6 +85,6 @@ router.get("/logout", function (req, res) {
 //router.get("/admin", adminMiddleware, usercontroller.searchAdmin);
 
 /* ruta a listado de usuarios*/
-//router.get("/list", usercontroller.listUsers);
+
 
 module.exports = router;

@@ -5,7 +5,7 @@ function guestMiddleware (req,res,next){
     if (req.session.usuarioLogueado == undefined) {
       next();
     } else {
-      res.render('userProfile',{usuarioLogueado:req.session.usuarioLogueado}); //DEBERIAMOS LLEVAR A PAGINA GUEST
+      res.redirect("/user/profile"); //DEBERIAMOS LLEVAR A PAGINA GUEST
     }
     
 }

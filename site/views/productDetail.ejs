@@ -10,29 +10,30 @@
     <!--PRINCIPAL-->
     <main class="main">
         <div class="container cuadroProducto">
+            
             <div class="row">
                 <!--imagen producto-->
                 <div class="col-md-6 order-md-1 mb-4 d-flex justify-content-center" >
-                    <img src="/images/product/<%= productoAMostrar.imagen %>" style="height: 74%;" alt="...">
+                    <img src="/images/product/<%= producto.foto %>" style="height: 50%; border-radius: 10%; margin-top: 5%;"  >
                 </div>
                 <!--especificaciones-->
                 <div class="col-md-6 order-md-2">
-                    <h4 class="mb-2"><%= productoAMostrar.nombre  %> </h4>
+                    <h1 class="mb-2" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: 700; color: darkslategray;"><%= producto.nombre  %> </h1>
                     <div class="precios-productos">
-                        <% if (productoAMostrar.cuotas >= 1 ){ %>
-                        <h6 class="subtitulo mb-0"> <%= productoAMostrar.cuotas %> cuotas de</h6>
-                        <h3 class="precio mb-2">&#36 <%=(productoAMostrar.precio / productoAMostrar.cuotas).toFixed(2) %></h3>
-                        <h6 class="subtitulo mb-4">1 Pago de &#36 <%= productoAMostrar.precio %></h6>
+                        <% if (producto.cuotas >= 1 ){ %>
+                        <h6 class="subtitulo mb-0"> <%= producto.cuotas %> cuotas de</h6>
+                        <h3 class="precio mb-2">&#36 <%=(producto.precio / producto.cuotas).toFixed(2) %></h3>
+                        <h6 class="subtitulo mb-4">1 Pago de &#36 <%= producto.precio %></h6>
                         <% }  else {%>
                         <h6 class="subtitulo mb-4">1 Pago de </h6> 
-                        <h3 class="precio mb-2">&#36 <%= productoAMostrar.precio %></h3>
+                        <h3 class="precio mb-2">&#36 <%= producto.precio %></h3>
                         <% } %>
                     </div>
                    <!--Breve Desc Tecn-->
                 <div class="row">
                     <div class="col-ms-12">
                         <p class="caja-descripcion">
-                            <%= productoAMostrar.descripcion  %>
+                            <%= producto.descripcion  %>
                         </p>
                     </div> 
                 </div>      

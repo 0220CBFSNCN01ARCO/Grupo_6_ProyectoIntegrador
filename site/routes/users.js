@@ -56,7 +56,7 @@ router.delete("/edit/:id", usercontroller.borrar);
 router.get("/profile", authMiddleware, usercontroller.userProfile);
 
 router.get("/admin", (req,res)=>{
-  res.render("portalAdmin");
+  res.render("portalAdmin", { usuario: req.session.usuarioLogueado });
 })
 
 

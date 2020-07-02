@@ -59,7 +59,7 @@ const userController = {
       avatar: req.file.filename,
       idTipoUsuario: "1",
     });
-    res.redirect("/user/profile");
+    res.redirect("/user/profile", { usuario: req.session.usuarioLogueado });
   },
 
   listUsers: (req, res) => {
@@ -77,7 +77,7 @@ const userController = {
     db.Usuario.findByPk(req.params.id, {
       include: [{ association: "tipoUsuario" }],
     }).then((usuario) => {
-      res.render("userEdit", { usuario, usuario: req.session.usuarioLogueado });
+      res.render("userEdit", { usuario });
     }),
 
   editar_post: (req, res) => {
@@ -92,7 +92,7 @@ const userController = {
         },
       }
     );
-    res.redirect("/user/list");
+    res.redirect("/user/list", { usuario });
   },
 
   borrar: (req, res) => {

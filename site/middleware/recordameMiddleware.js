@@ -2,7 +2,7 @@
 const db = require("../database/models");
 
 function recordameMiddleware (req,res,next){
-  console.log("estoy en el middlware global")
+  console.log(req.cookies.recordame);
     if (req.body.recordame != undefined && req.session.usuarioLogueado != undefined) {
       db.Usuario.findOne({
         where: {

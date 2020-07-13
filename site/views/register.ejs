@@ -2,65 +2,73 @@
 <html lang="en">
 
 <%- include('./partials/head.ejs')%>
-<title>REGISTRARSE</title>
+<title>Crea Tu Cuenta - Registrate</title>
 <body class="fondo">
 
     <%- include('./partials/header.ejs')%>
 
 
     <!--INICIAR SESION-->
-    <% if (typeof errors != 'undefined') { %>
-     <p style="color: red;">ERROR</p>
-     <ul>
-         <% for( let i = 0; i < errors.length; i++ ) { %>
-            <li>
-                <%= errors[i].msg %> 
-            </li>
-         <% } %>
-         
-     </ul>
-    <% } %>
+    
     <form action="" method="post" enctype="multipart/form-data">
         <div class="container-fluid">
             <div class="inicio-sesion row">
 
                 <div class="formulario-body col-sm-8 col-md-6 col-lg-4 mx-auto">
 
-                    <form action="" method="POST">
+                    <form action="" method="POST" id="formRegistro">
 
                         <div class="titulo text-center">
-                            <p>REGISTARSE</p>
+                            <p>Crea Tu Cuenta</p>
+                            <h6 style="font-size: smaller; font-weight: 200; text-align: center;">Por favor, complete
+                                todo los campos</h6>
                         </div>
-
                         <div class="formulario-email">
 
 
                             <input type="text" name="nombre" id="nombre" class="form-control"
-                                placeholder="Ingresa tu nombre" required>
+                                placeholder="Ingresa tu nombre"  focus>
                             <br>
 
                             <input type="text" name="apellido" id="apellido" class="form-control"
-                                placeholder="Ingresa tu apellido" required>
+                                placeholder="Ingresa tu apellido" >
                             <br>
 
                             <input type="email" id="email" name="email" class="form-control"
-                                placeholder="Ingresa tu correo electronico" required>
+                                placeholder="Ingresa tu correo electronico" >
                             <br>
                             <input type="password" id="password" name="password" class="form-control"
-                                placeholder="Contraseña" required>
+                                placeholder="Contraseña" >
                             <br>
                             <input type="password" id="repassword" name="repassword" class="form-control"
-                                placeholder="Contraseña" required>
+                                placeholder="Contraseña" >
                             <br>
                             <input type="file" id="avatar" name="avatar" accept="image/x-png,image/gif,image/jpeg" />
                             <br />
                         </div>
+                        <br>
 
-                        <div>
-                            <button class="boton-ingresar text-center" type="submit">
-                                REGISTAR
+                        <section class="validacionLogin">
+                            <% if (typeof errors != 'undefined') { %>
+                            <p>ERROR</p>
+                            <ul>
+                                <% for( let i = 0; i < errors.length; i++ ) { %>
+                                <li>
+                                    <%= errors[i].msg %>
+                                </li>
+                                <% } %>
+
+                            </ul>
+                            <% } %>
+                        </section>
+
+                        <div style="text-align: center; padding: 3%;">
+                            <button class="btn btn-info mt-2 text-center " type="submit">
+                                Crear Mi Cuenta
                             </button>
                         </div>
+
+                        
 
                     </form>
 
@@ -80,6 +88,7 @@
     </div>
     <!--ScripDeBoostrapt-->
     <%- include('./partials/scripts.ejs')%>
+    <script src="../js/validacionRegistro.js"></script>
 </body>
 
 </html>

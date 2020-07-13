@@ -1,5 +1,5 @@
 <header>
-    <nav class="navbar navbar-expand-md navbar-light bg-light" style="border-bottom: 1px solid gray;">
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light" style="border-bottom: 1px solid gray;">
          <!--agregué borde-->
 
         <a class="navbar-brand" href="/">LOGO</a> </a>
@@ -14,7 +14,7 @@
             <ul class="navbar-nav m-auto text-center">
                 <!--home-->
                 <li class="nav-item active">
-                    <a class="nav-link" href="/">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-link " href="/">Home <span class="sr-only"></span></a>
                 </li>
                 <!--Catalogo-->
                 <li class="nav-item dropdown">
@@ -25,7 +25,7 @@
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                         <a class="dropdown-item" href="/product/">Todos Los Productos</a>
                         <a class="dropdown-item disabled" href="/product/destacados">Destacados</a>
-                        <a class="dropdown-item disabled" href="/product/ofertas">Ofertas</a>
+                        <a class="dropdown-item" href="/product/ofertas">Ofertas</a>
                     </div>
                 </li>
                 <!--Soporte-->
@@ -59,21 +59,24 @@
                 </li>
             </ul>
             <!--Login-->
-            <% if (usuario != null) { %>
-            <h6 style="color: blueviolet;font-size: small;" class=" mr-3"> HOLA!! <%= usuario.nombre %> </h6>
-            <% } %>
-            <div  class="d-flex flex-row justify-content-center" >
-                
-                <a href="">
-                    <i class="fa fa-search fa-2x mr-3"></i>
-                </a>
-                <a href="/user" >
-                   <i class="fa fa-user fa-2x mr-3"></i>
-                </a>
-                    <a href="/product/cart"><i class="fa fa-shopping-cart fa-2x mr-3 "></i>
-                </a>
-            </div>
+            
+
+                <ul class="navbar-nav mr text-center">
+                    <li class="nav-item d-none d-md-block d-lg-block" style="margin-top: 5px;">
+                            <% if (usuario != null) { %>
+                            <span style="color: blueviolet;font-size: medium;"> HOLA!! <%= usuario.nombre %></span>
+                            <% } %>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/user">LOG IN</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/product/cart">SHOP </a>
+                    </li>
+            
 
         </div>
     </nav>
+    <marquee>Este texto se mueve de derecha a izquierda</marquee>
 </header>

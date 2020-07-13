@@ -26,11 +26,16 @@ var upload = multer({ storage: storage });
 
 
 router.get("/", guestMiddleware, (req, res) => {res.render("login" , {usuario: req.session.usuarioLogueado} );});
-router.post("/", usercontroller.login_post);
+
+router.post("/", [
+  check("email").isEmail().withMessage("ingrese un email válido"),
+  check("password").isLength({min: 3}).withMessage("La password debe tener 4 caracteres")
+],
+usercontroller.login_post);
+
 router.get("/register",guestMiddleware ,usercontroller.registrar);
 router.post(
   "/register",
-  upload.single("avatar"),
   [
     check("nombre")
       .isLength({ min: 1 })
@@ -40,9 +45,10 @@ router.post(
       .withMessage("El campo apellido no puede estar vacío"),
     check("email").isEmail().withMessage("Debe ser un email válido"),
     check("password")
-      .isLength({ min: 8 })
-      .withMessage("Password debe tener minimo 8 caracteres"),
+      .isLength({ min: 6 })
+      .withMessage("Password debe tener minimo 6 caracteres"),
   ],
+  upload.single("avatar"),
   usercontroller.guardarUsuario
 );
 
@@ -61,11 +67,6 @@ router.get("/admin", (req,res)=>{
 
 
 
-/*-------------------------VER PERFIL DE USUARIO ----METODO GET--------------------------------
-router.get("/profile", authMiddleware, function (req, res) {
-  
-  res.render("userProfile", { usuarioLogueado: req.session.usuarioLogueado });
-});*/
 
 /*-------------------------SIRVE PARA CONTROL DE SABER SI EL USUARIO ESTA LOGUEADO ----METODO GET--------------------------------*/
 router.get("/check", function (req, res) {

@@ -12,7 +12,7 @@ window.onload = () =>{
     
     formulario.addEventListener("submit", (e) => {
         console.log("dentro del evento")
-      e.preventDefault();
+      //e.preventDefault();
       let expReg = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
       let warning = "";
       let entrar = false;

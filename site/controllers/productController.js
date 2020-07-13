@@ -56,6 +56,7 @@ const productController = {
         descripcion: req.body.descripcion,
         precio: req.body.precio,
         stock: req.body.stock,
+        foto: req.file.filename,
         idMarca: req.body.marca,
         idCategoria: req.body.categoria,
         idColor: req.body.color,

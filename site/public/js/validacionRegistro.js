@@ -1,4 +1,4 @@
-console.log("hola soy validacion de Registro");
+console.log("hola soy Registro");
 
 window.onload = () => {
   

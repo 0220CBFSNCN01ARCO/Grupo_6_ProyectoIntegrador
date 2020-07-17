@@ -30,11 +30,7 @@ router.post(
 );
 router.get("/list", productController.listadoProductos);
 router.get("/edit/:id", productController.editar_get);
-router.put(
-  "/edit/:id",
-  upload.single("imagen-producto"),
-  productController.editar_post
-);
+router.put("/edit/:id", productController.editar_post);
 router.delete("/edit/:id", productController.borrar);
 router.get("/detail/:id", productController.detail_get);
 router.get("/ofertas",productController.catalagoOferta);

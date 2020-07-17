@@ -64,17 +64,37 @@
                 <ul class="navbar-nav mr text-center">
                     <li class="nav-item d-none d-md-block d-lg-block" style="margin-top: 5px;">
                             <% if (usuario != null) { %>
-                            <span style="color: blueviolet;font-size: medium;"> HOLA!! <%= usuario.nombre %></span>
+                            <span style="color: blueviolet;font-size: medium;"><%= usuario.nombre %></span>
+                            
                             <% } %>
 
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item submenu">
+                        <a class="nav-link" href="#">CART ( 0 )</a>
+                                <div id="carrito">
+                                    <table id="lista-carrito" class="u-full-width">
+                                        <thead>
+                                            <tr>
+                                                <th>Imagen</th>
+                                                <th>Nombre</th>
+                                                <th>Precio</th>
+                                                <th></th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+
+                                        </tbody>
+                                    </table>
+                                    <a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a><br>
+                                    <a href="#" id="check-out" class="button u-full-width">Check Out</a>
+                                </div>
+                    </li>
+                    
+                    <li class="nav-item userLogin">
                         <a class="nav-link" href="/user">LOG IN</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="/product/cart">SHOP </a>
-                    </li>
-            
+                    
+
 
         </div>
     </nav>

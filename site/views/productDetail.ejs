@@ -8,18 +8,21 @@
     <%- include('./partials/header.ejs')%>
     
     <!--PRINCIPAL-->
-    <main class="main">
+    
         <div class="container cuadroProducto">
-            
+
             <div class="row">
+                
                 <!--imagen producto-->
-                <div class="col-md-6 order-md-1 mb-4 d-flex justify-content-center" >
+                <div class="col-md-6 d-flex justify-content-center mt-4" >
                     <img src="/images/product/<%= producto.foto %>" class="zoom zoom:hover" style=" height: 50%;
                         border-radius: 10%; margin-top: 5%;">
                 </div>
                 <!--especificaciones-->
-                <div class="col-md-6 order-md-2">
-                    <h1 class="mb-2" style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: 700; color: darkslategray;"><%= producto.nombre  %> </h1>
+                <div class="col-md-6 order-md-2 detalle-producto">
+                    <h1 data-id=" <%= producto.id %> " class="mb-2"
+                        style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: 700; color: darkslategray;">
+                        <%= producto.nombre  %> </h1>
                     <div class="precios-productos">
                         <% if (producto.cuotas >= 1 ){ %>
                         <h6 class="subtitulo mb-0"> <%= producto.cuotas %> cuotas de</h6>
@@ -41,48 +44,46 @@
                 
                 <!--cantidad y Reseña-->
                 <div class="row">
-                <div class="col-md-3 mb-3">
-                    <label for="cantidad">Cantidad</label>
-                    <select class="custom-select d-block w-100" id="cantidad" >
-                      <option value="">1</option>
-                      <option>2</option>
-                      <option>3</option>
-                      <option>4</option>
-                    </select>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <label for="reseña">Puntuación</label>
-                
-                <div class="d-flex flex-row justify-content-center">
-                    <i class="p-2">
-                        <ion-icon name="star"></ion-icon>
-                    </i>
-                    <i class="p-2">
-                        <ion-icon name="star"></ion-icon>
-                    </i>
-                    <i class="p-2">
-                        <ion-icon name="star-outline"></ion-icon>
-                    </i>
-                </div>
-                </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="cantidad">Cantidad</label>
+                        <select class="custom-select d-block w-100" id="cantidad">
+                            <option value="">1</option>
+                            <option>2</option>
+                            <option>3</option>
+                            <option>4</option>
+                        </select>
+                    </div>
+                    <div class="col-md-3 mb-3">
+                        <label for="reseña">Puntuación</label>
+
+                        <div class="d-flex flex-row justify-content-center">
+                            <i class="p-2">
+                                <ion-icon name="star"></ion-icon>
+                            </i>
+                            <i class="p-2">
+                                <ion-icon name="star"></ion-icon>
+                            </i>
+                            <i class="p-2">
+                                <ion-icon name="star-outline"></ion-icon>
+                            </i>
+                        </div>
+                    </div>
                 </div>
                 <!--linea separacion-->
                 <hr class="mb-4">
                 <!--Boton-->
-                <button class="btn-carga btn-sm btn-block" type="submit">Añadir al Carrito</button>
+                <button class="btn-carga btn-sm btn-block agregar-carrito" type="submit">Añadir al Carrito</button>
                 </div><!--cierra el primer row, lleva la descripcion del producto-->
              
             </div>
-            </div> <!--cierra container-->
-
-    
-     </main>  
-    
+        </div> <!--cierra container-->
 
      <%- include('./partials/footer.ejs')%>
     
     <!--ScripDeBoostrapt-->
+
 <%- include('./partials/scripts.ejs')%>
+<script src="/js/carrito.js"></script>
 </body>
 
 </html>

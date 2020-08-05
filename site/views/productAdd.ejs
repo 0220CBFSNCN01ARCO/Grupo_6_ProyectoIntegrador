@@ -2,6 +2,7 @@
 
 <%- include('./partials/head.ejs')%>
 <title>PRODUCT ADD</title>
+
 <body class="fondo">
 
   <!--barra de navegacion-->
@@ -15,7 +16,7 @@
         <!--carga imagen-->
         <div class="col-md-6 order-md-1 mb-4">
 
-            <img src="/images/product/imagen-producto-1591036274646.webp" class="imgProducto" alt="imagenDemo">
+          <img src="/images/product/imagen-producto-1591036274646.webp" class="imgProducto" alt="imagenDemo">
 
         </div>
 
@@ -36,9 +37,9 @@
                 <select class="custom-select d-block w-100" id="marca" name="marca">
                   <option value="">Seleccionar</option>
                   <option value="1">LG</option>
-                  <option value="2" >SAMSUMG</option>
-                  <option value="3" >MOTOROLA</option>
-                  <option value="4" >NOKIA</option>
+                  <option value="2">SAMSUMG</option>
+                  <option value="3">MOTOROLA</option>
+                  <option value="4">NOKIA</option>
                 </select>
                 <div class="invalid-feedback">
                   Seleccionar una marca.
@@ -80,10 +81,10 @@
               <div class="col-md-3 mb-3">
                 <label for="color">color</label>
                 <select class="custom-select d-block w-100" id="color" name="color">
-                 <option value="">Elegir</option>
-                 <option value="1">BLANCO /option>
-                 <option value="2">NEGRO</var></option>
-                 <option value="3">OTRO</option>
+                  <option value="">Elegir</option>
+                  <option value="1">BLANCO /option>
+                  <option value="2">NEGRO</var></option>
+                  <option value="3">OTRO</option>
                 </select>
                 <div class="invalid-feedback">
                   Debes seleccionar 1 opción.
@@ -100,7 +101,7 @@
                   <% } %>
                 </select>
 
-                
+
                 <div class="invalid-feedback">
                   Debes seleccionar 1 opción.
                 </div>
@@ -110,7 +111,7 @@
             <textarea class="form-control" id="descripcion" name="descripcion" rows="3"></textarea>
             <!--linea separacion-->
             <hr class="mb-4">
-            
+
             <input type="file" id="imagen-producto" name="imagen-producto" accept="image/x-png,image/gif,image/jpeg" />
             <br>
             <!--Boton-->
@@ -130,6 +131,9 @@
 
 
   <%- include('./partials/scripts.ejs')%>
+  <script src="/js/mostrarCarrito.js"></script>
+  <script src="/js/carrito.js"></script>
+  <script src="/js/compra.js"></script>
 </body>
 
 </html>

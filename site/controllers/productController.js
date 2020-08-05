@@ -5,6 +5,7 @@ const { Op } = require("sequelize");
 
 /*--------------------------------CONTROLADOR CON METODO HOME CREAR, DETALLE, EDITAR Y ELIMINAR--------------------------------*/
 const productController = {
+  
   crear_post: (req, res) => {
     db.Producto.create({
       nombre: req.body.nombre,

@@ -1,17 +1,25 @@
-console.log("soy mostrarcarrito.js");
+window.addEventListener("load", function () {
+  console.log("soy mostrarcarrito.js");
+
+  cargarEventListeners();
+});
+
+//SE DEFINEN CUALES SON LOS ELEMENTOS CAPTURADOS PARA TRABAJAR.
 
 const carrito = document.getElementById("carrito");
 const listaProducto = document.querySelector("#lista-carrito tbody");
 const vaciarCarritoBtn = document.getElementById("vaciar-carrito");
-cargarEventListeners();
+const checkOutCarritoBtn = document.getElementById("check-out");
 
+//SE DEFINE UNA FUNCION QUE CONTIENEN TODOS LOS EVENTOS DE ESOS ELEMENTOS CAPTURADOS ANTERIORMENTE.
 function cargarEventListeners() {
+  leerLocalStorage();
   carrito.addEventListener("click", eliminarProducto);
-
   vaciarCarritoBtn.addEventListener("click", vaciarCarrito);
-
-  document.addEventListener("DOMContentLoaded", leerLocalStorage);
+  checkOutCarritoBtn.addEventListener("click", redireccionCheckOut);
 }
+
+//SE DEFINENE TODAS LAS FUNCIONES.
 
 function eliminarProducto(e) {
   e.preventDefault();
@@ -66,6 +74,10 @@ function leerLocalStorage() {
   productosLS = obtenerProductoLocalStorage();
 
   productosLS.forEach((producto) => {
+    const itemCarro = document.querySelector(".itemCarro a");
+    console.log(itemCarro);
+    productosLS = JSON.parse(localStorage.getItem("productos"));
+    itemCarro.innerHTML = `CART (${productosLS.length})`;
     const row = document.createElement("tr");
     row.innerHTML = `
                         <td> 
@@ -103,4 +115,9 @@ function eliminarProductoLocalStorage(producto) {
 function vaciarLocalStorage() {
   localStorage.clear();
   console.log("se vacio el carro");
+}
+
+function redireccionCheckOut() {
+  console.log("redeccion");
+  window.location = "/product/cart";
 }

@@ -1,50 +1,26 @@
 const db = require("../database/models");
 const { Op } = require("sequelize");
 
-
-
-let catalagoOferta = ()=> {
-    db.Producto.findAll(
-      {
-        where:{
-          idCategoria : '3'
-        }
-      }
-    ).then(function(producto){
-      
-      return producto;
-    });
-    
-  }
-
-  let catalagoFull = () => {
-    db.Producto.findAll({
-      where: {
-        idCategoria: "3",
-      },
-    }).then(function (producto) {
-      return producto;
-    });
-  };
-
-
 const indexController = {
+  catalagoCompleto: async (req, res) => {
+    const productosOferta = await db.Producto.findAll({
+      where: {
+        idCategoria: "1",
+      },
+    });
 
+    const productosDestacados = await db.Producto.findAll({
+      where: {
+        idCategoria: "2",
+      },
+    });
 
-
-  catalagoCompleto: (req, res) => {
-   
-    db.Producto.findAll().then(function (productos) {
-      
-      
-      return res.render("index", {
-        productos: productos,
-        usuario: req.session.usuarioLogueado,
-        
-      });
+    return res.render("index", {
+      productosOferta,
+      productosDestacados,
+      usuario: req.session.usuarioLogueado,
     });
   },
-
 };
 
 module.exports = indexController;

@@ -11,7 +11,10 @@ const recordameMiddleware = require("./middleware/recordameMiddleware");
 var indexRouter = require("./routes/index");
 var productsRouter = require("./routes/product");
 var usersRouter = require("./routes/users");
-
+var apiProductRouter = require("./routes/api/product");
+var apiCategoriaRouter = require("./routes/api/categoria");
+var apiMaraRouter = require("./routes/api/marca");
+var apiUserRouter = require("./routes/api/users");
 var app = express();
 
 // view engine setup
@@ -30,6 +33,10 @@ app.use(recordameMiddleware);
 app.use("/", indexRouter);
 app.use("/product", productsRouter);
 app.use("/user/", usersRouter);
+app.use("/api/product", apiProductRouter);
+app.use("/api/categoria", apiCategoriaRouter);
+app.use("/api/marca", apiMaraRouter);
+app.use("/api/user", apiUserRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

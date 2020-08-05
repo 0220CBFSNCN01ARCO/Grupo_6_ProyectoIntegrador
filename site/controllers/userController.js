@@ -20,7 +20,7 @@ const userController = {
       console.log(errors);
 
       if (!errors.isEmpty()) {
-        console.log("campos vacios")
+        console.log("campos vacios");
         return res.render("login", { errors: "campos vacios", usuario });
       }
 
@@ -29,9 +29,11 @@ const userController = {
         !bcrypt.compareSync(req.body.password, usuario.password)
       ) {
         console.log("no exisite usuario");
-        return res.render("login", { errors: "email o contraseña incorrecta", usuario: "" });
+        return res.render("login", {
+          errors: "email o contraseña incorrecta",
+          usuario: "",
+        });
       }
-
 
       if (req.body.recordame != undefined) {
         res.cookie("recordame", usuario.email, { maxAge: 900000 }); //RECUERDA LA COOKIE POR 1MINUTO
@@ -50,10 +52,9 @@ const userController = {
   },
 
   guardarUsuario: (req, res) => {
-
     const errors = validationResult(req);
     if (!errors.isEmpty()) {
-      return res.render("register", {errors: errors.errors, usuario: ""});
+      return res.render("register", { errors: errors.errors, usuario: "" });
       return res.status(422).json({ errors: result.array() });
     }
     db.Usuario.create({
@@ -64,7 +65,9 @@ const userController = {
       avatar: req.file.filename,
       idTipoUsuario: "1",
     });
-    res.redirect("/user/profile", { usuario: req.session.usuarioLogueado});
+    res.redirect("/user/userProfile2", {
+      usuario: req.session.usuarioLogueado,
+    });
   },
 
   listUsers: (req, res) => {
@@ -117,7 +120,7 @@ const userController = {
         email: usuarioActivo.email,
       },
     }).then((usuario) => {
-      res.render("userProfile", {
+      res.render("userProfile2", {
         usuario,
       });
     });

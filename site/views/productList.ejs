@@ -13,11 +13,11 @@
             <!--Titulo y servicios-->
             <div class="container mt-4 text-center">
                 <h1 style="font-style: italic; color: cornflowerblue;"> CATALAGO DE PRODUCTOS</h1>
-                
+
                 <div class="row">
                     <div class="container">
                         <br>
-                        
+
 
                         <table class=" col-12 md table table-hover table-responsive-md ">
                             <thead class="thead-dark">
@@ -26,7 +26,7 @@
                                     <th>Nombre</th>
                                     <th>Marca</th>
                                     <th>Precio</th>
-                                   
+
                                     <th>Stock</th>
                                     <th>Color</th>
                                     <th>Categoria</th>
@@ -36,16 +36,17 @@
                             <% productos.forEach(producto => { %>
                             <tbody>
                                 <tr>
-                                    <td><a href="/product/edit/<%= producto.id%>"><button type="button" class="btn btn-info btn-sm">Modificar</button></a></td>
+                                    <td><a href="/product/edit/<%= producto.id%>"><button type="button"
+                                                class="btn btn-info btn-sm">Modificar</button></a></td>
                                     <td><%=producto.nombre  %> </td>
                                     <td><%=producto.marca.nombre  %></td>
                                     <td><%=producto.precio  %></td>
-                                    
+
                                     <td><%=producto.stock  %></td>
                                     <td><%=producto.color.nombre  %></td>
                                     <td><%=producto.categoria.descripcion  %></td>
                                     <td><%=producto.descripcion  %></td>
-                                    
+
                                 </tr>
                             </tbody>
                             <% }) %>
@@ -59,6 +60,9 @@
     <%- include('./partials/footer.ejs')%>
 
     <%- include('./partials/scripts.ejs')%>
+    <script src="/js/mostrarCarrito.js"></script>
+    <script src="/js/carrito.js"></script>
+    <script src="/js/compra.js"></script>
 </body>
 
 </html>

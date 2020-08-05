@@ -1,140 +1,119 @@
 <html lang="en">
-  <%- include('./partials/head.ejs')%>
-  <title>HOME</title>
+<%- include('./partials/head.ejs')%>
+<title>HOME</title>
 
-  <body class="fondo">
-    <!--barra de navegacion-->
-    <%- include('./partials/header.ejs')%>
-    <!--carrousel-->
-    <%- include('./partials/carrousel.ejs')%>
-    <!--PRINCIPAL-->
-    <div class="container">
-      <main class="main">
-        <!--Titulo y servicios-->
-        <div class="container mt-4 text-center">
-          <h1>Nuestra tienda</h1>
-          <h4>OFERTAS</h4>
-          <section>
-            <div class="row">
-              <% productos.forEach(producto => { %>
-              <div class="col-12 col-md-4 col-lg-3">
-                <div class="card shadow-lg p-1 mb-5 bg-white">
-                  <div class="card-body">
-                    <section class="">
-                      <img
-                        src="/images/product/<%= producto.foto  %> "
-                        class="card-img-top img-fluid"
-                      />
-                    </section>
+<body class="fondo">
+  <!--barra de navegacion-->
+  <%- include('./partials/header.ejs')%>
+  <!--carrousel-->
+  <%- include('./partials/carrousel.ejs')%>
+  <!--PRINCIPAL-->
+  <div class="container">
+    <main class="main">
+      <!--Titulo y servicios-->
+      <div class="container mt-4 text-center">
+        <h1 class="mb-5 mt-5">TIENDA ONLINE</h1>
 
-                    <h5 class="card-title"><%= producto.nombre %></h5>
-                    <h5 style="text-align: left; font-size: smaller;">
-                      18 cuotas sin interés de:
-                    </h5>
-                    <h4
-                      style="
+        <H4 class="mb-3 mt-3">Ofertas</H4>
+
+        <section>
+          <div class="row">
+            <% productosOferta.forEach(producto => { %>
+            <div class="col-12 col-md-4 col-lg-3">
+              <div class="card shadow-lg p-1 mb-5 bg-white">
+                <div class="card-body">
+                  <section class="">
+                    <img src="/images/product/<%= producto.foto  %> " class="card-img-top img-fluid" />
+                  </section>
+
+                  <h5 class="card-title"><%= producto.nombre %></h5>
+                  <h5 style="text-align: left; font-size: smaller;">
+                    18 cuotas sin interés de:
+                  </h5>
+                  <h4 style="
                         text-align: left;
                         font-size: smaller;
                         font-size: large;
                         color: cadetblue;
-                      "
-                    >
-                      $<%= (producto.precio / 18).toFixed(0)%>
-                    </h4>
-                    <h5 style="text-align: left; font-size: smaller;">
-                      o 1 pago de <%= producto.precio %>
-                    </h5>
-                    <p>
-                      <a
-                        href="#"
-                        style="font-size: x-small;"
-                        data-toggle="modal"
-                        data-target="#exampleModal"
-                        >Ver financiación</a
-                      >
+                      ">
+                    $<%= (producto.precio / 18).toFixed(0)%>
+                  </h4>
+                  <h5 style="text-align: left; font-size: smaller;">
+                    o 1 pago de <%= producto.precio %>
+                  </h5>
+                  <p>
+                    <a href="#" style="font-size: x-small;" data-toggle="modal" data-target="#exampleModal">Ver
+                      financiación</a>
 
-                      <!-- Modal -->
-                      <%- include('./partials/modalFinanciacion.ejs')%>
-                    </p>
-                    <a
-                      href="/product/detail/<%=producto.id%>"
-                      class="btn btn-primary"
-                      >Ver detalles</a
-                    >
-                  </div>
+                    <!-- Modal -->
+                    <%- include('./partials/modalFinanciacion.ejs')%>
+                  </p>
+                  <a href="/product/detail/<%=producto.id%>" class="btn btn-primary">Ver detalles</a>
                 </div>
               </div>
-              <% }) %>
             </div>
-          </section>
-        </div>
-        <div class="container mt-4 text-center">
-          <h4>DESTACADOS</h4>
-          <section>
-            <div class="row">
-              <% productos.forEach(producto => { %>
-              <div class="col-12 col-md-4 col-lg-3">
-                <div class="card shadow-lg p-1 mb-5 bg-white rounded">
-                  <div class="card-body">
-                    <img
-                      class="card-img-top img-fluid"
-                      src="/images/product/<%= producto.foto  %> "
-                    />
-                    <h5 class="card-title"><%= producto.nombre %></h5>
-                    <h5 style="text-align: left; font-size: smaller;">
-                      18 cuotas sin interés de:
-                    </h5>
-                    <h4
-                      style="
+            <% }) %>
+          </div>
+        </section>
+      </div>
+      <div class="container mt-4 text-center">
+        <h4 class="mb-3 mt-3">Destacados</h4>
+        <section>
+          <div class="row">
+            <% productosDestacados.forEach(producto => { %>
+            <div class="col-12 col-md-4 col-lg-3">
+              <div class="card shadow-lg p-1 mb-5 bg-white rounded">
+                <div class="card-body">
+                  <img class="card-img-top img-fluid" src="/images/product/<%= producto.foto  %> " />
+                  <h5 class="card-title"><%= producto.nombre %></h5>
+                  <h5 style="text-align: left; font-size: smaller;">
+                    18 cuotas sin interés de:
+                  </h5>
+                  <h4 style="
                         text-align: left;
                         font-size: smaller;
                         font-size: large;
                         color: cadetblue;
-                      "
-                    >
-                      $<%= (producto.precio / 18).toFixed(0)%>
-                    </h4>
-                    <h5 style="text-align: left; font-size: smaller;">
-                      o 1 pago de <%= producto.precio %>
-                    </h5>
-                    <p>
-                      <a
-                        href="#"
-                        style="font-size: x-small;"
-                        data-toggle="modal"
-                        data-target="#exampleModal"
-                        >Ver financiación</a
-                      >
+                      ">
+                    $<%= (producto.precio / 18).toFixed(0)%>
+                  </h4>
+                  <h5 style="text-align: left; font-size: smaller;">
+                    o 1 pago de <%= producto.precio %>
+                  </h5>
+                  <p>
+                    <a href="#" style="font-size: x-small;" data-toggle="modal" data-target="#exampleModal">Ver
+                      financiación</a>
 
-                      <!-- Modal -->
-                      <%- include('./partials/modalFinanciacion.ejs')%>
-                    </p>
+                    <!-- Modal -->
+                    <%- include('./partials/modalFinanciacion.ejs')%>
+                  </p>
 
-                    <a
-                      href="/product/detail/<%=producto.id%>"
-                      class="btn btn-primary"
-                      >Ver detalles</a
-                    >
-                  </div>
+                  <a href="/product/detail/<%=producto.id%>" class="btn btn-primary">Ver detalles</a>
                 </div>
               </div>
-              <% }) %>
             </div>
-          </section>
-        </div>
-        <!--PARTE DE COTIZACION ONLINE-->
-        <%- include('./partials/cotizacion.ejs')%>
-        <!--PARTE DE RETIRO DE EQUIPO EN SITIO-->
-        <%- include('./partials/delivery.ejs')%>
-        <!--esta parte es la de imagenes de seguimiento tarjeta y otras-->
-        <%- include('./partials/preFooter.ejs')%>
-      </main>
-    </div>
-    <!--footer-->
-    <%- include('./partials/footer.ejs')%> <%-
+            <% }) %>
+          </div>
+        </section>
+      </div>
+      <!--PARTE DE COTIZACION ONLINE-->
+      <%- include('./partials/cotizacion.ejs')%>
+      <!--PARTE DE RETIRO DE EQUIPO EN SITIO-->
+      <%- include('./partials/delivery.ejs')%>
+      <!--esta parte es la de imagenes de seguimiento tarjeta y otras-->
+      <%- include('./partials/preFooter.ejs')%>
+    </main>
+  </div>
+  <!--footer-->
+  <%- include('./partials/footer.ejs')%> <%-
     include('./partials/scripts.ejs')%>
 
-    
-    <script src="/js/mostrarCarrito.js"></script>
-  </body>
+  <%- include('./partials/avisoCookies.ejs')%>
+  <%- include('./partials/modelCokies.ejs')%>
+  <a href="#" style="font-size: x-small;" data-toggle="modal" data-target="#exampleModalC">cookiemodal</a>
+  <script src="/js/mostrarCarrito.js"></script>
+  <script src="/js/avisoCookies.js"></script>
+
+</body>
+
 </html>

@@ -33,11 +33,15 @@ router.get("/edit/:id", productController.editar_get);
 router.put("/edit/:id", productController.editar_post);
 router.delete("/edit/:id", productController.borrar);
 router.get("/detail/:id", productController.detail_get);
-router.get("/ofertas",productController.catalagoOferta);
+router.get("/ofertas", productController.catalagoOferta);
 
 /*-------------------------------- ruta a carro de compras-------------------------------- */
 router.get("/cart", function (req, res) {
   res.render("productCart", { usuario: req.session.usuarioLogueado });
+});
+
+router.get("/checkout", function (req, res) {
+  res.render("checkOutForm");
 });
 
 module.exports = router;

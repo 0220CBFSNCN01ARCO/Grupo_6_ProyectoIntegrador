@@ -1,23 +1,25 @@
-console.log("hola soy carrito");
+window.addEventListener("load", function () {
+  console.log("hola soy carrito");
+  cargarEventListeners();
+});
 
 const carrito = document.getElementById("carrito");
 const producto = document.querySelector(".cuadroProducto");
 const listaProducto = document.querySelector("#lista-carrito tbody");
 const vaciarCarritoBtn = document.getElementById("vaciar-carrito");
-
-cargarEventListeners();
+const checkOutCarritoBtn = document.getElementById("check-out");
 
 function cargarEventListeners() {
-  
   producto.addEventListener("click", comprarProducto);
 
   carrito.addEventListener("click", eliminarProducto);
 
   vaciarCarritoBtn.addEventListener("click", vaciarCarrito);
 
-  document.addEventListener("DOMContentLoaded", leerLocalStorage);
-}
+  leerLocalStorage();
 
+  checkOutCarritoBtn.addEventListener("click", redireccionCheckOut);
+}
 
 function comprarProducto(e) {
   e.preventDefault();
@@ -150,4 +152,43 @@ function eliminarProductoLocalStorage(producto) {
 function vaciarLocalStorage() {
   localStorage.clear();
   console.log("se vacio el carro");
+}
+
+function redireccionCheckOut() {
+  console.log("redeccion");
+  window.location = "/product/cart";
+}
+
+function leerLocalStorageCompra() {
+  console.log("dentro de leerLocalStorage");
+  let productosLS;
+
+  productosLS = obtenerProductoLocalStorage();
+
+  productosLS.forEach((producto) => {
+    const row = document.createElement("tr");
+    row.innerHTML = `
+                        <td> 
+                            <img src="${producto.imagen}" width = 100%>
+                        </td>
+                        <td> 
+                            ${producto.nombre}
+                        </td>
+                        <td> 
+                            ${producto.precio}
+                        </td>
+                        <td>
+                            <input type="number" class= "form-control cantidad" min="1" value= ${producto.cantidad}
+                        </td>
+                        <td>
+                            ${producto.precio} * ${producto.cantidad}
+                        </td>
+
+                        <td> 
+                        <a href="#" class="borrar-producto" data-id="${producto.id}">X</a>
+                        </td>
+                        
+                       `;
+    listaCompra.appendChild(row);
+  });
 }

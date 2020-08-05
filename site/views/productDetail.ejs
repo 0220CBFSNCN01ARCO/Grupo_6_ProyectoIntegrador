@@ -2,46 +2,48 @@
 
 <%- include('./partials/head.ejs')%>
 <title>DETALLE DE PRODUCTO</title>
-<body class="fondo"> <!--agregue color de fondo-->
+
+<body class="fondo">
+    <!--agregue color de fondo-->
 
     <!--barra de navegacion-->
     <%- include('./partials/header.ejs')%>
-    
-    <!--PRINCIPAL-->
-    
-        <div class="container cuadroProducto">
 
-            <div class="row">
-                
-                <!--imagen producto-->
-                <div class="col-md-6 d-flex justify-content-center mt-4" >
-                    <img src="/images/product/<%= producto.foto %>" class="zoom zoom:hover" style=" height: 50%;
+    <!--PRINCIPAL-->
+
+    <div class="container cuadroProducto">
+
+        <div class="row">
+
+            <!--imagen producto-->
+            <div class="col-md-6 d-flex justify-content-center mt-4">
+                <img src="/images/product/<%= producto.foto %>" class="zoom zoom:hover" style=" height: 50%;
                         border-radius: 10%; margin-top: 5%;">
+            </div>
+            <!--especificaciones-->
+            <div class="col-md-6 order-md-2 detalle-producto">
+                <h1 data-id=" <%= producto.id %> " class="mb-2"
+                    style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: 700; color: darkslategray;">
+                    <%= producto.nombre  %> </h1>
+                <div class="precios-productos">
+                    <% if (producto.cuotas >= 1 ){ %>
+                    <h6 class="subtitulo mb-0"> <%= producto.cuotas %> cuotas de</h6>
+                    <h3 class="precio mb-2"> <%=(producto.precio / producto.cuotas).toFixed(2) %></h3>
+                    <h6 class="subtitulo mb-4">1 Pago de <%= producto.precio %></h6>
+                    <% }  else {%>
+                    <h6 class="subtitulo mb-4">1 Pago de </h6>
+                    <h3 class="precio mb-2"><%= producto.precio %></h3>
+                    <% } %>
                 </div>
-                <!--especificaciones-->
-                <div class="col-md-6 order-md-2 detalle-producto">
-                    <h1 data-id=" <%= producto.id %> " class="mb-2"
-                        style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: 700; color: darkslategray;">
-                        <%= producto.nombre  %> </h1>
-                    <div class="precios-productos">
-                        <% if (producto.cuotas >= 1 ){ %>
-                        <h6 class="subtitulo mb-0"> <%= producto.cuotas %> cuotas de</h6>
-                        <h3 class="precio mb-2">&#36 <%=(producto.precio / producto.cuotas).toFixed(2) %></h3>
-                        <h6 class="subtitulo mb-4">1 Pago de &#36 <%= producto.precio %></h6>
-                        <% }  else {%>
-                        <h6 class="subtitulo mb-4">1 Pago de </h6> 
-                        <h3 class="precio mb-2">&#36 <%= producto.precio %></h3>
-                        <% } %>
-                    </div>
-                   <!--Breve Desc Tecn-->
+                <!--Breve Desc Tecn-->
                 <div class="row">
                     <div class="col-ms-12">
                         <p class="caja-descripcion">
                             <%= producto.descripcion  %>
                         </p>
-                    </div> 
-                </div>      
-                
+                    </div>
+                </div>
+
                 <!--cantidad y Reseña-->
                 <div class="row">
                     <div class="col-md-3 mb-3">
@@ -73,17 +75,21 @@
                 <hr class="mb-4">
                 <!--Boton-->
                 <button class="btn-carga btn-sm btn-block agregar-carrito" type="submit">Añadir al Carrito</button>
-                </div><!--cierra el primer row, lleva la descripcion del producto-->
-             
             </div>
-        </div> <!--cierra container-->
+            <!--cierra el primer row, lleva la descripcion del producto-->
 
-     <%- include('./partials/footer.ejs')%>
-    
+        </div>
+    </div>
+    <!--cierra container-->
+
+    <%- include('./partials/footer.ejs')%>
+
     <!--ScripDeBoostrapt-->
 
-<%- include('./partials/scripts.ejs')%>
-<script src="/js/carrito.js"></script>
+    <%- include('./partials/scripts.ejs')%>
+
+    <script src="/js/carrito.js"></script>
+    <script src="/js/compra.js"></script>
 </body>
 
 </html>

@@ -2,6 +2,7 @@
 
 <%- include('./partials/head.ejs')%>
 <title>PRODUCT EDIT</title>
+
 <body class="fondo">
 
   <!--barra de navegacion-->
@@ -15,7 +16,7 @@
         <!--carga imagen-->
         <div class="col-md-6 order-md-1 mb-4">
 
-            <img src="/images/product/<%=producto.foto%>" class="imgProducto" alt="...">
+          <img src="/images/product/<%=producto.foto%>" class="imgProducto" alt="...">
 
         </div>
 
@@ -24,7 +25,7 @@
           <h4 class="mb-3">Usted va a Modificar el Producto</h4>
           <h6 style="color: red; font-size: xx-large;"><%=producto.nombre%></h6>
           <form action="/product/edit/<%=producto.id%>?_method=PUT" method="POST">
-            
+
             <!--Precio-Cuotas-Stock-->
             <div class="row">
               <div class="col-md-6 mb-3">
@@ -53,7 +54,7 @@
                 <label for="stock">Stock</label>
                 <input type="text" class="form-control" id="stock" name="stock" placeholder="Ingrese un numero"
                   value="<%=producto.stock%>">
-                
+
                 <div class="invalid-feedback">
                   Debes seleccionar 1 opción.
                 </div>
@@ -89,24 +90,23 @@
               </div>
             </div>
             <label for="descripcion">Descripción del Producto</label>
-            <textarea class="form-control" id="descripcion" name="descripcion"
-              rows="3"><%=producto.descripcion%>
+            <textarea class="form-control" id="descripcion" name="descripcion" rows="3"><%=producto.descripcion%>
             </textarea>
             <!--linea separacion-->
             <hr class="mb-4">
-            
+
             <input type="file" id="avatar" name="avatar" accept="image/x-png,image/gif,image/jpeg" />
             <br>
             <!--Boton-->
             <br>
             <button class="btn-carga btn-sm btn-block" type="submit">Guardar y Publicar</button>
-            
+
           </form>
           <form action="/product/edit/<%=producto.id%>?_method=DELETE" method="POST">
             <button class="btn-carga btn-sm btn-block btn btn-danger" type="submit">ELIMINAR PRODUCTO</button>
           </form>
-            
-          
+
+
         </div>
       </div>
     </div>
@@ -119,6 +119,9 @@
 
 
   <%- include('./partials/scripts.ejs')%>
+  <script src="/js/mostrarCarrito.js"></script>
+  <script src="/js/carrito.js"></script>
+  <script src="/js/compra.js"></script>
 </body>
 
 </html>

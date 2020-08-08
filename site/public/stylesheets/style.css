@@ -4,6 +4,46 @@
     background-color: #efefef;
 
 }
+.precio{
+    text-align: left;
+    font-size: smaller;
+    font-size: large;
+    color: cadetblue;
+    }
+    
+.tienda{
+    text-align: center;
+    font-size: 1.9rem;
+    color: #525252;
+    }
+.tituloProduct{
+    text-align: center;
+    font-size: 1.3rem;
+    color: #525252;
+    }
+.tituloVista{
+    text-align: left;
+    font-size: 1.9rem;
+    color: #525252;
+    }
+
+.tituloDescripcion{
+    text-align: left;
+    font-size: 1.3rem;
+    color: #525252;
+}
+.tituloCarrito{
+    text-align: left;
+    font-size: 1rem;
+    color: #525252;
+}
+
+.totalCarrito{
+    text-align: end; 
+    color:cadetblue;
+}
+
+
 
 .cuadroProducto {
     margin-top: 2%;
@@ -20,7 +60,7 @@
 }
 
 .caja-descripcion {
-    border: 1px solid #adaeaf;
+    border: 1px solid rgba(0,0,0,.1);
     padding: 2%;
     color: #393e46;
     margin-left: 2%;
@@ -202,20 +242,23 @@ td:last-child {
 
 .vacio {
     padding: 10px;
-    background-color: crimson;
+    background-color: rgb(190, 190, 190);
     text-align: center;
     border-radius: 10px;
     color: white;
 }
 
 .borrar-producto {
-    background-color: red;
+    text-decoration: none;
+    background-color: black;
     border-radius: 50%;
     padding: 5px 10px;
     text-decoration: none;
     color: white;
     font-weight: bold;
 }
+
+
 
 
 /* BARRA DE NAVEGACION */
@@ -361,8 +404,7 @@ td:last-child {
 }
 
 @media (max-width: 767px) {
-
-    ul.list-inline {
+        ul.list-inline {
         justify-content: center;
         display: flex;
     }
@@ -377,3 +419,5 @@ td:last-child {
         border-radius: 2%;
     }
 }
+
+    

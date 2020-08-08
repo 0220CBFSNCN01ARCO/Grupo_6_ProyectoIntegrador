@@ -52,10 +52,10 @@ const userController = {
   },
 
   guardarUsuario: (req, res) => {
-    const errors = validationResult(req);
-    if (!errors.isEmpty()) {
-      return res.render("register", { errors: errors.errors, usuario: "" });
-      return res.status(422).json({ errors: result.array() });
+    let errors = validationResult(req);
+    console.log("guardadndo usuario");
+    if (req.body.password != req.body.repassword) {
+      return res.render("register", { errors: errors.errors, usuario: " " });
     }
     db.Usuario.create({
       nombre: req.body.nombre,
@@ -65,9 +65,9 @@ const userController = {
       avatar: req.file.filename,
       idTipoUsuario: "1",
     });
-    res.redirect("/user/userProfile2", {
-      usuario: req.session.usuarioLogueado,
-    });
+    res.redirect("/product");
+    //return res.redirect("/user/profile", { usuario });
+    //return res.render("index", { usuario: req.session.usuarioLogueado,});
   },
 
   listUsers: (req, res) => {
@@ -100,7 +100,8 @@ const userController = {
         },
       }
     );
-    res.redirect("/user/list", { usuario });
+    //res.send("usuario modificado")
+    return res.redirect("/user/list", { usuario });
   },
 
   borrar: (req, res) => {
@@ -109,7 +110,7 @@ const userController = {
         id: req.params.id,
       },
     });
-    res.redirect("/user/list");
+    res.redirect("/user/list", { usuario });
   },
 
   userProfile: (req, res) => {

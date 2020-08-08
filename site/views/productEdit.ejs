@@ -23,9 +23,11 @@
         <!--formulario de modificacion-->
         <div class="col-md-6 order-md-2">
           <h4 class="mb-3">Usted va a Modificar el Producto</h4>
-          <h6 style="color: red; font-size: xx-large;"><%=producto.nombre%></h6>
+
+
           <form action="/product/edit/<%=producto.id%>?_method=PUT" method="POST">
 
+            <input type="text" class="form-control" id="nombre" name="nombre" value="<%=producto.nombre%>">
             <!--Precio-Cuotas-Stock-->
             <div class="row">
               <div class="col-md-6 mb-3">

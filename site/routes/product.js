@@ -44,4 +44,8 @@ router.get("/checkout", function (req, res) {
   res.render("checkOutForm");
 });
 
+router.get("/nosotros", (req, res) => {
+  res.render("nosotros", { usuario: req.session.usuarioLogueado });
+});
+
 module.exports = router;

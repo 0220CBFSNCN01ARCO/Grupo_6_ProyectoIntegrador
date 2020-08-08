@@ -10,6 +10,7 @@
   <!--PRINCIPAL-->
   <div class="container">
     <main class="main">
+
       <!--Titulo y servicios-->
       <div class="container mt-4 text-center">
         <h1 class="mb-5 mt-5">TIENDA ONLINE</h1>
@@ -42,7 +43,7 @@
                     o 1 pago de <%= producto.precio %>
                   </h5>
                   <p>
-                    <a href="#" style="font-size: x-small;" data-toggle="modal" data-target="#exampleModal">Ver
+                    <a href="#" style="font-size: x-small;" data-toggle="modal" data-target="#modalFinanciacion">Ver
                       financiación</a>
 
                     <!-- Modal -->
@@ -81,7 +82,7 @@
                     o 1 pago de <%= producto.precio %>
                   </h5>
                   <p>
-                    <a href="#" style="font-size: x-small;" data-toggle="modal" data-target="#exampleModal">Ver
+                    <a href="#" style="font-size: x-small;" data-toggle="modal" data-target="#modalFinanciacion">Ver
                       financiación</a>
 
                     <!-- Modal -->
@@ -98,21 +99,48 @@
       </div>
       <!--PARTE DE COTIZACION ONLINE-->
       <%- include('./partials/cotizacion.ejs')%>
+
+
+
       <!--PARTE DE RETIRO DE EQUIPO EN SITIO-->
       <%- include('./partials/delivery.ejs')%>
+
+
+
       <!--esta parte es la de imagenes de seguimiento tarjeta y otras-->
       <%- include('./partials/preFooter.ejs')%>
+
+      <section class="newsletter shadow-lg mb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12">
+              <div class="content">
+                <form>
+                  <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+                  <div class="input-group">
+                    <input type="email" class="form-control" placeholder="Enter your email">
+                    <span class="input-group-btn">
+                      <button class="btn" type="submit">Subscribe Now</button>
+                    </span>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
     </main>
   </div>
-  <!--footer-->
-  <%- include('./partials/footer.ejs')%> <%-
-    include('./partials/scripts.ejs')%>
 
-  <%- include('./partials/avisoCookies.ejs')%>
-  <%- include('./partials/modelCokies.ejs')%>
-  <a href="#" style="font-size: x-small;" data-toggle="modal" data-target="#exampleModalC">cookiemodal</a>
+  <%- include('./partials/comunicacion.ejs')%>
+  <!--footer-->
+  <%- include('./partials/footer.ejs')%>
+  <%- include('./partials/scripts.ejs')%>
+
+
   <script src="/js/mostrarCarrito.js"></script>
-  <script src="/js/avisoCookies.js"></script>
+
 
 </body>
 

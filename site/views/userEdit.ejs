@@ -41,14 +41,15 @@
                 </select>
                 <br>
 
-                    <button class="btn-carga btn-sm btn-block" type="submit">GUARDAR CAMBIOS</button>
+                <button class="btn-carga btn-sm btn-block" type="submit">GUARDAR CAMBIOS</button>
 
-            
                 <form action="/user/edit/<%=usuario.id%>?_method=DELETE" method="POST">
                     <button class="btn-carga btn-sm btn-block btn btn-danger" type="submit">ELIMINAR
-                         USUARIO</button>
+                        USUARIO</button>
                 </form>
+
             </form>
+
 
         </div>
     </div>
@@ -61,7 +62,7 @@
     <!--footer-->
 
     <%- include('./partials/footer.ejs')%>
-
+    <%- include('./partials/comunicacion.ejs')%>
 
 
     <!--ScripDeBoostrapt-->

@@ -275,6 +275,90 @@ td:last-child {
     text-align: center;
 }
 
+.marketing .col-lg-4 {
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.marketing h2 {
+    font-weight: 400;
+}
+
+.marketing .col-lg-4 p {
+    margin-right: .75rem;
+    margin-left: .75rem;
+}
+
+.marketing {
+    margin-top: 8%;
+}
+
+.redes-flotantes {
+    position: fixed;
+    right: 8px;
+    top: 75%;
+    z-index: 20;
+}
+
+.redes-flotantes img {
+    float: right;
+    clear: right;
+    margin: 5px;
+    -moz-transform: scale(.8);
+    -webkit-transform: scale(.8);
+    -o-transform: scale(.8);
+    -ms-transform: scale(.8);
+    transform: scale(.8);
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+}
+
+.redes-flotantes img:hover {
+    -moz-transform: scale(1.1) rotate(6deg);
+    -webkit-transform: scale(1.1) rotate(6deg);
+    -o-transform: scale(1.1) rotate(6deg);
+    -ms-transform: scale(1.1) rotate(6deg);
+    transform: scale(1.1) rotate(6deg);
+}
+
+.newsletter {
+    padding: 80px 0;
+    background: #f2f2f2;
+}
+
+.newsletter .content {
+    max-width: 650px;
+    margin: 0 auto;
+    text-align: center;
+    position: relative;
+    z-index: 2;
+}
+
+.newsletter .content h2 {
+    color: #243c4f;
+    margin-bottom: 40px;
+}
+
+.newsletter .content .form-control {
+    height: 50px;
+    border-color: #ffffff;
+    border-radius: 0;
+}
+
+.newsletter .content.form-control:focus {
+    box-shadow: none;
+    border: 2px solid #243c4f;
+}
+
+.newsletter .content .btn {
+    min-height: 50px;
+    border-radius: 0;
+    background: #243c4f;
+    color: #fff;
+    font-weight: 600;
+}
 
 @media (max-width: 767px) {
 

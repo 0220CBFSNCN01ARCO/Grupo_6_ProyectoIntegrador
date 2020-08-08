@@ -1,6 +1,8 @@
 import React from 'react'
 function Navbar(props) {
 
+
+
     return (
         <ul className="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
         {/* Sidebar - Brand */}
@@ -8,7 +10,7 @@ function Navbar(props) {
           <div className="sidebar-brand-icon">
             <i className="fas fa-chart-line" />
           </div>
-          <div className="sidebar-brand-text mx-3">Ingreso</div>
+          <div className="sidebar-brand-text mx-3">Admin</div>
         </a>
         {/* Divider */}
         <hr className="sidebar-divider my-0" />

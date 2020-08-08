@@ -22,8 +22,7 @@
             </div>
             <!--especificaciones-->
             <div class="col-md-6 order-md-2 detalle-producto">
-                <h1 data-id=" <%= producto.id %> " class="mb-2"
-                    style="font-family:Verdana, Geneva, Tahoma, sans-serif; font-weight: 700; color: darkslategray;">
+                <h1 data-id=" <%= producto.id %> " class="tituloVista mb-2">
                     <%= producto.nombre  %> </h1>
                 <div class="precios-productos">
                     <% if (producto.cuotas >= 1 ){ %>
@@ -35,25 +34,37 @@
                     <h3 class="precio mb-2"><%= producto.precio %></h3>
                     <% } %>
                 </div>
-                <!--Breve Desc Tecn-->
                 <div class="row">
-                    <div class="col-ms-12">
-                        <p class="caja-descripcion">
-                            <%= producto.descripcion  %>
-                        </p>
+                    <div class="col-md-3 mb-3">
+                        <label for="envio">Caracteristicas</label>
+                        <div class="d-flex flex-row ">
+                            <i class="p-1">
+                                <ion-icon size="large" name="logo-android"></ion-icon>
+                            </i>
+                            <i class="p-1">
+                                <ion-icon size="large" name="logo-chrome"></ion-icon>
+                            </i>
+                            <i class="p-1">
+                                <ion-icon size="large" name="battery-full-outline"></ion-icon>    
+                            </i>
+                            <i class="p-1">
+                                <ion-icon size="large" name="camera-outline"></ion-icon>
+                            </i>
+                            <i class="p-1">
+                                <ion-icon size="large" name="musical-notes-outline"></ion-icon>
+                            </i>
+                        </div>
                     </div>
                 </div>
-
                 <!--cantidad y Reseña-->
                 <div class="row">
                     <div class="col-md-3 mb-3">
-                        <label for="cantidad">Cantidad</label>
-                        <select class="custom-select d-block w-100" id="cantidad">
-                            <option value="">1</option>
-                            <option>2</option>
-                            <option>3</option>
-                            <option>4</option>
-                        </select>
+                        <label for="colores">Colores</label>
+                        <div class="elegirColor">
+                        <button type="button" class="btn btn-primary" alt="rojo"></button>
+                        <button type="button" class="btn btn-secondary"></button>
+                        <button type="button" class="btn btn-success"></button>
+                        </div>
                     </div>
                     <div class="col-md-3 mb-3">
                         <label for="reseña">Puntuación</label>
@@ -80,8 +91,29 @@
 
         </div>
     </div>
-    <!--cierra container-->
+    <!--cierra container producto-->
 
+
+    <!--abre container descripcion-->
+    <div >
+       
+
+<!--Breve Desc Tecn-->
+            <label  for="reseña">Descripcion</label>
+                <div class="row">
+                    
+                    <div class="col-ms-12">
+                        
+                    
+                        <p class="caja-descripcion">
+                            <%= producto.descripcion  %>
+                        </p>
+                    </div>
+                </div>
+        
+    </div>
+<!--cierra container descripcion-->
+</div>
     <%- include('./partials/footer.ejs')%>
     <%- include('./partials/comunicacion.ejs')%>
     <!--ScripDeBoostrapt-->

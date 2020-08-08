@@ -13,9 +13,9 @@
 
       <!--Titulo y servicios-->
       <div class="container mt-4 text-center">
-        <h1 class="mb-5 mt-5">TIENDA ONLINE</h1>
+        <h1 class="tienda mb-5 mt-5">TIENDA ONLINE</h1>
 
-        <H4 class="mb-3 mt-3">Ofertas</H4>
+        <H4 class="tituloProduct mb-3 mt-3">Productos en Oferta</H4>
 
         <section>
           <div class="row">
@@ -31,12 +31,7 @@
                   <h5 style="text-align: left; font-size: smaller;">
                     18 cuotas sin interés de:
                   </h5>
-                  <h4 style="
-                        text-align: left;
-                        font-size: smaller;
-                        font-size: large;
-                        color: cadetblue;
-                      ">
+                  <h4 class="precio"> 
                     $<%= (producto.precio / 18).toFixed(0)%>
                   </h4>
                   <h5 style="text-align: left; font-size: smaller;">
@@ -58,7 +53,7 @@
         </section>
       </div>
       <div class="container mt-4 text-center">
-        <h4 class="mb-3 mt-3">Destacados</h4>
+        <h4 class="tituloProduct mb-3 mt-3">Productos Destacados</h4>
         <section>
           <div class="row">
             <% productosDestacados.forEach(producto => { %>
@@ -70,12 +65,7 @@
                   <h5 style="text-align: left; font-size: smaller;">
                     18 cuotas sin interés de:
                   </h5>
-                  <h4 style="
-                        text-align: left;
-                        font-size: smaller;
-                        font-size: large;
-                        color: cadetblue;
-                      ">
+                  <h4 class="precio">
                     $<%= (producto.precio / 18).toFixed(0)%>
                   </h4>
                   <h5 style="text-align: left; font-size: smaller;">
@@ -116,11 +106,11 @@
             <div class="col-sm-12">
               <div class="content">
                 <form>
-                  <h2>SUBSCRIBE TO OUR NEWSLETTER</h2>
+                  <h5>Suscribite para ser el primero en conocer sobre las mejores ofertas</h5>
                   <div class="input-group">
-                    <input type="email" class="form-control" placeholder="Enter your email">
+                    <input type="email" class="form-control" placeholder="Ingresá tu email">
                     <span class="input-group-btn">
-                      <button class="btn" type="submit">Subscribe Now</button>
+                      <button class="btn" type="submit">Suscribirme</button>
                     </span>
                   </div>
                 </form>

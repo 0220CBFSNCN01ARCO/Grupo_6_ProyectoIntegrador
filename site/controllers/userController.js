@@ -53,10 +53,14 @@ const userController = {
 
   guardarUsuario: (req, res) => {
     let errors = validationResult(req);
-    console.log("guardadndo usuario");
+
     if (req.body.password != req.body.repassword) {
-      return res.render("register", { errors: errors.errors, usuario: " " });
+      return res.render("register", {
+        errors: "contraseñas no son iguales",
+        usuario: " ",
+      });
     }
+    console.log("guardadndo usuario");
     db.Usuario.create({
       nombre: req.body.nombre,
       apellido: req.body.apellido,

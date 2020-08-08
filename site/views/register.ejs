@@ -20,8 +20,8 @@
 
                     <div class="titulo text-center">
                         <p>Crea Tu Cuenta</p>
-                        <h6 style="font-size: smaller; font-weight: 200; text-align: center;">Por favor, completá
-                            todos los campos</h6>
+                        <h6 style="font-size: smaller; font-weight: 200; text-align: center;">Por favor, complete
+                            todo los campos</h6>
                     </div>
 
 
@@ -36,9 +36,11 @@
                     <input type="email" name="email" class="form-control" placeholder="Ingresa tu correo electronico"
                         required>
                     <br>
-                    <input type="password" name="password" class="form-control" placeholder="Contraseña" required>
+                    <input type="password" minlength="4" name="password" class="form-control" placeholder="Contraseña"
+                        required>
                     <br>
-                    <input type="password" name="repassword" class="form-control" placeholder="Contraseña" required>
+                    <input type="password" minlength="4" name="repassword" class="form-control" placeholder="Contraseña"
+                        required>
                     <br>
                     <input type="file" id="avatar" name="avatar" accept="image/x-png,image/gif,image/jpeg" required />
                     <br />
@@ -47,13 +49,13 @@
 
                     <section class="validacionLogin">
                         <% if (typeof errors != 'undefined') { %>
-                        <p>ERROR</p>
+                        <p>Ha ocuirrido un error</p>
                         <ul>
-                            <% for( let i = 0; i < errors.length; i++ ) { %>
+
                             <li>
-                                <%= errors[i].msg %>
+                                <p>Las contraseñas no son iguales.</p>
                             </li>
-                            <% } %>
+
 
                         </ul>
                         <% } %>

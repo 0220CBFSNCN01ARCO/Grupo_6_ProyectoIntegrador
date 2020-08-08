@@ -1,12 +1,62 @@
 <div class="container text-center">
     <br>
     <div class="row cotizacion-detalle">
-        <div class="col-md-6 mb-4" style="margin-top:10%;">
+        <div class="col-md-6 mb-5" style="margin-top:10%;">
             <h4>¿Problemas con tu celular o tablet?</h4>
             <p>Utilizá nuestro sistema de reparación, calcula tu presupuesto indicando el problema y
                 dispositivo que tenés y reparalo ya mismo!!
             </p>
-            <button type="button" class="btn btn-outline-primary btn-lg btn-block" rol="alert">Cotizar</button>
+            <button type="button" class="btn btn-outline-primary btn-lg btn-block" data-toggle="modal" data-target="#example" >Cotizar</button>
+
+<!--Modal Cotizar--->
+            <div class="modal fade" id="example" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Cotizar</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                          <div class="form-group">
+                            <label for="exampleFormControlInput1">Email</label>
+                            <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="nombre@email.com">
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlSelect1">Tipo de Equipo</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                              <option>Seleccioná</option> 
+                              <option>Celular</option>
+                              <option>Tablet</option>
+                              <option>Notebook</option>
+                              <option>Otro</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlSelect1">Tipo de Reparación</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                              <option>Seleccioná</option>
+                              <option>Pantalla Dañada</option>
+                              <option>Cámara</option>
+                              <option>Bateria</option>
+                            </select>
+                          </div>
+                          <div class="form-group">
+                            <label for="exampleFormControlTextarea1">Comentario</label>
+                            <textarea class="form-control" id="exampleFormControlTextarea1" rows="2"></textarea>
+                          </div>
+                        </form>
+              
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancelar</button>
+                      <button type="button" class="btn btn-primary" href="#">Enviar</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
         </div>
         <div class="col-md-6 shadow-lg p-3 mb-5 bg-white rounded">
             <figure>

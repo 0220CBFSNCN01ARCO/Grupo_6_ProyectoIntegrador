@@ -67,8 +67,7 @@ export default class Content extends Component {
 
     let contenidoUsuarios;
     let contenidoNombre;
-    let contenidoUltimoProducto;
-    let contenidoUltimoProductoNombre;
+    
 
     if (this.state.cantidadUsuarios == "0") {
       contenidoUsuarios = <p>NO HAY USUARIOS</p>;
@@ -77,8 +76,11 @@ export default class Content extends Component {
       contenidoNombre = <p>{this.state.nombreUsuario}</p>;
     }
 
+    let contenidoUltimoProducto;
+    let contenidoUltimoProductoNombre;
+
     if (this.state.ultimoProducto == "") {
-      contenido = <p>NO ULTIMO PRODUCTOS</p>;
+      contenidoUltimoProducto = <p>NO ULTIMO PRODUCTOS</p>;
     } else {
       contenidoUltimoProducto = <p> {this.state.ultimoProducto}</p>;
       contenidoUltimoProductoNombre = <p> {this.state.ultimoNombre}</p>;
@@ -117,7 +119,7 @@ export default class Content extends Component {
               >
                 <i className="fas fa-envelope fa-fw" />
                 {/* Counter - Messages */}
-                <span className="badge badge-danger badge-counter">7</span>
+                <span className="badge badge-danger badge-counter"></span>
               </a>
             </li>
             <div className="topbar-divider d-none d-sm-block" />
@@ -145,7 +147,7 @@ export default class Content extends Component {
         <div className="container-fluid">
           {/* Page Heading */}
           <div className="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 className="h3 mb-0 text-gray-800">App Dashboard</h1>
+            <h1 className="h3 mb-0 text-gray-800">Dashboard</h1>
           </div>
           {/* Content Row */}
           <div className="row">
@@ -166,11 +168,11 @@ export default class Content extends Component {
             {/* Content Row */}
             <div className="row">
               {/* Last Product in DB */}
-              <div className="col-lg-6 mb-4">
+              <div className="col-lg-12 mb-4">
                 <div className="card shadow mb-4">
                   <div className="card-header py-3">
                     <h6 className="m-0 font-weight-bold text-primary">
-                      Last product in Data Base
+                      Ultimo Producto
                     </h6>
                   </div>
                   <div className="card-body">
@@ -178,7 +180,7 @@ export default class Content extends Component {
                       <img
                         className="img-fluid px-3 px-sm-4 mt-3 mb-4"
                         style={{ width: "25rem" }}
-                        src="assets/images/product_dummy.svg"
+                        src="assets/images/ultimo.webp"
                         alt="image dummy"
                       />
                     </div>
@@ -186,18 +188,18 @@ export default class Content extends Component {
 
                     {contenidoUltimoProducto}
                     <a target="_blank" rel="nofollow" href="/">
-                      View product detail
+                      Ver detalles de producto
                     </a>
                   </div>
                 </div>
               </div>
             </div>
             {/* Categories in DB */}
-            <div className="col-lg-6 mb-4">
+            <div className="col-lg-8 mb-4">
               <div className="card shadow mb-4">
                 <div className="card-header py-3">
                   <h6 className="m-0 font-weight-bold text-primary">
-                    Categories in Data Base
+                    Categorias
                   </h6>
                 </div>
                 <div className="card-body">

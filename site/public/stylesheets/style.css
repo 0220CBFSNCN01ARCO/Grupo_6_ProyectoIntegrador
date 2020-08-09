@@ -60,11 +60,10 @@
 }
 
 .caja-descripcion {
-    border: 1px solid rgba(0,0,0,.1);
-    padding: 2%;
+      
     color: #393e46;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-bottom: 2%;
+    
 
 }
 

@@ -16,14 +16,14 @@
             <h3>Editar a <%=usuario.nombre%></h3>
             <img class="rounded-circle mr-4 mt-2 mb-2" src="/images/users/<%= usuario.avatar %>">
         </div>
-
-        <div class="container col-12 text-center shadow">
-            <h3 style="color: darkslategray;">Datos de "<%=usuario.nombre%>"</h3>
+        <br>
+        <div class="container col-12 text-center shadow mt-4 mb-4">
+            <h3 style="color: darkslategray;">Informacion de <%=usuario.nombre%></h3>
         </div>
 
 
 
-
+        <br>
         <form action="/user/edit/<%=usuario.id%>?_method=PUT" method="POST">
             <input type="text" class="form-control" id="nombre" name="nombre" value="<%= usuario.nombre %>" disabled>
             <br>

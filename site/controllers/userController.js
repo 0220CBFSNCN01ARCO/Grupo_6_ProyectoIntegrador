@@ -105,7 +105,7 @@ const userController = {
       }
     );
     //res.send("usuario modificado")
-    return res.redirect("/user/list", { usuario });
+    return res.redirect("/user/list");
   },
 
   borrar: (req, res) => {
@@ -114,7 +114,7 @@ const userController = {
         id: req.params.id,
       },
     });
-    res.redirect("/user/list", { usuario });
+    res.redirect("/user/list");
   },
 
   userProfile: (req, res) => {

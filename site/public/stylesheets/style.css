@@ -4,52 +4,56 @@
     background-color: #efefef;
 
 }
-.precio{
+
+.precio {
     text-align: left;
     font-size: smaller;
     font-size: large;
     color: cadetblue;
-    }
-    
-.tienda{
+}
+
+.tienda {
     text-align: center;
     font-size: 1.9rem;
     color: #525252;
-    }
-.tituloProduct{
+}
+
+.tituloProduct {
     text-align: center;
     font-size: 1.3rem;
     color: #525252;
-    }
-.tituloVista{
-    text-align: left;
+}
+
+.tituloVista {
+    text-align: center;
     font-size: 1.9rem;
     color: #525252;
-    }
+}
 
-.tituloDescripcion{
+.tituloDescripcion {
     text-align: left;
     font-size: 1.3rem;
     color: #525252;
 }
-.tituloCarrito{
+
+.tituloCarrito {
     text-align: left;
     font-size: 1rem;
     color: #525252;
 }
 
-.totalCarrito{
-    text-align: end; 
-    color:cadetblue;
+.totalCarrito {
+    text-align: end;
+    color: cadetblue;
 }
 
 
 
 .cuadroProducto {
-    margin-top: 2%;
+    margin-top: 5%;
     border: none;
     padding: 2%;
-    margin-bottom: 2%;
+    margin-bottom: 5%;
     border-radius: 2%;
     /*background-color: white;*/
 }
@@ -60,10 +64,10 @@
 }
 
 .caja-descripcion {
-      
+
     color: #393e46;
     margin-bottom: 2%;
-    
+
 
 }
 
@@ -403,7 +407,7 @@ td:last-child {
 }
 
 @media (max-width: 767px) {
-        ul.list-inline {
+    ul.list-inline {
         justify-content: center;
         display: flex;
     }
@@ -418,5 +422,3 @@ td:last-child {
         border-radius: 2%;
     }
 }
-
-    

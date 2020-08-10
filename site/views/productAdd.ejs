@@ -27,14 +27,15 @@
             <div class="row">
               <div class="col-md-12  mb-3">
                 <label for="name">Producto</label>
-                <input type="text" class="form-control" id="name" name="nombre" placeholder="Nombre del Producto">
+                <input type="text" class="form-control" id="name" name="nombre" placeholder="Nombre del Producto"
+                  required>
                 <div class="invalid-feedback">
                   Campo requerido
                 </div>
               </div>
               <div class="col-md-12 mb-3">
                 <label for="marca">Marca</label>
-                <select class="custom-select d-block w-100" id="marca" name="marca">
+                <select class="custom-select d-block w-100" id="marca" name="marca" required>
                   <option value="">Seleccionar</option>
                   <option value="1">LG</option>
                   <option value="2">SAMSUMG</option>
@@ -51,14 +52,14 @@
             <div class="row">
               <div class="col-md-6 mb-3">
                 <label for="precio">Precio</label>
-                <input type="number" class="form-control" id="precio" name="precio" placeholder=>
+                <input type="number" class="form-control" id="precio" name="precio" required>
                 <div class="invalid-feedback">
                   Ingresar el precio total
                 </div>
               </div>
               <div class="col-md-3 mb-3">
                 <label for="cuotas">Cuotas</label>
-                <select class="custom-select d-block w-100" id="cuota" name="cuota">
+                <select class="custom-select d-block w-100" id="cuota" name="cuota" required>
                   <option value="">Elegir</option>
                   <option value="2">1</option>
                   <option value="3">3</option>
@@ -72,7 +73,8 @@
               </div>
               <div class="col-md-3 mb-3">
                 <label for="stock">Stock</label>
-                <input type="text" class="form-control" id="stock" name="stock" placeholder="Ingrese un numero">
+                <input type="text" class="form-control" id="stock" name="stock" placeholder="Ingrese un numero"
+                  required>
                 <div class="invalid-feedback">
                   Debes seleccionar 1 opción.
                 </div>
@@ -80,7 +82,7 @@
               <br />
               <div class="col-md-3 mb-3">
                 <label for="color">color</label>
-                <select class="custom-select d-block w-100" id="color" name="color">
+                <select class="custom-select d-block w-100" id="color" name="color" required>
                   <option value="">Elegir</option>
                   <option value="1">BLANCO </option>
                   <option value="2">NEGRO</var></option>
@@ -93,7 +95,7 @@
               <div class="col-md-3 mb-3">
                 <label for="categoria">categoria</label>
 
-                <select class="custom-select d-block w-100" id="categoria" name="categoria">
+                <select class="custom-select d-block w-100" id="categoria" name="categoria" required>
                   <% for( let i = 0; i < categorias.length; i++ ) { %>
                   <option value="<%= categorias[i].id %> ">
                     <%= categorias[i].descripcion %>
@@ -108,7 +110,7 @@
               </div>
             </div>
             <label for="descripcion">Descripción del Producto</label>
-            <textarea class="form-control" id="descripcion" name="descripcion" rows="3"></textarea>
+            <textarea class="form-control" id="descripcion" name="descripcion" rows="3" required></textarea>
             <!--linea separacion-->
             <hr class="mb-4">
 

@@ -10,29 +10,39 @@
 
     <div class="container">
 
-        <div class="row">
-            <div class="col-3 my-3 pt-2 shadow mt-2">
-                <img class="float-left mr-4 mt-2 mb-2" style="width: 100%;" src="/images/users/<%= usuario.avatar %>">
-            </div>
-            <div class="col-9 my-3 pt-2 shadow mt-2">
-                <input type="text" class="form-control " id="nombre" name="nombre" value="<%= usuario.nombre %>"
-                    disabled>
-                <br>
-                <input type="text" class="form-control" id="apellido" name="apellido" value="<%= usuario.apellido %>"
-                    disabled>
-                <br>
-                <input type="text" class="form-control" id="email" name="email" value="<%= usuario.email %>" disabled>
-                <br>
-                <input type="text" class="form-control" id="direccion" name="direccion" value="<%= usuario.direccion %>"
-                    disabled>
-                <br>
-                <form action="/user/logout" class="my-3 pt-2 shadow mt-2">
-                    <button class="btn-carga btn-sm btn-block btn btn-danger" type="submit">CERRAR
-                        SESIÓN</button>
-                </form>
-            </div>
 
+        <div class="col-12 my-3 pt-2 shadow  text-center">
+            <h3>Bienvenido</h3>
+            <img class="rounded-circle mr-4 mt-2 mb-2" src="/images/users/<%= usuario.avatar %>">
         </div>
+
+
+
+        <div class="col-12 my-3 pt-2 shadow mt-2">
+
+            <label for="">Nombre </label>
+            <input type="text" class="form-control " id="nombre" name="nombre" value="<%= usuario.nombre %>" disabled>
+            <br>
+            <label for="">Apellido </label>
+            <input type="text" class="form-control" id="apellido" name="apellido" value="<%= usuario.apellido %>"
+                disabled>
+            <br>
+            <label for="">Email </label>
+            <input type="text" class="form-control" id="email" name="email" value="<%= usuario.email %>" disabled>
+            <br>
+
+
+            <form action="/user/logout" class="my-3 pt-2 mt-2 mb-2 pb-1">
+                <button class="btn-carga btn-sm btn-block" type="submit">
+                    EDITAR PERFIL</button>
+            </form>
+            <form action="/user/logout" class="my-3 pt-2 mt-2 mb-5 pb-2">
+                <button class="btn-carga btn-sm btn-block btn btn-danger" type="submit">CERRAR
+                    SESIÓN</button>
+            </form>
+        </div>
+
+
 
     </div>
 

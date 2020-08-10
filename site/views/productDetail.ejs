@@ -11,111 +11,119 @@
 
     <!--PRINCIPAL-->
     <div class="container">
-    <div class="container cuadroProducto">
+        <div class="container cuadroProducto">
 
-        <div class="row">
+            <div class="row">
 
-            <!--imagen producto-->
-            <div class="col-md-6 d-flex justify-content-center mt-4">
-                <img src="/images/product/<%= producto.foto %>" class="zoom zoom:hover" style=" height: 50%;
-                        border-radius: 10%; margin-top: 5%;">
+                <!--imagen producto-->
+                <div class="col-md-6 d-flex justify-content-center">
+                    <img src="/images/product/<%= producto.foto %>" style="width: 80%; height: 100%;">
+                </div>
+
+                <!--especificaciones-->
+                <div class="col-md-6 order-md-2 detalle-producto">
+                    <h1 data-id=" <%= producto.id %> " class="tituloVista mb-2">
+                        <%= producto.nombre  %> </h1>
+                    <div class="precios-productos">
+                        <% if (producto.cuotas >= 1 ){ %>
+                        <h6 class="subtitulo mb-0"> <%= producto.cuotas %> cuotas de</h6>
+                        <h3 class="precio mb-2"> <%=(producto.precio / producto.cuotas).toFixed(2) %></h3>
+                        <h6 class="subtitulo mb-4">1 Pago de <%= producto.precio %></h6>
+                        <% }  else {%>
+                        <h6 class="subtitulo mb-4">1 Pago de </h6>
+                        <h3 class="precio mb-2"><%= producto.precio %></h3>
+                        <% } %>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 mb-3">
+                            <label for="envio">Caracteristicas</label>
+                            <div class="d-flex flex-row ">
+                                <i class="p-1">
+                                    <ion-icon size="large" name="logo-android"></ion-icon>
+                                </i>
+                                <i class="p-1">
+                                    <ion-icon size="large" name="logo-chrome"></ion-icon>
+                                </i>
+                                <i class="p-1">
+                                    <ion-icon size="large" name="battery-full-outline"></ion-icon>
+                                </i>
+                                <i class="p-1">
+                                    <ion-icon size="large" name="camera-outline"></ion-icon>
+                                </i>
+                                <i class="p-1">
+                                    <ion-icon size="large" name="musical-notes-outline"></ion-icon>
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--cantidad y Reseña-->
+                    <div class="row">
+                        <div class="col-md-3 mb-3">
+                            <label for="colores">Colores</label>
+                            <div class="elegirColor">
+                                <button type="button" class="btn btn-primary" alt="rojo"></button>
+                                <button type="button" class="btn btn-secondary"></button>
+                                <button type="button" class="btn btn-success"></button>
+                            </div>
+                        </div>
+                        <div class="col-md-3 mb-3">
+                            <label for="reseña">Puntuación</label>
+
+                            <div class="d-flex flex-row justify-content-center">
+                                <i class="p-2">
+                                    <ion-icon name="star"></ion-icon>
+                                </i>
+                                <i class="p-2">
+                                    <ion-icon name="star"></ion-icon>
+                                </i>
+                                <i class="p-2">
+                                    <ion-icon name="star-outline"></ion-icon>
+                                </i>
+                            </div>
+                        </div>
+                    </div>
+                    <!--linea separacion-->
+                    <hr class="mb-4">
+                    <!--Boton-->
+                    <button class="btn-carga btn-sm btn-block agregar-carrito" type="submit">Añadir al Carrito</button>
+                </div>
+                <!--cierra el primer row, lleva la descripcion del producto-->
+
             </div>
-            <!--especificaciones-->
-            <div class="col-md-6 order-md-2 detalle-producto">
-                <h1 data-id=" <%= producto.id %> " class="tituloVista mb-2">
-                    <%= producto.nombre  %> </h1>
-                <div class="precios-productos">
-                    <% if (producto.cuotas >= 1 ){ %>
-                    <h6 class="subtitulo mb-0"> <%= producto.cuotas %> cuotas de</h6>
-                    <h3 class="precio mb-2"> <%=(producto.precio / producto.cuotas).toFixed(2) %></h3>
-                    <h6 class="subtitulo mb-4">1 Pago de <%= producto.precio %></h6>
-                    <% }  else {%>
-                    <h6 class="subtitulo mb-4">1 Pago de </h6>
-                    <h3 class="precio mb-2"><%= producto.precio %></h3>
-                    <% } %>
-                </div>
-                <div class="row">
-                    <div class="col-md-3 mb-3">
-                        <label for="envio">Caracteristicas</label>
-                        <div class="d-flex flex-row ">
-                            <i class="p-1">
-                                <ion-icon size="large" name="logo-android"></ion-icon>
-                            </i>
-                            <i class="p-1">
-                                <ion-icon size="large" name="logo-chrome"></ion-icon>
-                            </i>
-                            <i class="p-1">
-                                <ion-icon size="large" name="battery-full-outline"></ion-icon>    
-                            </i>
-                            <i class="p-1">
-                                <ion-icon size="large" name="camera-outline"></ion-icon>
-                            </i>
-                            <i class="p-1">
-                                <ion-icon size="large" name="musical-notes-outline"></ion-icon>
-                            </i>
-                        </div>
-                    </div>
-                </div>
-                <!--cantidad y Reseña-->
-                <div class="row">
-                    <div class="col-md-3 mb-3">
-                        <label for="colores">Colores</label>
-                        <div class="elegirColor">
-                        <button type="button" class="btn btn-primary" alt="rojo"></button>
-                        <button type="button" class="btn btn-secondary"></button>
-                        <button type="button" class="btn btn-success"></button>
-                        </div>
-                    </div>
-                    <div class="col-md-3 mb-3">
-                        <label for="reseña">Puntuación</label>
+        </div>
+        <!--cierra container producto-->
 
-                        <div class="d-flex flex-row justify-content-center">
-                            <i class="p-2">
-                                <ion-icon name="star"></ion-icon>
-                            </i>
-                            <i class="p-2">
-                                <ion-icon name="star"></ion-icon>
-                            </i>
-                            <i class="p-2">
-                                <ion-icon name="star-outline"></ion-icon>
-                            </i>
-                        </div>
-                    </div>
-                </div>
-                <!--linea separacion-->
+
+        <!--abre container descripcion-->
+        <div>
+
+
+            <!--Breve Desc Tecn-->
+
+
+
+            <div class="col-ms-12">
+
+                <h5 class="tituloDescripcion">Descripción </h5>
                 <hr class="mb-4">
-                <!--Boton-->
-                <button class="btn-carga btn-sm btn-block agregar-carrito" type="submit">Añadir al Carrito</button>
+                <div class="caja-descripcion">
+                    <p>
+                        <%= producto.descripcion  %>
+                    </p>
+                </div>
             </div>
-            <!--cierra el primer row, lleva la descripcion del producto-->
+            <hr class="mb-4">
 
         </div>
+        <!--cierra container descripcion-->
     </div>
-    <!--cierra container producto-->
+
+    <%- include('./partials/delivery.ejs')%>
 
 
-    <!--abre container descripcion-->
-    <div >
-       
 
-<!--Breve Desc Tecn-->
-            
-                
-                    
-                    <div class="col-ms-12">
-                        
-                        <h5 class="tituloDescripcion">Descripción </h5>  
-                        <hr class="mb-4">                     
-                       <div class="caja-descripcion"><p >
-                            <%= producto.descripcion  %>
-                        </p>
-                    </div>
-                    </div>
-                
-        
-    </div>
-<!--cierra container descripcion-->
-</div>
+    <!--esta parte es la de imagenes de seguimiento tarjeta y otras-->
+    <%- include('./partials/preFooter.ejs')%>
 
     <%- include('./partials/footer.ejs')%>
     <%- include('./partials/comunicacion.ejs')%>

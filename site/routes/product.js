@@ -48,4 +48,8 @@ router.get("/nosotros", (req, res) => {
   res.render("nosotros", { usuario: req.session.usuarioLogueado });
 });
 
+router.get("/samsung", productController.catalogoMarca);
+router.get("/motorola", productController.catalogoMarcaMotorola);
+router.get("/lg", productController.catalogoMarcaLg);
+
 module.exports = router;

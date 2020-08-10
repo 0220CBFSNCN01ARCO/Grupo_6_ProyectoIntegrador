@@ -1,11 +1,8 @@
 const db = require("../database/models");
 const { Op } = require("sequelize");
 
-
-
 /*--------------------------------CONTROLADOR CON METODO HOME CREAR, DETALLE, EDITAR Y ELIMINAR--------------------------------*/
 const productController = {
-  
   crear_post: (req, res) => {
     db.Producto.create({
       nombre: req.body.nombre,
@@ -115,17 +112,60 @@ const productController = {
   },
 
   catalagoOferta: (req, res) => {
-    db.Producto.findAll(
-      {
-        where:{
-          idCategoria : '2'
-        }
-      }
-    ).then(function (productos) {
+    db.Producto.findAll({
+      where: {
+        idCategoria: "2",
+      },
+    }).then(function (productos) {
       return res.render("productOfert", {
         productos,
         usuario: req.session.usuarioLogueado,
       });
+    });
+  },
+
+  catalogoMarca: async (req, res) => {
+    console.log("estoy en catalogo marca");
+    const productosSamsung = await db.Producto.findAll({
+      where: {
+        idMarca: "2",
+      },
+    });
+
+    return res.render("samsung", {
+      productosSamsung,
+
+      usuario: req.session.usuarioLogueado,
+    });
+  },
+
+  catalogoMarcaMotorola: async (req, res) => {
+    console.log("estoy en catalogo marca Motorola");
+    const productosMotorola = await db.Producto.findAll({
+      where: {
+        idMarca: "3",
+      },
+    });
+
+    return res.render("motorola", {
+      productosMotorola,
+
+      usuario: req.session.usuarioLogueado,
+    });
+  },
+
+  catalogoMarcaLg: async (req, res) => {
+    console.log("estoy en catalogo marca Lg");
+    const productosLg = await db.Producto.findAll({
+      where: {
+        idMarca: "1",
+      },
+    });
+
+    return res.render("lg", {
+      productosLg,
+
+      usuario: req.session.usuarioLogueado,
     });
   },
 };

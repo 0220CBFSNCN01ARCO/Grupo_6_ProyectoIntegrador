@@ -52,7 +52,7 @@
                     <div>
                         SUBTOTAL
                     </div>
-                    <div>
+                    <div style="color: rgb(34, 235, 34); font-weight: bold;">
                         ENVIO
                     </div>
                     <hr>
@@ -62,14 +62,14 @@
 
 
                 </div>
-                <div class="col-4" style="text-align: center;">
-                    <div id="subtotal"> $ </div>
-                    <div id="igv"> GRATIS </div>
+                <div class="col-4" style="text-align: center; font-weight: bold;">
+                    <div id=" subtotal"> $ </div>
+                    <div id="igv" style="color: rgb(34, 235, 34); font-weight: bold;"> GRATIS </div>
                     <hr>
-                    <div id="total">$ </div>
+                    <div id="total" style="font-weight: bold;">$ </div>
                 </div>
             </div>
-
+            <br>
             <form action="/product" method="GET" id="comprar">
                 <div class="mb-4 mt-4">
                     <button type="submit" class="btn btn-primary btn-lg float-right">Finalizar Compra</button>
@@ -78,7 +78,7 @@
 
             <form action="/product/" method="GET" id="comprar">
                 <div class="mb-4 mt-4">
-                    <button type="submit" class="btn btn-secondary">Volver</button>
+                    <button type="button" class="btn btn-outline-dark btn-sm">Volver</button>
 
                 </div>
             </form>
@@ -87,7 +87,8 @@
         </main>
     </div>
 
-
+    <br>
+    <br>
     <%- include('./partials/footer.ejs')%>
 
 

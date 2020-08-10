@@ -68,11 +68,19 @@
 
                 <% if (usuario != null) { %>
 
-                <a style="color: rgba(60, 240, 240, 0.5); font-weight: bold;" class="nav-link text-uppercase"
-                    href="/user"><%= usuario.nombre %></a>
-                <li class="nav-item d-none userLogin">
-                    <a class="nav-link" href="/user">LOG IN</a>
+                <li class="nav-item dropdown">
+                    <a a class="nav-link dropdown-toggle text-uppercase" href="#" id="navbarDropdown" role="button"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"
+                        href=""><%= usuario.nombre %></a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="/user">Mi Perfil</a>
+                        <form action="/user/logout">
+                            <button class="btn-carga btn-sm btn-block btn btn-danger" type="submit">Cerrar
+                                Sesión</button>
+                        </form>
+                    </div>
                 </li>
+
                 <% } %>
 
                 <% if (usuario == null) { %>
@@ -81,8 +89,6 @@
                 </li>
 
                 <% } %>
-
-
 
 
 
